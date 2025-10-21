@@ -13,7 +13,7 @@ interface Props {
     data: Array<ProductType>;
     productPerPage: number
     dataType: string | null
-    productStyle: string
+    productStyle?: string; // optional now
 }
 
 const ShopFilterCanvas: React.FC<Props> = ({ data, productPerPage, dataType, productStyle }) => {
