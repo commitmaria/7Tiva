@@ -20,7 +20,6 @@ import { useModalCompareContext } from "@/context/ModalCompareContext";
 import ModalSizeguide from "@/components/Modal/ModalSizeguide";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
-
 SwiperCore.use([Navigation, Thumbs]);
 
 interface Props {
@@ -38,16 +37,11 @@ const Default: React.FC<Props> = ({ data, productId }) => {
   const [activeSize, setActiveSize] = useState<string>("");
   const [activeTab, setActiveTab] = useState<string | undefined>("description");
 
-
   const { addToCart, updateCart, cartState } = useCart();
   const totalCart = cartState.cartArray.reduce(
-  (sum, item) => sum + item.price * item.quantity,
-  0
-   );
-
-
-
-
+    (sum, item) => sum + item.price * item.quantity,
+    0
+  );
 
   const { openModalCart } = useModalCartContext();
   const { addToWishlist, removeFromWishlist, wishlistState } = useWishlist();
@@ -119,11 +113,6 @@ const Default: React.FC<Props> = ({ data, productId }) => {
     }
   };
 
-
-
-
-
-
   const handleAddToCart = () => {
     if (!cartState.cartArray.find((item) => item.id === productMain.id)) {
       addToCart({ ...productMain });
@@ -143,10 +132,6 @@ const Default: React.FC<Props> = ({ data, productId }) => {
     }
     openModalCart();
   };
-
-
-
-
 
   const handleAddToWishlist = () => {
     // if product existed in wishlit, remove from wishlist and set state to false
@@ -186,7 +171,8 @@ const Default: React.FC<Props> = ({ data, productId }) => {
   return (
     <PayPalScriptProvider
       options={{
-        clientId: "AYW-U8C4ouJJ4EP3_AZt_6R5OOnWvo1eXnWpJzCz3IJTE0sDaZWk84aWmriEh5l_ia0j3PuNiUuDihLr", // <- replace this with your Client ID (sandbox or live)
+        clientId:
+          "AYW-U8C4ouJJ4EP3_AZt_6R5OOnWvo1eXnWpJzCz3IJTE0sDaZWk84aWmriEh5l_ia0j3PuNiUuDihLr", // <- replace this with your Client ID (sandbox or live)
         currency: "USD",
       }}
     >
@@ -446,9 +432,6 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                           immediately.
                         </div>
 
-
-
-
                         {/* PayPal Buttons (TypeScript-safe) */}
                         <PayPalButtons
                           style={{
@@ -458,18 +441,32 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                             label: "pay",
                           }}
                           createOrder={(data, actions) => {
-                            // compute the final amount (safe with fallback)
-                            const finalAmount = totalCart || 0;
+                            if (!actions.order) {
+                              console.error(
+                                "PayPal 'actions.order' is undefined"
+                              );
+                              return Promise.reject("PayPal not ready");
+                            }
 
-                            // PayPal requires intent + currency_code in recent types
+                            const price =
+                              productMain.price * productMain.quantityPurchase;
+
+                            if (price <= 0) {
+                              alert(
+                                "Please select quantity, color, and size before paying!"
+                              );
+                              return Promise.reject("Product not configured");
+                            }
+
                             return actions.order.create({
                               intent: "CAPTURE",
                               purchase_units: [
                                 {
                                   amount: {
                                     currency_code: "USD",
-                                    value: finalAmount.toString(),
+                                    value: price.toFixed(2),
                                   },
+                                  description: `${productMain.name} (${activeColor}, ${activeSize})`,
                                 },
                               ],
                             });
@@ -477,29 +474,38 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                           onApprove={async (data, actions) => {
                             if (!actions?.order) {
                               console.error(
-                                "PayPal actions.order is undefined"
+                                "PayPal actions or actions.order is missing"
                               );
                               return;
                             }
-                            const order = await actions.order.capture();
-                            console.log("PayPal Order completed:", order);
-                            // keep your existing behavior: e.g. show success, clear cart, redirect
-                            alert("Payment successful!");
+
+                            try {
+                              const order = await actions.order.capture();
+                              console.log("✅ Payment successful:", order);
+                              alert("Payment completed successfully!");
+
+                              // Optional: Clear cart after payment
+                              // cartState.cartArray.forEach(item => removeFromCart(item.id));
+                            } catch (error) {
+                              console.error(
+                                "❌ Payment capture failed:",
+                                error
+                              );
+                              alert(
+                                "There was an error processing your payment."
+                              );
+                            }
                           }}
                           onError={(err) => {
-                            console.error("PayPal error:", err);
-                            alert("Payment failed. Try again.");
+                            console.error("❌ PayPal Button error:", err);
+                            alert(
+                              "An error occurred during payment. Please try again."
+                            );
                           }}
                         />
                       </div>
                     </div>
                   </div>
-                  {/* ===== end replacement ===== */}
-
-
-
-
-
 
                   <div className="flex items-center lg:gap-20 gap-8 mt-5 pb-6 border-b border-line">
                     <div
