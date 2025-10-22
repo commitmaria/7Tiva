@@ -35,7 +35,7 @@ const Checkout = () => {
   return (
     <PayPalScriptProvider
       options={{
-        "client-id":
+        clientId:
           "AYW-U8C4ouJJ4EP3_AZt_6R5OOnWvo1eXnWpJzCz3IJTE0sDaZWk84aWmriEh5l_ia0j3PuNiUuDihLr",
         currency: "USD",
       }}
@@ -116,9 +116,9 @@ const Checkout = () => {
                           <option value="default" disabled>
                             Choose State
                           </option>
-                          <option value="India">India</option>
+                          <option value="India">Canda</option>
                           <option value="France">France</option>
-                          <option value="Singapore">Singapore</option>
+                          <option value="Singapore">United states</option>
                         </select>
                         <input
                           className="border-line px-4 py-3 w-full rounded-lg"
@@ -154,10 +154,17 @@ const Checkout = () => {
                                     label: "pay",
                                   }}
                                   createOrder={(data, actions) => {
+                                    const finalAmount =
+                                      totalCart -
+                                      Number(discount || 0) +
+                                      Number(ship || 0);
+
                                     return actions.order.create({
+                                      intent: "CAPTURE", // <-- REQUIRED
                                       purchase_units: [
                                         {
                                           amount: {
+                                            currency_code: "USD",
                                             value: finalAmount.toString(),
                                           },
                                         },
@@ -165,16 +172,19 @@ const Checkout = () => {
                                     });
                                   }}
                                   onApprove={async (data, actions) => {
+                                    if (!actions?.order) {
+                                      console.error(
+                                        "PayPal actions.order is undefined"
+                                      );
+                                      return;
+                                    }
+
                                     const order = await actions.order.capture();
                                     console.log(
                                       "PayPal Order completed:",
                                       order
                                     );
-                                    alert("Payment successful!");
-                                  }}
-                                  onError={(err) => {
-                                    console.error(err);
-                                    alert("Payment failed. Try again.");
+                                    alert("Payment successful!"); // optionally redirect or clear cart
                                   }}
                                 />
                               </div>
