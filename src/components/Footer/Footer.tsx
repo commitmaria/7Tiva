@@ -12,7 +12,15 @@ const Footer = () => {
             <div className="content-footer py-[60px] flex justify-between flex-wrap gap-y-8">
               <div className="company-infor basis-1/4 max-lg:basis-full pr-7">
                 <Link href={"/"} className="logo">
-                  <div className="heading4">shopclud</div>
+                  <div className="heading4">
+                    <Image
+                      src="/logoclud.png"
+                      alt="Shopclud logo"
+                      width={80}
+                      height={28}
+                      priority
+                    />
+                  </div>
                 </Link>
                 <div className="flex gap-3 mt-3">
                   <div className="flex flex-col ">

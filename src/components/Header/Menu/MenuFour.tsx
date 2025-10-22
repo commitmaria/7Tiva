@@ -87,7 +87,15 @@ const MenuFour: React.FC<Props> = ({ props }) => {
               <i className="icon-category text-2xl"></i>
             </div>
             <Link href={"/"} className="flex items-center lg:hidden">
-              <div className="heading4">shopclud</div>
+              <div className="heading4">
+                <Image
+                  src="/logoclud.png"
+                  alt="Shopclud logo"
+                  width={100}
+                  height={30}
+                  priority
+                />
+              </div>
             </Link>
             <div className="form-search relative max-lg:hidden z-[1]">
               <Icon.MagnifyingGlass
@@ -1542,11 +1550,16 @@ const MenuFour: React.FC<Props> = ({ props }) => {
                 >
                   <Icon.X size={14} />
                 </div>
-                <Link
-                  href={"/"}
-                  className="logo text-3xl font-semibold text-center"
-                >
-                  shopclud
+                <Link href={"/"}>
+                  <div className="logo">
+                    <Image
+                      src="/logoclud.png"
+                      alt="Shopclud logo"
+                      width={114}
+                      height={31}
+                      priority
+                    />
+                  </div>
                 </Link>
               </div>
               <div className="form-search relative mt-2">

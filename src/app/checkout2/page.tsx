@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import * as Icon from "@phosphor-icons/react/dist/ssr";
 import { useCart } from "@/context/CartContext";
@@ -21,7 +22,15 @@ const Checkout = () => {
           <div className="container mx-auto h-full">
             <div className="header-main flex items-center justify-between h-full">
               <Link href={"/"} className="flex items-center">
-                <div className="heading4">shopclud</div>
+                <div className="heading4">
+                  <Image
+                    src="/logoclud.png"
+                    alt="Shopclud logo"
+                    width={100}
+                    height={30}
+                    priority
+                  />
+                </div>
               </Link>
               <button
                 className="max-md:hidden cart-icon flex items-center relative h-fit cursor-pointer"

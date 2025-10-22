@@ -86,7 +86,15 @@ const MenuEight = () => {
               <i className="icon-category text-2xl"></i>
             </div>
             <Link href={"/"} className="flex items-center">
-              <div className="heading4">shopclud</div>
+              <div className="heading4">
+                <Image
+                  src="/logoclud.png"
+                  alt="Shopclud logo"
+                  width={100}
+                  height={30}
+                  priority
+                />
+              </div>
             </Link>
             <div className="form-search w-2/3 pl-8 flex items-center h-[44px] max-lg:hidden">
               <div className="category-block relative h-full">
@@ -1683,11 +1691,16 @@ const MenuEight = () => {
                 >
                   <Icon.X size={14} />
                 </div>
-                <Link
-                  href={"/"}
-                  className="logo text-3xl font-semibold text-center"
-                >
-                  shopclud
+                <Link href={"/"}>
+                  <div className="logo">
+                    <Image
+                      src="/logoclud.png"
+                      alt="Shopclud logo"
+                      width={114}
+                      height={28}
+                      priority
+                    />
+                  </div>
                 </Link>
               </div>
               <div className="form-search relative mt-2">

@@ -1536,11 +1536,16 @@ const MenuMarketplace = () => {
                 >
                   <Icon.X size={14} />
                 </div>
-                <Link
-                  href={"/"}
-                  className="logo text-3xl font-semibold text-center"
-                >
-                  shopclud
+                <Link href={"/"}>
+                  <div className="logo">
+                    <Image
+                      src="/logoclud.png"
+                      alt="Shopclud logo"
+                      width={114}
+                      height={31}
+                      priority
+                    />
+                  </div>
                 </Link>
               </div>
               <div className="form-search relative mt-2">
