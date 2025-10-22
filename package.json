@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@paypal/react-paypal-js": "^8.9.2",
     "@phosphor-icons/react": "^2.0.14",
     "framer-motion": "^10.17.4",
     "next": "14.0.3",
