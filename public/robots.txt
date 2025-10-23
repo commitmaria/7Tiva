@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.shopclud.com
+
+# Sitemaps
+Sitemap: https://www.shopclud.com/sitemap.xml

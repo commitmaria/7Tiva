@@ -434,7 +434,7 @@ const BoughtTogether: React.FC<Props> = ({ data, productId }) => {
                     <div className="list grid grid-cols-6">
                       <div className="item flex items-center justify-center lg:px-3 px-1">
                         <Image
-                          src={"/images/payment/Frame-0.png"}
+                          src={"/images/payment/visa.png"}
                           width={500}
                           height={450}
                           alt="payment"
@@ -443,7 +443,7 @@ const BoughtTogether: React.FC<Props> = ({ data, productId }) => {
                       </div>
                       <div className="item flex items-center justify-center lg:px-3 px-1">
                         <Image
-                          src={"/images/payment/Frame-1.png"}
+                          src={"/images/payment/mcard.png"}
                           width={500}
                           height={450}
                           alt="payment"
@@ -452,7 +452,7 @@ const BoughtTogether: React.FC<Props> = ({ data, productId }) => {
                       </div>
                       <div className="item flex items-center justify-center lg:px-3 px-1">
                         <Image
-                          src={"/images/payment/Frame-2.png"}
+                          src={"/images/payment/ppaypal.png"}
                           width={500}
                           height={450}
                           alt="payment"
@@ -461,7 +461,7 @@ const BoughtTogether: React.FC<Props> = ({ data, productId }) => {
                       </div>
                       <div className="item flex items-center justify-center lg:px-3 px-1">
                         <Image
-                          src={"/images/payment/Frame-3.png"}
+                          src={"/images/payment/american-express.png"}
                           width={500}
                           height={450}
                           alt="payment"
@@ -470,7 +470,7 @@ const BoughtTogether: React.FC<Props> = ({ data, productId }) => {
                       </div>
                       <div className="item flex items-center justify-center lg:px-3 px-1">
                         <Image
-                          src={"/images/payment/Frame-4.png"}
+                          src={"/images/payment/google-pay.png"}
                           width={500}
                           height={450}
                           alt="payment"
@@ -479,7 +479,7 @@ const BoughtTogether: React.FC<Props> = ({ data, productId }) => {
                       </div>
                       <div className="item flex items-center justify-center lg:px-3 px-1">
                         <Image
-                          src={"/images/payment/Frame-5.png"}
+                          src={"/images/payment/apple-pay.png"}
                           width={500}
                           height={450}
                           alt="payment"
