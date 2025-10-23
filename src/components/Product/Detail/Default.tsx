@@ -422,7 +422,7 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                     </div>
                   </div>
 
-                  {/* ===== Replace original Buy It Now block with this PayPal box ===== */}
+                  {/* ===== Replace original block with this PayPal box ===== */}
                   <div className="button-block mt-5">
                     <div className="type bg-surface p-5 border border-line rounded-lg open">
                       <div className="infor">

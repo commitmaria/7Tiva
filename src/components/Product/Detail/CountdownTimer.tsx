@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import Image from 'next/image'
 import Link from 'next/link'
 import { ProductType } from '@/type/ProductType'
@@ -18,6 +18,9 @@ import { countdownTime } from '@/store/countdownTime'
 import { useCompare } from '@/context/CompareContext'
 import { useModalCompareContext } from '@/context/ModalCompareContext'
 import ModalSizeguide from '@/components/Modal/ModalSizeguide'
+import PayPalButton from "@/components/PayPalButton";
+
+
 
 interface Props {
     data: Array<ProductType>
@@ -33,6 +36,10 @@ const CountdownTimer: React.FC<Props> = ({ data, productId }) => {
     const [activeSize, setActiveSize] = useState<string>('')
     const [activeTab, setActiveTab] = useState<string | undefined>('description')
     const { addToCart, updateCart, cartState } = useCart()
+
+
+
+
     const { openModalCart } = useModalCartContext()
     const { addToWishlist, removeFromWishlist, wishlistState } = useWishlist()
     const { openModalWishlist } = useModalWishlistContext()
@@ -42,6 +49,12 @@ const CountdownTimer: React.FC<Props> = ({ data, productId }) => {
     if (productMain === undefined) {
         productMain = data[0]
     }
+
+
+
+
+  const totalAmount = useMemo(() => productMain.price * productMain.quantityPurchase, [productMain.price, productMain.quantityPurchase]);
+
 
     const percentSale = Math.floor(100 - ((productMain.price / productMain.originPrice) * 100))
     const [timeLeft, setTimeLeft] = useState(countdownTime());
@@ -325,7 +338,28 @@ const CountdownTimer: React.FC<Props> = ({ data, productId }) => {
                                     <div onClick={handleAddToCart} className="button-main w-full text-center bg-white text-black border border-black">Add To Cart</div>
                                 </div>
                                 <div className="button-block mt-5">
-                                    <div className="button-main w-full text-center">Buy It Now</div>
+
+
+
+
+
+
+<PayPalButton
+  amount={totalAmount}
+  className="w-full flex justify-center"
+  onSuccess={(details) => console.log('Payment successful:', details)}
+/>
+
+
+
+
+
+
+
+
+
+
+
                                 </div>
                                 <div className="flex items-center lg:gap-20 gap-8 mt-5 pb-6 border-b border-line">
                                     <div className="compare flex items-center gap-3 cursor-pointer" onClick={(e) => { e.stopPropagation(); handleAddToCompare() }}>
