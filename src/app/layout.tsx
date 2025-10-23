@@ -9,15 +9,42 @@ import ModalQuickview from "@/components/Modal/ModalQuickview";
 import ModalCompare from "@/components/Modal/ModalCompare";
 import CountdownTimeType from "@/type/CountdownType";
 import { countdownTime } from "@/store/countdownTime";
-
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const serverTimeLeft: CountdownTimeType = countdownTime();
 
 const instrument = Instrument_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "shopclud",
-  description: "Multipurpose eCommerce Template",
+  title: "ShopClud | Best Digital Products & Exclusive Deals Online",
+  description:
+    "Discover high-quality digital products at ShopClud. Enjoy exclusive deals, fast delivery, and secure checkout on software, eBooks, courses, and more.",
+
+  openGraph: {
+    title: "ShopClud | Best Digital Products & Exclusive Deals Online",
+    description:
+      "Discover high-quality digital products at ShopClud. Enjoy exclusive deals, fast delivery, and secure checkout on software, eBooks, courses, and more.",
+    url: "https://www.shopclud.com", 
+    siteName: "ShopClud",
+    images: [
+      {
+        url: "https://www.shopclud.com/open_graph.jpeg", // replace with your image URL
+        width: 1200,
+        height: 630,
+        alt: "ShopClud Digital Storefront",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "ShopClud | Best Digital Products & Exclusive Deals Online",
+    description:
+      "Discover high-quality digital products at ShopClud. Enjoy exclusive deals, fast delivery, and secure checkout on software, eBooks, courses, and more.",
+    images: ["https://www.shopclud.com/open_graph.jpeg"], 
+  },
 };
 
 export default function RootLayout({
@@ -29,6 +56,7 @@ export default function RootLayout({
     <GlobalProvider>
       <html lang="en">
         <body className={instrument.className}>
+          <SpeedInsights />
           {children}
           <ModalCart serverTimeLeft={serverTimeLeft} />
           <ModalWishlist />
