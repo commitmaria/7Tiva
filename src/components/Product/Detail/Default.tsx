@@ -1187,11 +1187,11 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                   <div className="right lg:w-3/4 w-full lg:pl-[15px]">
                     <Rate currentRate={5} size={16} />
                     <div className="heading5 mt-3">
-                      Unbeatable Style and Quality: A Fashion Brand That
+                      Unbeatable Style and Quality: A Digital Brand That
                       Delivers
                     </div>
                     <div className="body1 mt-3">
-                      I can{String.raw`'t`} get enough of the fashion pieces
+                      I can{String.raw`'t`} get enough of the Digital pieces
                       from this brand. They have a great selection for every
                       occasion and the prices are reasonable. The shipping is
                       fast and the items always arrive in perfect condition.
@@ -1251,11 +1251,11 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                   <div className="right lg:w-3/4 w-full lg:pl-[15px]">
                     <Rate currentRate={5} size={16} />
                     <div className="heading5 mt-3">
-                      Exceptional Fashion: The Perfect Blend of Style and
+                      Exceptional Digital: The Perfect Blend of Style and
                       Durability
                     </div>
                     <div className="body1 mt-3">
-                      The fashion brand{String.raw`'s`} online shopping
+                      The Digital brand{String.raw`'s`} online shopping
                       experience is seamless. The website is user-friendly, the
                       product images are clear, and the checkout process is
                       quick.
@@ -1320,7 +1320,7 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                     </div>
                     <div className="body1 mt-3">
                       I love how sustainable and ethically conscious this
-                      fashion brand is. They prioritize eco-friendly materials
+                      Digital brand is. They prioritize eco-friendly materials
                       and fair trade practices, which makes me feel good about
                       supporting them.
                     </div>

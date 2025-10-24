@@ -991,7 +991,7 @@ const Discount: React.FC<Props> = ({ data, productId }) => {
                         </div>
                       </div>
                       <div className="mt-3">
-                        I can{String.raw`'t`} get enough of the fashion pieces
+                        I can{String.raw`'t`} get enough of the Digital pieces
                         from this brand. They have a great selection for every
                         occasion and the prices are reasonable. The shipping is
                         fast and the items always arrive in perfect condition.
@@ -1043,7 +1043,7 @@ const Discount: React.FC<Props> = ({ data, productId }) => {
                         </div>
                       </div>
                       <div className="mt-3">
-                        I can{String.raw`'t`} get enough of the fashion pieces
+                        I can{String.raw`'t`} get enough of the Digital pieces
                         from this brand. They have a great selection for every
                         occasion and the prices are reasonable. The shipping is
                         fast and the items always arrive in perfect condition.
@@ -1095,7 +1095,7 @@ const Discount: React.FC<Props> = ({ data, productId }) => {
                         </div>
                       </div>
                       <div className="mt-3">
-                        I can{String.raw`'t`} get enough of the fashion pieces
+                        I can{String.raw`'t`} get enough of the Digital pieces
                         from this brand. They have a great selection for every
                         occasion and the prices are reasonable. The shipping is
                         fast and the items always arrive in perfect condition.

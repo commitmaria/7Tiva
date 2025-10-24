@@ -128,101 +128,101 @@ const MenuFurniture: React.FC<Props> = ({ props }) => {
                                                 : ""
                                             }`}
                   >
-                    Demo
+                    Menu
                   </Link>
                   <div className="sub-menu absolute py-3 px-5 -left-10 w-max grid grid-cols-4 gap-5 bg-white rounded-b-xl">
                     <ul>
                       <li>
                         <Link href="/" className="text-secondary duration-300">
-                          Home Fashion 1
+                          Home Digital 1
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href="/homepages/fashion2"
+                          href="/homepages/Digital2"
                           className={`text-secondary duration-300`}
                         >
-                          Home Fashion 2
+                          Home Digital 2
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href="/homepages/fashion3"
+                          href="/homepages/Digital3"
                           className={`text-secondary duration-300`}
                         >
-                          Home Fashion 3
+                          Home Digital 3
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href="/homepages/fashion4"
+                          href="/homepages/Digital4"
                           className={`text-secondary duration-300 ${
-                            pathname === "/homepages/fashion4" ? "active" : ""
+                            pathname === "/homepages/Digital4" ? "active" : ""
                           }`}
                         >
-                          Home Fashion 4
+                          Home Digital 4
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href="/homepages/fashion5"
+                          href="/homepages/Digital5"
                           className={`text-secondary duration-300 ${
-                            pathname === "/homepages/fashion5" ? "active" : ""
+                            pathname === "/homepages/Digital5" ? "active" : ""
                           }`}
                         >
-                          Home Fashion 5
+                          Home Digital 5
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href="/homepages/fashion6"
+                          href="/homepages/Digital6"
                           className={`text-secondary duration-300 ${
-                            pathname === "/homepages/fashion6" ? "active" : ""
+                            pathname === "/homepages/Digital6" ? "active" : ""
                           }`}
                         >
-                          Home Fashion 6
+                          Home Digital 6
                         </Link>
                       </li>
                     </ul>
                     <ul>
                       <li>
                         <Link
-                          href="/homepages/fashion7"
+                          href="/homepages/Digital7"
                           className={`text-secondary duration-300`}
                         >
-                          Home Fashion 7
+                          Home Digital 7
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href="/homepages/fashion8"
+                          href="/homepages/Digital8"
                           className="text-secondary duration-300"
                         >
-                          Home Fashion 8
+                          Home Digital 8
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href="/homepages/fashion9"
+                          href="/homepages/Digital9"
                           className="text-secondary duration-300"
                         >
-                          Home Fashion 9
+                          Home Digital 9
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href="/homepages/fashion10"
+                          href="/homepages/Digital10"
                           className="text-secondary duration-300"
                         >
-                          Home Fashion 10
+                          Home Digital 10
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href="/homepages/fashion11"
+                          href="/homepages/Digital11"
                           className="text-secondary duration-300"
                         >
-                          Home Fashion 11
+                          Home Digital 11
                         </Link>
                       </li>
                       <li>
@@ -1437,7 +1437,7 @@ const MenuFurniture: React.FC<Props> = ({ props }) => {
                       href={"#!"}
                       className={`text-xl font-semibold flex items-center justify-between`}
                     >
-                      Demo
+                      Menu
                       <span className="text-right">
                         <Icon.CaretRight size={20} />
                       </span>
@@ -1459,127 +1459,127 @@ const MenuFurniture: React.FC<Props> = ({ props }) => {
                                 pathname === "/" ? "active" : ""
                               }`}
                             >
-                              Home Fashion 1
+                              Home Digital 1
                             </Link>
                           </li>
                           <li>
                             <Link
-                              href="/homepages/fashion2"
+                              href="/homepages/Digital2"
                               className={`nav-item-mobile text-secondary duration-300 ${
-                                pathname === "/homepages/fashion2"
+                                pathname === "/homepages/Digital2"
                                   ? "active"
                                   : ""
                               }`}
                             >
-                              Home Fashion 2
+                              Home Digital 2
                             </Link>
                           </li>
                           <li>
                             <Link
-                              href="/homepages/fashion3"
+                              href="/homepages/Digital3"
                               className={`nav-item-mobile text-secondary duration-300 ${
-                                pathname === "/homepages/fashion3"
+                                pathname === "/homepages/Digital3"
                                   ? "active"
                                   : ""
                               }`}
                             >
-                              Home Fashion 3
+                              Home Digital 3
                             </Link>
                           </li>
                           <li>
                             <Link
-                              href="/homepages/fashion4"
+                              href="/homepages/Digital4"
                               className={`nav-item-mobile text-secondary duration-300 ${
-                                pathname === "/homepages/fashion4"
+                                pathname === "/homepages/Digital4"
                                   ? "active"
                                   : ""
                               }`}
                             >
-                              Home Fashion 4
+                              Home Digital 4
                             </Link>
                           </li>
                           <li>
                             <Link
-                              href="/homepages/fashion5"
+                              href="/homepages/Digital5"
                               className={`nav-item-mobile text-secondary duration-300 ${
-                                pathname === "/homepages/fashion5"
+                                pathname === "/homepages/Digital5"
                                   ? "active"
                                   : ""
                               }`}
                             >
-                              Home Fashion 5
+                              Home Digital 5
                             </Link>
                           </li>
                           <li>
                             <Link
-                              href="/homepages/fashion6"
+                              href="/homepages/Digital6"
                               className={`nav-item-mobile text-secondary duration-300 ${
-                                pathname === "/homepages/fashion6"
+                                pathname === "/homepages/Digital6"
                                   ? "active"
                                   : ""
                               }`}
                             >
-                              Home Fashion 6
+                              Home Digital 6
                             </Link>
                           </li>
                           <li>
                             <Link
-                              href="/homepages/fashion7"
+                              href="/homepages/Digital7"
                               className={`nav-item-mobile text-secondary duration-300 ${
-                                pathname === "/homepages/fashion7"
+                                pathname === "/homepages/Digital7"
                                   ? "active"
                                   : ""
                               }`}
                             >
-                              Home Fashion 7
+                              Home Digital 7
                             </Link>
                           </li>
                           <li>
                             <Link
-                              href="/homepages/fashion8"
+                              href="/homepages/Digital8"
                               className={`nav-item-mobile text-secondary duration-300 ${
-                                pathname === "/homepages/fashion8"
+                                pathname === "/homepages/Digital8"
                                   ? "active"
                                   : ""
                               }`}
                             >
-                              Home Fashion 8
+                              Home Digital 8
                             </Link>
                           </li>
                           <li>
                             <Link
-                              href="/homepages/fashion9"
+                              href="/homepages/Digital9"
                               className={`nav-item-mobile text-secondary duration-300 ${
-                                pathname === "/homepages/fashion9"
+                                pathname === "/homepages/Digital9"
                                   ? "active"
                                   : ""
                               }`}
                             >
-                              Home Fashion 9
+                              Home Digital 9
                             </Link>
                           </li>
                           <li>
                             <Link
-                              href="/homepages/fashion10"
+                              href="/homepages/Digital10"
                               className={`nav-item-mobile text-secondary duration-300 ${
-                                pathname === "/homepages/fashion10"
+                                pathname === "/homepages/Digital10"
                                   ? "active"
                                   : ""
                               }`}
                             >
-                              Home Fashion 10
+                              Home Digital 10
                             </Link>
                           </li>
                           <li>
                             <Link
-                              href="/homepages/fashion11"
+                              href="/homepages/Digital11"
                               className={`nav-item-mobile text-secondary duration-300 ${
-                                pathname === "/homepages/fashion11"
+                                pathname === "/homepages/Digital11"
                                   ? "active"
                                   : ""
                               }`}
                             >
-                              Home Fashion 11
+                              Home Digital 11
                             </Link>
                           </li>
                         </ul>
