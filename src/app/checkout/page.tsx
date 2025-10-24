@@ -33,10 +33,9 @@ const Checkout = () => {
   const finalAmount = totalCart - discount + ship;
 
   const [firstName, setFirstName] = useState("");
-const [lastName, setLastName] = useState("");
-const [email, setEmail] = useState("");
-const [whatsapp, setWhatsapp] = useState("");
-
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [whatsapp, setWhatsapp] = useState("");
 
   return (
     <PayPalScriptProvider
@@ -58,156 +57,9 @@ const [whatsapp, setWhatsapp] = useState("");
 
         <div className="cart-block md:py-20 py-10">
           <div className="container">
-            <div className="content-main flex justify-between">
-              {/* LEFT SIDE - Checkout Form */}
-              <div className="left w-1/2">
-                <div className="information mt-5">
-                  <div className="heading5">Information</div>
-                  <div className="form-checkout mt-5">
-
-
-                    {/* ---------- START: REPLACE YOUR <form> BLOCK WITH THIS ---------- */}
-{/* ---------- START: REPLACE YOUR <form> BLOCK WITH THIS ---------- */}
-<form>
-  <div className="grid sm:grid-cols-2 gap-4 gap-y-5 flex-wrap">
-    {/* First Name (required) */}
-    <input
-      className="border-line px-4 py-3 w-full rounded-lg"
-      id="firstName"
-      name="firstName"
-      type="text"
-      placeholder="First Name *"
-      required
-      value={firstName}
-      onChange={(e) => setFirstName(e.target.value)}
-    />
-
-    {/* Last Name (required) */}
-    <input
-      className="border-line px-4 py-3 w-full rounded-lg"
-      id="lastName"
-      name="lastName"
-      type="text"
-      placeholder="Last Name *"
-      required
-      value={lastName}
-      onChange={(e) => setLastName(e.target.value)}
-    />
-
-    {/* Email (required) */}
-    <input
-      className="border-line px-4 py-3 w-full rounded-lg"
-      id="email"
-      name="email"
-      type="email"
-      placeholder="Email Address *"
-      required
-      value={email}
-      onChange={(e) => setEmail(e.target.value)}
-    />
-
-    {/* WhatsApp (optional) */}
-    <input
-      className="border-line px-4 py-3 w-full rounded-lg"
-      id="whatsappNumber"
-      name="whatsappNumber"
-      type="tel"
-      placeholder="WhatsApp (optional)"
-      pattern="[0-9]{7,15}"
-      value={whatsapp}
-      onChange={(e) => setWhatsapp(e.target.value)}
-    />
-  </div>
-
-  {/* PAYMENT SECTION */}
-  <div className="payment-block md:mt-10 mt-6">
-    <div className="heading5">Payment Option:</div>
-    <div className="list-payment mt-5">
-      {activePayment === "paypal" && (
-        <div className="type bg-surface p-5 border border-line rounded-lg open">
-          <div className="infor">
-            <div className="text-on-surface-variant1 pt-4 pb-4 text-center">
-              Pay securely with PayPal. Your order will be processed
-              immediately.
-            </div>
-
-            <PayPalButtons
-              style={{
-                layout: "vertical",
-                color: "blue",
-                shape: "pill",
-                label: "pay",
-              }}
-              createOrder={(data, actions) => {
-                const finalAmount =
-                  totalCart - Number(discount || 0) + Number(ship || 0);
-
-                return actions.order.create({
-                  intent: "CAPTURE",
-                  purchase_units: [
-                    {
-                      amount: {
-                        currency_code: "USD",
-                        value: finalAmount.toString(),
-                      },
-                    },
-                  ],
-                });
-              }}
-              onApprove={async (data, actions) => {
-                if (!actions?.order) {
-                  console.error("PayPal actions.order is undefined");
-                  return;
-                }
-
-                try {
-                  const capture = await actions.order.capture();
-                  console.log("PayPal Order completed:", capture);
-
-                  // ✅ Send all form data to your backend
-                  await fetch("/api/notify-payment", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({
-                      firstName,
-                      lastName,
-                      email,
-                      whatsapp,
-                      order: capture,
-                      amount:
-                        totalCart - Number(discount || 0) + Number(ship || 0),
-                      cart: cartState.cartArray,
-                    }),
-                  });
-
-                  alert("Payment successful!");
-                } catch (err) {
-                  console.error("Capture / notify error", err);
-                  alert(
-                    "Payment captured but an error occurred sending data to server. Check console."
-                  );
-                }
-              }}
-            />
-          </div>
-        </div>
-      )}
-    </div>
-  </div>
-</form>
-{/* ---------- END: REPLACEMENT ---------- */}
-
-{/* ---------- END: REPLACEMENT ---------- */}
-
-
-
-
-                  </div>
-                </div>
-              </div>
-
+            <div className="content-main flex flex-col md:flex-row justify-between">
               {/* RIGHT SIDE - Order Summary */}
-              <div className="right w-5/12">
+              <div className="right w-full md:w-5/12 mt-10 md:mt-0">
                 <div className="checkout-block">
                   <div className="heading5 pb-3">Your Order</div>
                   <div className="list-product-checkout">
@@ -273,10 +125,159 @@ const [whatsapp, setWhatsapp] = useState("");
                   </div>
                 </div>
               </div>
+
+              {/* LEFT SIDE - Checkout Form */}
+              <div className="left w-full md:w-1/2">
+                <div className="information mt-5">
+                  <div className="heading5">Information</div>
+                  <div className="form-checkout mt-5">
+                    <form>
+                      <div className="grid sm:grid-cols-2 gap-4 gap-y-5 flex-wrap">
+                        {/* First Name (required) */}
+                        <input
+                          className="border-line px-4 py-3 w-full rounded-lg"
+                          id="firstName"
+                          name="firstName"
+                          type="text"
+                          placeholder="First Name *"
+                          required
+                          value={firstName}
+                          onChange={(e) => setFirstName(e.target.value)}
+                        />
+
+                        {/* Last Name (required) */}
+                        <input
+                          className="border-line px-4 py-3 w-full rounded-lg"
+                          id="lastName"
+                          name="lastName"
+                          type="text"
+                          placeholder="Last Name *"
+                          required
+                          value={lastName}
+                          onChange={(e) => setLastName(e.target.value)}
+                        />
+
+                        {/* Email (required) */}
+                        <input
+                          className="border-line px-4 py-3 w-full rounded-lg"
+                          id="email"
+                          name="email"
+                          type="email"
+                          placeholder="Email Address *"
+                          required
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
+                        />
+
+                        {/* WhatsApp (optional) */}
+                        <input
+                          className="border-line px-4 py-3 w-full rounded-lg"
+                          id="whatsappNumber"
+                          name="whatsappNumber"
+                          type="tel"
+                          placeholder="WhatsApp (optional)"
+                          pattern="[0-9]{7,15}"
+                          value={whatsapp}
+                          onChange={(e) => setWhatsapp(e.target.value)}
+                        />
+                      </div>
+
+                      {/* PAYMENT SECTION */}
+                      <div className="payment-block md:mt-10 mt-6">
+                        <div className="heading5">Payment Option:</div>
+                        <div className="list-payment mt-5">
+                          {activePayment === "paypal" && (
+                            <div className="type bg-surface p-5 border border-line rounded-lg open">
+                              <div className="infor">
+                                <div className="text-on-surface-variant1 pt-4 pb-4 text-center">
+                                  Pay securely with PayPal. Your order will be
+                                  processed immediately.
+                                </div>
+                                <PayPalButtons
+                                  style={{
+                                    layout: "vertical",
+                                    color: "blue",
+                                    shape: "pill",
+                                    label: "pay",
+                                  }}
+                                  createOrder={(data, actions) => {
+                                    const finalAmount =
+                                      totalCart -
+                                      Number(discount || 0) +
+                                      Number(ship || 0);
+
+                                    return actions.order.create({
+                                      intent: "CAPTURE",
+                                      purchase_units: [
+                                        {
+                                          amount: {
+                                            currency_code: "USD",
+                                            value: finalAmount.toString(),
+                                          },
+                                        },
+                                      ],
+                                    });
+                                  }}
+                                  onApprove={async (data, actions) => {
+                                    if (!actions?.order) {
+                                      console.error(
+                                        "PayPal actions.order is undefined"
+                                      );
+                                      return;
+                                    }
+
+                                    try {
+                                      const capture =
+                                        await actions.order.capture();
+                                      console.log(
+                                        "PayPal Order completed:",
+                                        capture
+                                      );
+
+                                      // ✅ Send all form data to your backend
+                                      await fetch("/api/notify-payment", {
+                                        method: "POST",
+                                        headers: {
+                                          "Content-Type": "application/json",
+                                        },
+                                        body: JSON.stringify({
+                                          firstName,
+                                          lastName,
+                                          email,
+                                          whatsapp,
+                                          order: capture,
+                                          amount:
+                                            totalCart -
+                                            Number(discount || 0) +
+                                            Number(ship || 0),
+                                          cart: cartState.cartArray,
+                                        }),
+                                      });
+
+                                      alert("Payment successful!");
+                                    } catch (err) {
+                                      console.error(
+                                        "Capture / notify error",
+                                        err
+                                      );
+                                      alert(
+                                        "Payment captured but an error occurred sending data to server. Check console."
+                                      );
+                                    }
+                                  }}
+                                />
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
         <Footer />
       </>
     </PayPalScriptProvider>

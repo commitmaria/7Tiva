@@ -1369,7 +1369,22 @@ const MenuToys: React.FC<Props> = ({ props }) => {
                   className="cart-icon flex items-center relative cursor-pointer"
                   onClick={openModalCart}
                 >
-                  <Icon.Handbag size={24} color="black" />
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    role="img"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      d="M8.25 8.25V6a2.25 2.25 0 012.25-2.25h3a2.25 2.25 0 110 4.5H3.75v8.25a3.75 3.75 0 003.75 3.75h9a3.75 3.75 0 003.75-3.75V8.25H17.5"
+                    />
+                  </svg>
                   <span className="quantity cart-quantity absolute -right-1.5 -top-1.5 text-xs text-white bg-black w-4 h-4 flex items-center justify-center rounded-full">
                     {cartState.cartArray.length}
                   </span>
