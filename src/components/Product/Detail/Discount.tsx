@@ -511,7 +511,7 @@ const Discount: React.FC<Props> = ({ data, productId }) => {
                     <div className="list grid grid-cols-6">
                       <div className="item flex items-center justify-center lg:px-3 px-1">
                         <Image
-                          src={"/images/payment/visa.png"}
+                          src={"/images/payment/visa.webp"}
                           width={500}
                           height={450}
                           alt="payment"
@@ -520,7 +520,7 @@ const Discount: React.FC<Props> = ({ data, productId }) => {
                       </div>
                       <div className="item flex items-center justify-center lg:px-3 px-1">
                         <Image
-                          src={"/images/payment/mcard.png"}
+                          src={"/images/payment/mcard.webp"}
                           width={500}
                           height={450}
                           alt="payment"
@@ -529,7 +529,7 @@ const Discount: React.FC<Props> = ({ data, productId }) => {
                       </div>
                       <div className="item flex items-center justify-center lg:px-3 px-1">
                         <Image
-                          src={"/images/payment/ppaypal.png"}
+                          src={"/images/payment/ppaypal.webp"}
                           width={500}
                           height={450}
                           alt="payment"
@@ -538,7 +538,7 @@ const Discount: React.FC<Props> = ({ data, productId }) => {
                       </div>
                       <div className="item flex items-center justify-center lg:px-3 px-1">
                         <Image
-                          src={"/images/payment/american-express.png"}
+                          src={"/images/payment/american-express.webp"}
                           width={500}
                           height={450}
                           alt="payment"
@@ -547,7 +547,7 @@ const Discount: React.FC<Props> = ({ data, productId }) => {
                       </div>
                       <div className="item flex items-center justify-center lg:px-3 px-1">
                         <Image
-                          src={"/images/payment/google-pay.png"}
+                          src={"/images/payment/google-pay.webp"}
                           width={500}
                           height={450}
                           alt="payment"
@@ -556,7 +556,7 @@ const Discount: React.FC<Props> = ({ data, productId }) => {
                       </div>
                       <div className="item flex items-center justify-center lg:px-3 px-1">
                         <Image
-                          src={"/images/payment/apple-pay.png"}
+                          src={"/images/payment/apple-pay.webp"}
                           width={500}
                           height={450}
                           alt="payment"

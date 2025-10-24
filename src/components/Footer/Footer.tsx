@@ -210,7 +210,7 @@ const Footer = () => {
                 <div className="caption1 text-secondary">Payment:</div>
                 <div className="payment-img">
                   <Image
-                    src={"/images/payment/visa.png"}
+                    src={"/images/payment/visa.webp"}
                     width={500}
                     height={500}
                     alt={"payment"}
@@ -219,7 +219,7 @@ const Footer = () => {
                 </div>
                 <div className="payment-img">
                   <Image
-                    src={"/images/payment/mcard.png"}
+                    src={"/images/payment/mcard.webp"}
                     width={500}
                     height={500}
                     alt={"payment"}
@@ -228,7 +228,7 @@ const Footer = () => {
                 </div>
                 <div className="payment-img">
                   <Image
-                    src={"/images/payment/ppaypal.png"}
+                    src={"/images/payment/ppaypal.webp"}
                     width={500}
                     height={500}
                     alt={"payment"}
@@ -237,7 +237,7 @@ const Footer = () => {
                 </div>
                 <div className="payment-img">
                   <Image
-                    src={"/images/payment/american-express.png"}
+                    src={"/images/payment/american-express.webp"}
                     width={500}
                     height={500}
                     alt={"payment"}
@@ -246,7 +246,7 @@ const Footer = () => {
                 </div>
                 <div className="payment-img">
                   <Image
-                    src={"/images/payment/google-pay.png"}
+                    src={"/images/payment/google-pay.webp"}
                     width={500}
                     height={500}
                     alt={"payment"}
@@ -255,7 +255,7 @@ const Footer = () => {
                 </div>
                 <div className="payment-img">
                   <Image
-                    src={"/images/payment/apple-pay.png"}
+                    src={"/images/payment/apple-pay.webp"}
                     width={500}
                     height={500}
                     alt={"payment"}
