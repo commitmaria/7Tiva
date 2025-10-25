@@ -28,7 +28,32 @@ export async function POST(req) {
 
     if (error) console.error("Supabase insert error:", error);
 
-    // optional email notify
+    // --- Define JSON-LD for Gmail "Order placed" card ---
+    const jsonLd = {
+      "@context": "http://schema.org",
+      "@type": "Order",
+      "merchant": {
+        "@type": "Organization",
+        "name": "ShopClud",
+      },
+      "orderNumber": order?.id || "N/A",
+      "priceCurrency": "USD",
+      "price": amount || "N/A",
+      "acceptedOffer": cart?.length
+        ? cart.map(item => ({
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": item.name,
+              "price": item.price,
+              "priceCurrency": "USD",
+            },
+          }))
+        : [],
+      "orderStatus": "http://schema.org/OrderProcessing",
+      "url": `https://www.shopclud.com/orders/${order?.id || ""}`,
+    };
+
     if (process.env.SMTP_HOST && process.env.OWNER_EMAIL) {
       try {
         const transporter = nodemailer.createTransport({
@@ -41,53 +66,60 @@ export async function POST(req) {
           },
         });
 
-        // ==============================
-        // START HTML TEMPLATE FOR EMAIL
-        // ==============================
+        // HTML template with JSON-LD embedded
         const html = `
-          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #eee; border-radius: 10px; background-color: #f9f9f9;">
-            <h2 style="color: #4f46e5; margin-bottom: 20px;">New Purchase Notification</h2>
-            <p><strong>Name:</strong> ${firstName || ""} ${lastName || ""}</p>
-            <p><strong>Email:</strong> ${email}</p>
-            <p><strong>WhatsApp:</strong> ${whatsapp || "N/A"}</p>
-            <p><strong>Amount:</strong> $${amount || "N/A"}</p>
-            <p><strong>Order ID:</strong> ${order?.id || "N/A"}</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Order Confirmation - ShopClud</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="application/ld+json">
+${JSON.stringify(jsonLd)}
+</script>
+<style>
+body { font-family: Arial, sans-serif; background: #f9f9f9; margin:0; padding:0; }
+.container { max-width:600px; margin:30px auto; background:#fff; border-radius:10px; padding:20px; border:1px solid #eee; }
+h1 { color:#4f46e5; text-align:center; }
+.order-details { margin:20px 0; padding:15px; background:#f3f4f6; border-radius:8px; }
+.order-details p { margin:5px 0; }
+.btn { display:inline-block; text-decoration:none; background:#4f46e5; color:#fff; padding:12px 20px; border-radius:6px; margin-top:20px; text-align:center; }
+.footer { margin-top:30px; text-align:center; font-size:12px; color:#888; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Thank you for your order!</h1>
+<p>Hello <strong>${firstName || ""} ${lastName || ""}</strong>,</p>
+<p>We have received your order and it is now being processed. Here are the details:</p>
+<div class="order-details">
+<p><strong>Order Number:</strong> ${order?.id || "N/A"}</p>
+<p><strong>Products:</strong> ${cart?.length ? cart.map(i => i.name).join(", ") : "N/A"}</p>
+<p><strong>Amount:</strong> $${amount || "N/A"}</p>
+<p><strong>Status:</strong> Processing</p>
+</div>
+<a href="https://www.shopclud.com/orders/${order?.id || ""}" class="btn">View your order</a>
+<div class="footer">
+© 2025 ShopClud. All rights reserved.
+</div>
+</div>
+</body>
+</html>
+`;
 
-            <h3 style="margin-top: 20px; color: #4f46e5;">Cart Items:</h3>
-            <ul>
-              ${(cart || []).map(item => `<li>${item.name} - $${item.price}</li>`).join("")}
-            </ul>
-
-            <p style="margin-top: 20px; font-size: 12px; color: #666;">
-              This is an automated message from ShopClud.
-            </p>
-          </div>
-        `;
-        // ==============================
-        // END HTML TEMPLATE FOR EMAIL
-        // ==============================
-
-        // ==============================
-        // SEND EMAIL WITH HTML TEMPLATE
-        // ==============================
         await transporter.sendMail({
           from: process.env.SMTP_USER,
           to: process.env.OWNER_EMAIL,
           subject: `New purchase from ${email}`,
-          html, // use HTML instead of plain text
+          html,
         });
-        // ==============================
-        // EMAIL SENT
-        // ==============================
 
       } catch (mailErr) {
         console.error("Email send failed:", mailErr);
       }
     }
 
-    return new Response(JSON.stringify({ ok: true, supabase: data || null }), {
-      status: 200,
-    });
+    return new Response(JSON.stringify({ ok: true, supabase: data || null }), { status: 200 });
   } catch (err) {
     console.error("notify-payment error:", err);
     return new Response(JSON.stringify({ error: "Internal server error" }), { status: 500 });

@@ -58,10 +58,8 @@ export default function RootLayout({
         <head>
         {/* Google */}
         <meta name="google-site-verification" content="JeGQcFab2tmIIePoPCy83hGJ07e_APE8_hJJbx0b3XU" />
-
         {/* Bing / Microsoft */}
         <meta name="msvalidate.01" content="57363A009272A35D9667EFBA52D8EDD3" />
-
         {/* Yandex */}
         <meta name="yandex-verification" content="e14503bce1b56e8a" />
       </head>
