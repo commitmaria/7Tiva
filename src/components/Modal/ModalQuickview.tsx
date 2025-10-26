@@ -225,11 +225,11 @@ const ModalQuickview = () => {
                 </div>
                 <div className="flex items-center gap-3 flex-wrap mt-5 pb-6 border-b border-line">
                   <div className="product-price heading5">
-                    ${selectedProduct?.price}.00
+                    ${selectedProduct?.price}
                   </div>
                   <div className="w-px h-4 bg-line"></div>
                   <div className="product-origin-price font-normal text-secondary2">
-                    <del>${selectedProduct?.originPrice}.00</del>
+                    <del>${selectedProduct?.originPrice}</del>
                   </div>
                   {selectedProduct?.originPrice && (
                     <div className="product-sale caption2 font-semibold bg-green px-3 py-0.5 inline-block rounded-full">
@@ -379,9 +379,7 @@ const ModalQuickview = () => {
                     <div className="flex items-center flex-wrap gap-1 mt-3">
                       <Icon.Timer className="body1" />
                       <span className="text-title">Estimated Delivery:</span>
-                      <span className="text-secondary">
-                        14 January - 18 January
-                      </span>
+                      <span className="text-secondary">Instant / 1 Hour</span>
                     </div>
                     <div className="flex items-center flex-wrap gap-1 mt-3">
                       <Icon.Eye className="body1" />

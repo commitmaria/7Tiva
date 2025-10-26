@@ -11,12 +11,16 @@ import { motion } from "framer-motion";
 
 const MyAccount = () => {
   const [activeTab, setActiveTab] = useState<string | undefined>("dashboard");
-  const [activeAddress, setActiveAddress] = useState<string | null>("billing");
+  const [activeAdSubscriptions, setActiveAdSubscriptions] = useState<
+    string | null
+  >("billing");
   const [activeOrders, setActiveOrders] = useState<string | undefined>("all");
   const [openDetail, setOpenDetail] = useState<boolean | undefined>(false);
 
-  const handleActiveAddress = (order: string) => {
-    setActiveAddress((prevOrder) => (prevOrder === order ? null : order));
+  const handleActiveAdSubscriptions = (order: string) => {
+    setActiveAdSubscriptions((prevOrder) =>
+      prevOrder === order ? null : order
+    );
   };
 
   const handleActiveOrders = (order: string) => {
@@ -82,12 +86,12 @@ const MyAccount = () => {
                     href={"#!"}
                     scroll={false}
                     className={`item flex items-center gap-3 w-full px-5 py-4 rounded-lg cursor-pointer duration-300 hover:bg-white mt-1.5 ${
-                      activeTab === "address" ? "active" : ""
+                      activeTab === "adSubscriptions" ? "active" : ""
                     }`}
-                    onClick={() => setActiveTab("address")}
+                    onClick={() => setActiveTab("adSubscriptions")}
                   >
                     <Icon.Tag size={20} />
-                    <strong className="heading6">My Address</strong>
+                    <strong className="heading6">My AdSubscriptions</strong>
                   </Link>
                   <Link
                     href={"#!"}
@@ -187,12 +191,12 @@ const MyAccount = () => {
                                 src={"/images/product/1000x1000.png"}
                                 width={400}
                                 height={400}
-                                alt="Contrasting sweatshirt"
+                                alt="Contrasting sweatCode activation"
                                 className="flex-shrink-0 w-12 h-12 rounded"
                               />
                               <div className="info flex flex-col">
                                 <strong className="product_name text-button">
-                                  Contrasting sweatshirt
+                                  Contrasting sweatCode activation
                                 </strong>
                                 <span className="product_tag caption1 text-secondary">
                                   Women, Clothing
@@ -200,7 +204,7 @@ const MyAccount = () => {
                               </div>
                             </Link>
                           </td>
-                          <td className="py-3 price">$45.00</td>
+                          <td className="py-3 price">$45</td>
                           <td className="py-3 text-right">
                             <span className="tag px-4 py-1.5 rounded-full bg-opacity-10 bg-yellow text-yellow caption1 font-semibold">
                               Pending
@@ -233,7 +237,7 @@ const MyAccount = () => {
                               </div>
                             </Link>
                           </td>
-                          <td className="py-3 price">$45.00</td>
+                          <td className="py-3 price">$45</td>
                           <td className="py-3 text-right">
                             <span className="tag px-4 py-1.5 rounded-full bg-opacity-10 bg-purple text-purple caption1 font-semibold">
                               Delivery
@@ -266,7 +270,7 @@ const MyAccount = () => {
                               </div>
                             </Link>
                           </td>
-                          <td className="py-3 price">$45.00</td>
+                          <td className="py-3 price">$45</td>
                           <td className="py-3 text-right">
                             <span className="tag px-4 py-1.5 rounded-full bg-opacity-10 bg-success text-success caption1 font-semibold">
                               Completed
@@ -286,12 +290,12 @@ const MyAccount = () => {
                                 src={"/images/product/1000x1000.png"}
                                 width={400}
                                 height={400}
-                                alt="Contrasting sweatshirt"
+                                alt="Contrasting sweatCode activation"
                                 className="flex-shrink-0 w-12 h-12 rounded"
                               />
                               <div className="info flex flex-col">
                                 <strong className="product_name text-button">
-                                  Contrasting sweatshirt
+                                  Contrasting sweatCode activation
                                 </strong>
                                 <span className="product_tag caption1 text-secondary">
                                   Women, Clothing
@@ -299,7 +303,7 @@ const MyAccount = () => {
                               </div>
                             </Link>
                           </td>
-                          <td className="py-3 price">$45.00</td>
+                          <td className="py-3 price">$45</td>
                           <td className="py-3 text-right">
                             <span className="tag px-4 py-1.5 rounded-full bg-opacity-10 bg-yellow text-yellow caption1 font-semibold">
                               Pending
@@ -332,7 +336,7 @@ const MyAccount = () => {
                               </div>
                             </Link>
                           </td>
-                          <td className="py-3 price">$45.00</td>
+                          <td className="py-3 price">$45</td>
                           <td className="py-3 text-right">
                             <span className="tag px-4 py-1.5 rounded-full bg-opacity-10 bg-purple text-purple caption1 font-semibold">
                               Delivery
@@ -365,7 +369,7 @@ const MyAccount = () => {
                               </div>
                             </Link>
                           </td>
-                          <td className="py-3 price">$45.00</td>
+                          <td className="py-3 price">$45</td>
                           <td className="py-3 text-right">
                             <span className="tag px-4 py-1.5 rounded-full bg-opacity-10 bg-red text-red caption1 font-semibold">
                               Canceled
@@ -438,13 +442,13 @@ const MyAccount = () => {
                               src={"/images/product/1000x1000.png"}
                               width={1000}
                               height={1000}
-                              alt={"Contrasting sheepskin sweatshirt"}
+                              alt={"Contrasting sheepskin sweatCode activation"}
                               className="w-full h-full object-cover"
                             />
                           </div>
                           <div>
                             <div className="prd_name text-title">
-                              Contrasting sheepskin sweatshirt
+                              Contrasting sheepskin sweatCode activation
                             </div>
                             <div className="caption1 text-secondary mt-2">
                               <span className="prd_size uppercase">XL</span>
@@ -458,7 +462,7 @@ const MyAccount = () => {
                         <div className="text-title">
                           <span className="prd_quantity">1</span>
                           <span> X </span>
-                          <span className="prd_price">$45.00</span>
+                          <span className="prd_price">$45</span>
                         </div>
                       </div>
                       <div className="prd_item flex flex-wrap items-center justify-between gap-3 py-5 border-b border-line">
@@ -471,13 +475,13 @@ const MyAccount = () => {
                               src={"/images/product/1000x1000.png"}
                               width={1000}
                               height={1000}
-                              alt={"Contrasting sheepskin sweatshirt"}
+                              alt={"Contrasting sheepskin sweatCode activation"}
                               className="w-full h-full object-cover"
                             />
                           </div>
                           <div>
                             <div className="prd_name text-title">
-                              Contrasting sheepskin sweatshirt
+                              Contrasting sheepskin sweatCode activation
                             </div>
                             <div className="caption1 text-secondary mt-2">
                               <span className="prd_size uppercase">XL</span>
@@ -491,7 +495,7 @@ const MyAccount = () => {
                         <div className="text-title">
                           <span className="prd_quantity">2</span>
                           <span> X </span>
-                          <span className="prd_price">$70.00</span>
+                          <span className="prd_price">$70</span>
                         </div>
                       </div>
                     </div>
@@ -533,13 +537,13 @@ const MyAccount = () => {
                               src={"/images/product/1000x1000.png"}
                               width={1000}
                               height={1000}
-                              alt={"Contrasting sheepskin sweatshirt"}
+                              alt={"Contrasting sheepskin sweatCode activation"}
                               className="w-full h-full object-cover"
                             />
                           </div>
                           <div>
                             <div className="prd_name text-title">
-                              Contrasting sheepskin sweatshirt
+                              Contrasting sheepskin sweatCode activation
                             </div>
                             <div className="caption1 text-secondary mt-2">
                               <span className="prd_size uppercase">L</span>
@@ -551,7 +555,7 @@ const MyAccount = () => {
                         <div className="text-title">
                           <span className="prd_quantity">1</span>
                           <span> X </span>
-                          <span className="prd_price">$69.00</span>
+                          <span className="prd_price">$69</span>
                         </div>
                       </div>
                     </div>
@@ -593,13 +597,13 @@ const MyAccount = () => {
                               src={"/images/product/1000x1000.png"}
                               width={1000}
                               height={1000}
-                              alt={"Contrasting sheepskin sweatshirt"}
+                              alt={"Contrasting sheepskin sweatCode activation"}
                               className="w-full h-full object-cover"
                             />
                           </div>
                           <div>
                             <div className="prd_name text-title">
-                              Contrasting sheepskin sweatshirt
+                              Contrasting sheepskin sweatCode activation
                             </div>
                             <div className="caption1 text-secondary mt-2">
                               <span className="prd_size uppercase">L</span>
@@ -613,7 +617,7 @@ const MyAccount = () => {
                         <div className="text-title">
                           <span className="prd_quantity">1</span>
                           <span> X </span>
-                          <span className="prd_price">$32.00</span>
+                          <span className="prd_price">$32</span>
                         </div>
                       </div>
                     </div>
@@ -655,13 +659,13 @@ const MyAccount = () => {
                               src={"/images/product/1000x1000.png"}
                               width={1000}
                               height={1000}
-                              alt={"Contrasting sheepskin sweatshirt"}
+                              alt={"Contrasting sheepskin sweatCode activation"}
                               className="w-full h-full object-cover"
                             />
                           </div>
                           <div>
                             <div className="prd_name text-title">
-                              Contrasting sheepskin sweatshirt
+                              Contrasting sheepskin sweatCode activation
                             </div>
                             <div className="caption1 text-secondary mt-2">
                               <span className="prd_size uppercase">M</span>
@@ -675,7 +679,7 @@ const MyAccount = () => {
                         <div className="text-title">
                           <span className="prd_quantity">1</span>
                           <span> X </span>
-                          <span className="prd_price">$49.00</span>
+                          <span className="prd_price">$49</span>
                         </div>
                       </div>
                     </div>
@@ -694,24 +698,26 @@ const MyAccount = () => {
                 </div>
               </div>
               <div
-                className={`tab_address text-content w-full p-7 border border-line rounded-xl ${
-                  activeTab === "address" ? "block" : "hidden"
+                className={`tab_adSubscriptions text-content w-full p-7 border border-line rounded-xl ${
+                  activeTab === "adSubscriptions" ? "block" : "hidden"
                 }`}
               >
                 <form>
                   <button
                     type="button"
                     className={`tab_btn flex items-center justify-between w-full pb-1.5 border-b border-line ${
-                      activeAddress === "billing" ? "active" : ""
+                      activeAdSubscriptions === "billing" ? "active" : ""
                     }`}
-                    onClick={() => handleActiveAddress("billing")}
+                    onClick={() => handleActiveAdSubscriptions("billing")}
                   >
-                    <strong className="heading6">Billing address</strong>
+                    <strong className="heading6">
+                      Billing adSubscriptions
+                    </strong>
                     <Icon.CaretDown className="text-2xl ic_down duration-300" />
                   </button>
                   <div
-                    className={`form_address ${
-                      activeAddress === "billing" ? "block" : "hidden"
+                    className={`form_adSubscriptions ${
+                      activeAdSubscriptions === "billing" ? "block" : "hidden"
                     }`}
                   >
                     <div className="grid sm:grid-cols-2 gap-4 gap-y-5 mt-5">
@@ -776,7 +782,8 @@ const MyAccount = () => {
                           htmlFor="billingStreet"
                           className="caption1 capitalize"
                         >
-                          street address <span className="text-red">*</span>
+                          street adSubscriptions{" "}
+                          <span className="text-red">*</span>
                         </label>
                         <input
                           className="border-line mt-2 px-4 py-3 w-full rounded-lg"
@@ -860,16 +867,18 @@ const MyAccount = () => {
                   <button
                     type="button"
                     className={`tab_btn flex items-center justify-between w-full mt-10 pb-1.5 border-b border-line ${
-                      activeAddress === "shipping" ? "active" : ""
+                      activeAdSubscriptions === "shipping" ? "active" : ""
                     }`}
-                    onClick={() => handleActiveAddress("shipping")}
+                    onClick={() => handleActiveAdSubscriptions("shipping")}
                   >
-                    <strong className="heading6">Shipping address</strong>
+                    <strong className="heading6">
+                      Shipping adSubscriptions
+                    </strong>
                     <Icon.CaretDown className="text-2xl ic_down duration-300" />
                   </button>
                   <div
-                    className={`form_address ${
-                      activeAddress === "shipping" ? "block" : "hidden"
+                    className={`form_adSubscriptions ${
+                      activeAdSubscriptions === "shipping" ? "block" : "hidden"
                     }`}
                   >
                     <div className="grid sm:grid-cols-2 gap-4 gap-y-5 mt-5">
@@ -934,7 +943,8 @@ const MyAccount = () => {
                           htmlFor="shippingStreet"
                           className="caption1 capitalize"
                         >
-                          street address <span className="text-red">*</span>
+                          street adSubscriptions{" "}
+                          <span className="text-red">*</span>
                         </label>
                         <input
                           className="border-line mt-2 px-4 py-3 w-full rounded-lg"
@@ -1016,7 +1026,9 @@ const MyAccount = () => {
                     </div>
                   </div>
                   <div className="block-button lg:mt-10 mt-6">
-                    <button className="button-main">Update Address</button>
+                    <button className="button-main">
+                      Update AdSubscriptions
+                    </button>
                   </div>
                 </form>
               </div>
@@ -1114,14 +1126,15 @@ const MyAccount = () => {
                     </div>
                     <div className="email">
                       <label htmlFor="email" className="caption1 capitalize">
-                        Email Address <span className="text-red">*</span>
+                        Email AdSubscriptions{" "}
+                        <span className="text-red">*</span>
                       </label>
                       <input
                         className="border-line mt-2 px-4 py-3 w-full rounded-lg"
                         id="email"
                         type="email"
                         defaultValue={"alexdev.end@gmail.com"}
-                        placeholder="Email address"
+                        placeholder="Email adSubscriptions"
                         required
                       />
                     </div>
@@ -1241,17 +1254,17 @@ const MyAccount = () => {
               </div>
               <div className="info_item">
                 <strong className="text-button-uppercase text-secondary">
-                  Shipping address
+                  Shipping adSubscriptions
                 </strong>
-                <h6 className="heading6 order_shipping_address mt-2">
+                <h6 className="heading6 order_shipping_adSubscriptions mt-2">
                   2163 Phillips Gap Rd, West Jefferson, North Carolina, US
                 </h6>
               </div>
               <div className="info_item">
                 <strong className="text-button-uppercase text-secondary">
-                  Billing address
+                  Billing adSubscriptions
                 </strong>
-                <h6 className="heading6 order_billing_address mt-2">
+                <h6 className="heading6 order_billing_adSubscriptions mt-2">
                   2163 Phillips Gap Rd, West Jefferson, North Carolina, US
                 </h6>
               </div>
@@ -1278,13 +1291,13 @@ const MyAccount = () => {
                       src={"/images/product/1000x1000.png"}
                       width={1000}
                       height={1000}
-                      alt={"Contrasting sheepskin sweatshirt"}
+                      alt={"Contrasting sheepskin sweatCode activation"}
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div>
                     <div className="prd_name text-title">
-                      Contrasting sheepskin sweatshirt
+                      Contrasting sheepskin sweatCode activation
                     </div>
                     <div className="caption1 text-secondary mt-2">
                       <span className="prd_size uppercase">XL</span>
@@ -1296,7 +1309,7 @@ const MyAccount = () => {
                 <div className="text-title">
                   <span className="prd_quantity">1</span>
                   <span> X </span>
-                  <span className="prd_price">$45.00</span>
+                  <span className="prd_price">$45</span>
                 </div>
               </div>
               <div className="prd_item flex flex-wrap items-center justify-between gap-3 py-5 border-b border-line">
@@ -1309,13 +1322,13 @@ const MyAccount = () => {
                       src={"/images/product/1000x1000.png"}
                       width={1000}
                       height={1000}
-                      alt={"Contrasting sheepskin sweatshirt"}
+                      alt={"Contrasting sheepskin sweatCode activation"}
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div>
                     <div className="prd_name text-title">
-                      Contrasting sheepskin sweatshirt
+                      Contrasting sheepskin sweatCode activation
                     </div>
                     <div className="caption1 text-secondary mt-2">
                       <span className="prd_size uppercase">XL</span>
@@ -1327,7 +1340,7 @@ const MyAccount = () => {
                 <div className="text-title">
                   <span className="prd_quantity">2</span>
                   <span> X </span>
-                  <span className="prd_price">$70.00</span>
+                  <span className="prd_price">$70</span>
                 </div>
               </div>
             </div>
@@ -1337,11 +1350,11 @@ const MyAccount = () => {
             </div>
             <div className="flex items-center justify-between mt-4">
               <strong className="text-title">Discounts</strong>
-              <strong className="order_discounts text-title">-$80.00</strong>
+              <strong className="order_discounts text-title">-$80</strong>
             </div>
             <div className="flex items-center justify-between mt-5 pt-5 border-t border-line">
               <h5 className="heading5">Subtotal</h5>
-              <h5 className="order_total heading5">$105.00</h5>
+              <h5 className="order_total heading5">$105</h5>
             </div>
           </div>
         </div>

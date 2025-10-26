@@ -14,8 +14,6 @@ import { AboutMetadata } from "@/lib/metadata";
 
 export const metadata = AboutMetadata;
 
-
-
 const AboutUs = () => {
   return (
     <>
@@ -33,8 +31,8 @@ const AboutUs = () => {
             <div className="text flex items-center justify-center">
               <div className="content md:w-5/6 w-full">
                 <div className="heading3 text-center">
-                  I{String.raw`'m`} obsessed with the dress Pippa Middleton wore
-                  to her brother{String.raw`'s`} wedding.
+                  I{String.raw`'m`} obsessed with the Subscriptions Pippa
+                  Middleton wore to her brother{String.raw`'s`} wedding.
                 </div>
                 <div className="body1 text-center md:mt-7 mt-5">
                   Kim Kardashian West needs no introduction. In the 14 years

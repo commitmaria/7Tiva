@@ -21,9 +21,9 @@ const ShopSidebarList: React.FC<Props> = ({
   dataType,
 }) => {
   const [type, setType] = useState<string | null>(dataType);
-  const [showOnlySale, setShowOnlySale] = useState(false);
-  const [sortOption, setSortOption] = useState("");
-  const [size, setSize] = useState<string | null>();
+  const [showOnlySale, setshowOnlySale] = useState(false);
+  const [sortOption, setsortOption] = useState("");
+  const [size, setsize] = useState<string | null>();
   const [color, setColor] = useState<string | null>();
   const [brand, setBrand] = useState<string | null>();
   const [priceRange, setPriceRange] = useState<{ min: number; max: number }>({
@@ -40,17 +40,17 @@ const ShopSidebarList: React.FC<Props> = ({
   };
 
   const handleShowOnlySale = () => {
-    setShowOnlySale((toggleSelect) => !toggleSelect);
+    setshowOnlySale((toggleSelect) => !toggleSelect);
     setCurrentPage(0);
   };
 
   const handleSortChange = (option: string) => {
-    setSortOption(option);
+    setsortOption(option);
     setCurrentPage(0);
   };
 
   const handleSize = (size: string) => {
-    setSize((prevSize) => (prevSize === size ? null : size));
+    setsize((prevSize) => (prevSize === size ? null : size));
     setCurrentPage(0);
   };
 
@@ -202,7 +202,7 @@ const ShopSidebarList: React.FC<Props> = ({
 
   const handleClearAll = () => {
     setType(null);
-    setSize(null);
+    setsize(null);
     setColor(null);
     setBrand(null);
     setPriceRange({ min: 0, max: 100 });
@@ -230,19 +230,23 @@ const ShopSidebarList: React.FC<Props> = ({
                 </div>
               </div>
               <div className="list-tab flex flex-wrap items-center justify-center gap-y-5 gap-8 lg:mt-[70px] mt-12 overflow-hidden">
-                {["t-shirt", "dress", "top", "swimwear", "shirt"].map(
-                  (item, index) => (
-                    <div
-                      key={index}
-                      className={`tab-item text-button-uppercase cursor-pointer has-line-before line-2px ${
-                        dataType === item ? "active" : ""
-                      }`}
-                      onClick={() => handleType(item)}
-                    >
-                      {item}
-                    </div>
-                  )
-                )}
+                {[
+                  "d-apps",
+                  "Subscriptions",
+                  "top",
+                  "swimwear",
+                  "Code activation",
+                ].map((item, index) => (
+                  <div
+                    key={index}
+                    className={`tab-item text-button-uppercase cursor-pointer has-line-before line-2px ${
+                      dataType === item ? "active" : ""
+                    }`}
+                    onClick={() => handleType(item)}
+                  >
+                    {item}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -257,11 +261,11 @@ const ShopSidebarList: React.FC<Props> = ({
                 <div className="heading6">Products Type</div>
                 <div className="list-type mt-4">
                   {[
-                    "t-shirt",
-                    "dress",
+                    "d-apps",
+                    "Subscriptions",
                     "top",
                     "swimwear",
-                    "shirt",
+                    "Code activation",
                     "underwear",
                     "sets",
                     "accessories",
@@ -558,7 +562,7 @@ const ShopSidebarList: React.FC<Props> = ({
                         <div
                           className="item flex items-center px-2 py-1 gap-1 bg-linear rounded-full capitalize"
                           onClick={() => {
-                            setSize(null);
+                            setsize(null);
                           }}
                         >
                           <Icon.X className="cursor-pointer" />

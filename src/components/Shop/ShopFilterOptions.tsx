@@ -16,10 +16,10 @@ interface Props {
 
 const ShopFilterOptions: React.FC<Props> = ({ data, productPerPage }) => {
   const [layoutCol, setLayoutCol] = useState<number | null>(4);
-  const [sortOption, setSortOption] = useState("");
-  const [showOnlySale, setShowOnlySale] = useState(false);
+  const [sortOption, setsortOption] = useState("");
+  const [showOnlySale, setshowOnlySale] = useState(false);
   const [type, setType] = useState<string | undefined>();
-  const [size, setSize] = useState<string | undefined>();
+  const [size, setsize] = useState<string | undefined>();
   const [color, setColor] = useState<string | undefined>();
   const [brand, setBrand] = useState<string | undefined>();
   const [priceRange, setPriceRange] = useState<{ min: number; max: number }>({
@@ -35,12 +35,12 @@ const ShopFilterOptions: React.FC<Props> = ({ data, productPerPage }) => {
   };
 
   const handleShowOnlySale = () => {
-    setShowOnlySale((toggleSelect) => !toggleSelect);
+    setshowOnlySale((toggleSelect) => !toggleSelect);
     setCurrentPage(0);
   };
 
   const handleSortChange = (option: string) => {
-    setSortOption(option);
+    setsortOption(option);
     setCurrentPage(0);
   };
 
@@ -50,7 +50,7 @@ const ShopFilterOptions: React.FC<Props> = ({ data, productPerPage }) => {
   };
 
   const handleSize = (size: string) => {
-    setSize((prevSize) => (prevSize === size ? undefined : size));
+    setsize((prevSize) => (prevSize === size ? undefined : size));
     setCurrentPage(0);
   };
 
@@ -195,7 +195,7 @@ const ShopFilterOptions: React.FC<Props> = ({ data, productPerPage }) => {
 
   const handleClearAll = () => {
     setType(undefined);
-    setSize(undefined);
+    setsize(undefined);
     setColor(undefined);
     setBrand(undefined);
     setPriceRange({ min: 0, max: 100 });
@@ -221,19 +221,23 @@ const ShopFilterOptions: React.FC<Props> = ({ data, productPerPage }) => {
                 </div>
               </div>
               <div className="list-tab flex flex-wrap items-center justify-center gap-y-5 gap-8 lg:mt-[70px] mt-12 overflow-hidden">
-                {["t-shirt", "dress", "top", "swimwear", "shirt"].map(
-                  (item, index) => (
-                    <div
-                      key={index}
-                      className={`tab-item text-button-uppercase cursor-pointer has-line-before line-2px ${
-                        type === item ? "active" : ""
-                      }`}
-                      onClick={() => handleType(item)}
-                    >
-                      {item}
-                    </div>
-                  )
-                )}
+                {[
+                  "d-apps",
+                  "Subscriptions",
+                  "top",
+                  "swimwear",
+                  "Code activation",
+                ].map((item, index) => (
+                  <div
+                    key={index}
+                    className={`tab-item text-button-uppercase cursor-pointer has-line-before line-2px ${
+                      type === item ? "active" : ""
+                    }`}
+                    onClick={() => handleType(item)}
+                  >
+                    {item}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -315,11 +319,11 @@ const ShopFilterOptions: React.FC<Props> = ({ data, productPerPage }) => {
                       Type
                     </option>
                     {[
-                      "t-shirt",
-                      "dress",
+                      "d-apps",
+                      "Subscriptions",
                       "top",
                       "swimwear",
-                      "shirt",
+                      "Code activation",
                       "underwear",
                       "sets",
                       "accessories",
@@ -485,7 +489,7 @@ const ShopFilterOptions: React.FC<Props> = ({ data, productPerPage }) => {
                       <div
                         className="item flex items-center px-2 py-1 gap-1 bg-linear rounded-full capitalize"
                         onClick={() => {
-                          setSize(undefined);
+                          setsize(undefined);
                         }}
                       >
                         <Icon.X className="cursor-pointer" />

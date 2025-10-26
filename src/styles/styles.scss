@@ -24,3 +24,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+.size-guide {
+  display: none !important;
+}
+/* Hide Color section */
+.choose-color {
+  display: none !important;
+}
+
+/* Hide Size section (including Size Guide modal) */
+.choose-size {
+  display: none !important;
+}

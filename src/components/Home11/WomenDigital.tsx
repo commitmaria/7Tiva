@@ -14,7 +14,7 @@ interface Props {
 }
 
 const WomenDigital: React.FC<Props> = ({ data, start, limit }) => {
-  const [activeTab, setActiveTab] = useState<string>("t-shirt");
+  const [activeTab, setActiveTab] = useState<string>("d-apps");
 
   const handleTabClick = (type: string) => {
     setActiveTab(type);
@@ -34,7 +34,7 @@ const WomenDigital: React.FC<Props> = ({ data, start, limit }) => {
           <div className="heading flex items-center justify-between gap-5 flex-wrap">
             <div className="heading3">men{String.raw`'s`} Digital</div>
             <div className="menu-tab flex items-center gap-2 p-1 bg-surface rounded-2xl">
-              {["dress", "t-shirt", "top", "swimwear"].map((type) => (
+              {["Subscriptions", "d-apps", "top", "swimwear"].map((type) => (
                 <div
                   key={type}
                   className={`tab-item relative text-secondary py-2 px-5 cursor-pointer duration-500 hover:text-black ${

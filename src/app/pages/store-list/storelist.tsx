@@ -34,7 +34,7 @@ const StoreList = () => {
                 <div className="list-featrue lg:mt-10 mt-6">
                   <div className="item flex lg:gap-10 gap-6">
                     <div className="w-1/2">
-                      <div className="heading6">Address:</div>
+                      <div className="heading6">AdSubscriptions:</div>
                       <div className="text-secondary mt-2">
                         2163 Phillips Gap Rd West Jefferson, North Carolina
                       </div>
@@ -104,7 +104,7 @@ const StoreList = () => {
                 <div className="list-featrue lg:mt-10 mt-6">
                   <div className="item flex lg:gap-10 gap-6">
                     <div className="w-1/2">
-                      <div className="heading6">Address:</div>
+                      <div className="heading6">AdSubscriptions:</div>
                       <div className="text-secondary mt-2">
                         2163 Phillips Gap Rd West Jefferson, North Carolina
                       </div>
@@ -188,7 +188,7 @@ const StoreList = () => {
                 <div className="list-featrue lg:mt-10 mt-6">
                   <div className="item flex lg:gap-10 gap-6">
                     <div className="w-1/2">
-                      <div className="heading6">Address:</div>
+                      <div className="heading6">AdSubscriptions:</div>
                       <div className="text-secondary mt-2">
                         2163 Phillips Gap Rd West Jefferson, North Carolina
                       </div>

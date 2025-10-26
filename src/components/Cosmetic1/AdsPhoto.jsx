@@ -7,7 +7,7 @@ const AdsPhoto = () => {
     useEffect(() => {
         const imageComparisonSlider = document.querySelector('[data-component="image-comparison-slider"]');
 
-        function setSliderstate(e, element) {
+        function setsliderstate(e, element) {
             const sliderRange = element.querySelector('[data-image-comparison-range]');
 
             if (e.type === 'input') {
@@ -44,7 +44,7 @@ const AdsPhoto = () => {
             imageWrapperOverlay.style.width = `${value}%`;
 
             element.addEventListener('mousemove', moveSliderThumb);
-            setSliderstate(e, element);
+            setsliderstate(e, element);
         }
 
         function init(element) {
@@ -52,7 +52,7 @@ const AdsPhoto = () => {
 
             if (sliderRange) {
                 if ('ontouchstart' in window === false) {
-                    sliderRange.addEventListener('mouseup', e => setSliderstate(e, element));
+                    sliderRange.addEventListener('mouseup', e => setsliderstate(e, element));
                     sliderRange.addEventListener('mousedown', moveSliderThumb);
                 }
 

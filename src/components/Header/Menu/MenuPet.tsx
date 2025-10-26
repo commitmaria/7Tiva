@@ -28,12 +28,12 @@ const MenuPet = () => {
   const { openModalWishlist } = useModalWishlistContext();
   const { openModalSearch } = useModalSearchContext();
 
-  const [searchKeyword, setSearchKeyword] = useState("");
+  const [searchKeyword, setsearchKeyword] = useState("");
   const router = useRouter();
 
   const handleSearch = (value: string) => {
     router.push(`/search-result?query=${value}`);
-    setSearchKeyword("");
+    setsearchKeyword("");
   };
 
   const handleOpenSubNavMobile = (index: number) => {
@@ -104,7 +104,7 @@ const MenuPet = () => {
                   className="search-input h-full px-4 w-full border border-line rounded-l-2xl"
                   placeholder="What are you looking for today?"
                   value={searchKeyword}
-                  onChange={(e) => setSearchKeyword(e.target.value)}
+                  onChange={(e) => setsearchKeyword(e.target.value)}
                   onKeyDown={(e) =>
                     e.key === "Enter" && handleSearch(searchKeyword)
                   }

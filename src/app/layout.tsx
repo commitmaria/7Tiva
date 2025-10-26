@@ -18,13 +18,13 @@ const instrument = Instrument_Sans({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "ShopClud | Best Digital Products & Exclusive Deals Online",
   description:
-    "Discover high-quality digital products at ShopClud. Enjoy exclusive deals, fast delivery, and secure checkout on software, eBooks, courses, and more.",
+    "Discover high-quality digital products at ShopClud. Enjoy exclusive deals, fast delivery, and secure checkout on sets, eBooks, courses, and more.",
 
   openGraph: {
     title: "ShopClud | Best Digital Products & Exclusive Deals Online",
     description:
-      "Discover high-quality digital products at ShopClud. Enjoy exclusive deals, fast delivery, and secure checkout on software, eBooks, courses, and more.",
-    url: "https://www.shopclud.com", 
+      "Discover high-quality digital products at ShopClud. Enjoy exclusive deals, fast delivery, and secure checkout on sets, eBooks, courses, and more.",
+    url: "https://www.shopclud.com",
     siteName: "ShopClud",
     images: [
       {
@@ -42,8 +42,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ShopClud | Best Digital Products & Exclusive Deals Online",
     description:
-      "Discover high-quality digital products at ShopClud. Enjoy exclusive deals, fast delivery, and secure checkout on software, eBooks, courses, and more.",
-    images: ["https://www.shopclud.com/open_graph.jpeg"], 
+      "Discover high-quality digital products at ShopClud. Enjoy exclusive deals, fast delivery, and secure checkout on sets, eBooks, courses, and more.",
+    images: ["https://www.shopclud.com/open_graph.jpeg"],
   },
 };
 
@@ -56,13 +56,19 @@ export default function RootLayout({
     <GlobalProvider>
       <html lang="en">
         <head>
-        {/* Google */}
-        <meta name="google-site-verification" content="JeGQcFab2tmIIePoPCy83hGJ07e_APE8_hJJbx0b3XU" />
-        {/* Bing / Microsoft */}
-        <meta name="msvalidate.01" content="57363A009272A35D9667EFBA52D8EDD3" />
-        {/* Yandex */}
-        <meta name="yandex-verification" content="e14503bce1b56e8a" />
-      </head>
+          {/* Google */}
+          <meta
+            name="google-site-verification"
+            content="JeGQcFab2tmIIePoPCy83hGJ07e_APE8_hJJbx0b3XU"
+          />
+          {/* Bing / Microsoft */}
+          <meta
+            name="msvalidate.01"
+            content="57363A009272A35D9667EFBA52D8EDD3"
+          />
+          {/* Yandex */}
+          <meta name="yandex-verification" content="e14503bce1b56e8a" />
+        </head>
         <body className={instrument.className}>
           <SpeedInsights />
           {children}

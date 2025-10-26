@@ -52,16 +52,13 @@ const Login = () => {
             <div className="left md:w-1/2 w-full lg:pr-[60px] md:pr-[40px] md:border-r border-line">
               <div className="heading4">Login</div>
 
-
-
-
               <form className="md:mt-7 mt-4" onSubmit={handleLogin}>
                 <div className="email ">
                   <input
                     className="border-line px-4 pt-3 pb-3 w-full rounded-lg"
                     id="username"
                     type="email"
-                    placeholder="Username or email address *"
+                    placeholder="Username or email adSubscriptions *"
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -119,11 +116,6 @@ const Login = () => {
                   <p className="mt-3 text-center text-red-600">{message}</p>
                 )}
               </form>
-
-
-
-
-
             </div>
             <div className="right md:w-1/2 w-full lg:pl-[60px] md:pl-[40px] flex items-center">
               <div className="text-content">

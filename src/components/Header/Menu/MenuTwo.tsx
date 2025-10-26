@@ -346,10 +346,12 @@ const MenuTwo = () => {
                               </li>
                               <li>
                                 <div
-                                  onClick={() => handleTypeClick("shirt")}
+                                  onClick={() =>
+                                    handleTypeClick("Code activation")
+                                  }
                                   className={`link text-secondary duration-300 cursor-pointer`}
                                 >
-                                  Shirt | Sweatshirts
+                                  Code activation | SweatCode activations
                                 </div>
                               </li>
                               <li>
@@ -369,10 +371,12 @@ const MenuTwo = () => {
                             <ul>
                               <li>
                                 <div
-                                  onClick={() => handleTypeClick("shirt")}
+                                  onClick={() =>
+                                    handleTypeClick("Code activation")
+                                  }
                                   className={`link text-secondary duration-300 cursor-pointer`}
                                 >
-                                  Shirt | Clothes
+                                  Code activation | Clothes
                                 </div>
                               </li>
                               <li>
@@ -380,15 +384,15 @@ const MenuTwo = () => {
                                   onClick={() => handleTypeClick("top")}
                                   className={`link text-secondary duration-300 cursor-pointer`}
                                 >
-                                  Top | Overshirts
+                                  Top | OverCode activations
                                 </div>
                               </li>
                               <li>
                                 <div
-                                  onClick={() => handleTypeClick("t-shirt")}
+                                  onClick={() => handleTypeClick("d-apps")}
                                   className={`link text-secondary duration-300 cursor-pointer`}
                                 >
-                                  T-shirts | Clothes
+                                  d-appss | Clothes
                                 </div>
                               </li>
                               <li>
@@ -520,18 +524,20 @@ const MenuTwo = () => {
                               </li>
                               <li>
                                 <div
-                                  onClick={() => handleTypeClick("dress")}
+                                  onClick={() =>
+                                    handleTypeClick("Subscriptions")
+                                  }
                                   className={`link text-secondary duration-300 cursor-pointer`}
                                 >
-                                  Dresses | Jumpsuits
+                                  Subscriptionses | Jumpsuits
                                 </div>
                               </li>
                               <li>
                                 <div
-                                  onClick={() => handleTypeClick("t-shirt")}
+                                  onClick={() => handleTypeClick("d-apps")}
                                   className={`link text-secondary duration-300 cursor-pointer`}
                                 >
-                                  T-shirts | Sweatshirts
+                                  d-appss | SweatCode activations
                                 </div>
                               </li>
                               <li>
@@ -1904,10 +1910,12 @@ const MenuTwo = () => {
                               </li>
                               <li>
                                 <div
-                                  onClick={() => handleTypeClick("shirt")}
+                                  onClick={() =>
+                                    handleTypeClick("Code activation")
+                                  }
                                   className={`link text-secondary duration-300 cursor-pointer`}
                                 >
-                                  Shirt | Sweatshirts
+                                  Code activation | SweatCode activations
                                 </div>
                               </li>
                               <li>
@@ -2031,18 +2039,20 @@ const MenuTwo = () => {
                               </li>
                               <li>
                                 <div
-                                  onClick={() => handleTypeClick("dress")}
+                                  onClick={() =>
+                                    handleTypeClick("Subscriptions")
+                                  }
                                   className={`link text-secondary duration-300 cursor-pointer`}
                                 >
-                                  Dresses | Jumpsuits
+                                  Subscriptionses | Jumpsuits
                                 </div>
                               </li>
                               <li>
                                 <div
-                                  onClick={() => handleTypeClick("t-shirt")}
+                                  onClick={() => handleTypeClick("d-apps")}
                                   className={`link text-secondary duration-300 cursor-pointer`}
                                 >
-                                  T-shirts | Sweatshirts
+                                  d-appss | SweatCode activations
                                 </div>
                               </li>
                               <li>

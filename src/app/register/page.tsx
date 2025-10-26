@@ -9,46 +9,35 @@ import * as Icon from "@phosphor-icons/react/dist/ssr";
 
 import { supabase } from "@/lib/supabaseClient";
 
-
 const Register = () => {
-  
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [remember, setRemember] = useState(false); // optional
+  const [message, setMessage] = useState("");
 
+  const handleRegister = async (e: React.FormEvent) => {
+    e.preventDefault();
 
+    if (password !== confirmPassword) {
+      setMessage("Passwords do not match!");
+      return;
+    }
 
+    const { error } = await supabase.auth.signUp({
+      email,
+      password,
+    });
 
-const [email, setEmail] = useState('')
-const [password, setPassword] = useState('')
-const [confirmPassword, setConfirmPassword] = useState('')
-const [remember, setRemember] = useState(false)   // optional
-const [message, setMessage] = useState('')
+    if (error) setMessage(error.message);
+    else setMessage("Account created! Check your email for confirmation.");
 
-const handleRegister = async (e: React.FormEvent) => {
-  e.preventDefault()
-
-  if (password !== confirmPassword) {
-    setMessage("Passwords do not match!")
-    return
-  }
-
-  const { error } = await supabase.auth.signUp({
-    email,
-    password
-  })
-
-  if (error) setMessage(error.message)
-  else setMessage("Account created! Check your email for confirmation.")
-
-  // Optional: reset form fields
-  setEmail('')
-  setPassword('')
-  setConfirmPassword('')
-  setRemember(false)
-}
-
-
-
-
-
+    // Optional: reset form fields
+    setEmail("");
+    setPassword("");
+    setConfirmPassword("");
+    setRemember(false);
+  };
 
   return (
     <>
@@ -69,8 +58,6 @@ const handleRegister = async (e: React.FormEvent) => {
             <div className="left md:w-1/2 w-full lg:pr-[60px] md:pr-[40px] md:border-r border-line">
               <div className="heading4">Register</div>
 
-
-
               <form className="md:mt-7 mt-4" onSubmit={handleRegister}>
                 {/* Email / Username */}
                 <div className="email">
@@ -78,7 +65,7 @@ const handleRegister = async (e: React.FormEvent) => {
                     className="border-line px-4 pt-3 pb-3 w-full rounded-lg"
                     id="username"
                     type="email"
-                    placeholder="Username or email address *"
+                    placeholder="Username or email adSubscriptions *"
                     required
                     value={email} // React state
                     onChange={(e) => setEmail(e.target.value)}
@@ -151,12 +138,6 @@ const handleRegister = async (e: React.FormEvent) => {
                 {/* Feedback message */}
                 {message && <p className="mt-2 text-red-600">{message}</p>}
               </form>
-
-
-
-
-
-
             </div>
 
             <div className="right md:w-1/2 w-full lg:pl-[60px] md:pl-[40px] flex items-center">

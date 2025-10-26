@@ -626,7 +626,7 @@ const BlogDetailTwo = () => {
                   <input
                     className="text-center md:h-[50px] h-[44px] w-full px-4 rounded-xl"
                     type="text"
-                    placeholder="Your email address"
+                    placeholder="Your email adSubscriptions"
                   />
                   <button className="button-main text-center w-full mt-4">
                     Sign Up

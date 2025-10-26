@@ -28,12 +28,12 @@ const MenuWatch: React.FC<Props> = ({ props }) => {
   const { cartState } = useCart();
   const { openModalWishlist } = useModalWishlistContext();
   const { openModalSearch } = useModalSearchContext();
-  const [searchKeyword, setSearchKeyword] = useState("");
+  const [searchKeyword, setsearchKeyword] = useState("");
   const router = useRouter();
 
   const handleSearch = (value: string) => {
     router.push(`/search-result?query=${value}`);
-    setSearchKeyword("");
+    setsearchKeyword("");
   };
 
   const handleOpenSubNavMobile = (index: number) => {
@@ -110,7 +110,7 @@ const MenuWatch: React.FC<Props> = ({ props }) => {
                 placeholder="What are you looking for?"
                 className=" h-10 rounded-lg border border-line caption2 w-full pl-9 pr-4"
                 value={searchKeyword}
-                onChange={(e) => setSearchKeyword(e.target.value)}
+                onChange={(e) => setsearchKeyword(e.target.value)}
                 onKeyDown={(e) =>
                   e.key === "Enter" && handleSearch(searchKeyword)
                 }

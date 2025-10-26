@@ -22,7 +22,7 @@ interface Props {
 const MenuOne: React.FC<Props> = ({ props }) => {
   const router = useRouter();
   const pathname = usePathname();
-  let [selectedType, setSelectedType] = useState<string | null>();
+  let [selectedType, setselectedType] = useState<string | null>();
   const { openLoginPopup, handleLoginPopup } = useLoginPopup();
   const { openMenuMobile, handleMenuMobile } = useMenuMobile();
   const [openSubNavMobile, setOpenSubNavMobile] = useState<number | null>(null);
@@ -63,7 +63,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
   };
 
   const handleTypeClick = (type: string) => {
-    setSelectedType(type);
+    setselectedType(type);
     router.push(`/shop/breadcrumb1?type=${type}`);
   };
 
@@ -347,10 +347,12 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                 </li>
                                 <li>
                                   <div
-                                    onClick={() => handleTypeClick("shirt")}
+                                    onClick={() =>
+                                      handleTypeClick("Code activation")
+                                    }
                                     className={`link text-secondary duration-300 cursor-pointer`}
                                   >
-                                    Shirt | Sweatshirts
+                                    Code activation | SweatCode activations
                                   </div>
                                 </li>
                                 <li>
@@ -370,10 +372,12 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                               <ul>
                                 <li>
                                   <div
-                                    onClick={() => handleTypeClick("shirt")}
+                                    onClick={() =>
+                                      handleTypeClick("Code activation")
+                                    }
                                     className={`link text-secondary duration-300 cursor-pointer`}
                                   >
-                                    Shirt | Clothes
+                                    Code activation | Clothes
                                   </div>
                                 </li>
                                 <li>
@@ -381,15 +385,15 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                     onClick={() => handleTypeClick("top")}
                                     className={`link text-secondary duration-300 cursor-pointer`}
                                   >
-                                    Top | Overshirts
+                                    Top | OverCode activations
                                   </div>
                                 </li>
                                 <li>
                                   <div
-                                    onClick={() => handleTypeClick("t-shirt")}
+                                    onClick={() => handleTypeClick("d-apps")}
                                     className={`link text-secondary duration-300 cursor-pointer`}
                                   >
-                                    T-shirts | Clothes
+                                    d-appss | Clothes
                                   </div>
                                 </li>
                                 <li>
@@ -523,18 +527,20 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                 </li>
                                 <li>
                                   <div
-                                    onClick={() => handleTypeClick("dress")}
+                                    onClick={() =>
+                                      handleTypeClick("Subscriptions")
+                                    }
                                     className={`link text-secondary duration-300 cursor-pointer`}
                                   >
-                                    Dresses | Jumpsuits
+                                    Subscriptionses | Jumpsuits
                                   </div>
                                 </li>
                                 <li>
                                   <div
-                                    onClick={() => handleTypeClick("t-shirt")}
+                                    onClick={() => handleTypeClick("d-apps")}
                                     className={`link text-secondary duration-300 cursor-pointer`}
                                   >
-                                    T-shirts | Sweatshirts
+                                    d-appss | SweatCode activations
                                   </div>
                                 </li>
                                 <li>
@@ -1971,10 +1977,12 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                               </li>
                               <li>
                                 <div
-                                  onClick={() => handleTypeClick("shirt")}
+                                  onClick={() =>
+                                    handleTypeClick("Code activation")
+                                  }
                                   className={`link text-secondary duration-300 cursor-pointer`}
                                 >
-                                  Shirt | Sweatshirts
+                                  Code activation | SweatCode activations
                                 </div>
                               </li>
                               <li>
@@ -2098,18 +2106,20 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                               </li>
                               <li>
                                 <div
-                                  onClick={() => handleTypeClick("dress")}
+                                  onClick={() =>
+                                    handleTypeClick("Subscriptions")
+                                  }
                                   className={`link text-secondary duration-300 cursor-pointer`}
                                 >
-                                  Dresses | Jumpsuits
+                                  Subscriptionses | Jumpsuits
                                 </div>
                               </li>
                               <li>
                                 <div
-                                  onClick={() => handleTypeClick("t-shirt")}
+                                  onClick={() => handleTypeClick("d-apps")}
                                   className={`link text-secondary duration-300 cursor-pointer`}
                                 >
-                                  T-shirts | Sweatshirts
+                                  d-appss | SweatCode activations
                                 </div>
                               </li>
                               <li>

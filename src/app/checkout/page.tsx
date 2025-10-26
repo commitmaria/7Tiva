@@ -101,7 +101,7 @@ const Checkout = () => {
                                 {product.quantity}
                               </span>
                               <span className="px-1">x</span>
-                              <span>${product.price}.00</span>
+                              <span>${product.price}</span>
                             </div>
                           </div>
                         </div>
@@ -111,17 +111,17 @@ const Checkout = () => {
 
                   <div className="discount-block py-5 flex justify-between border-b border-line">
                     <div className="text-title">Discounts</div>
-                    <div className="text-title">-${discount}.00</div>
+                    <div className="text-title">-${discount}</div>
                   </div>
                   <div className="ship-block py-5 flex justify-between border-b border-line">
                     <div className="text-title">Shipping</div>
                     <div className="text-title">
-                      {ship === 0 ? "Free" : `$${ship}.00`}
+                      {ship === 0 ? "Free" : `$${ship}`}
                     </div>
                   </div>
                   <div className="total-cart-block pt-5 flex justify-between">
                     <div className="heading5">Total</div>
-                    <div className="heading5 total-cart">${finalAmount}.00</div>
+                    <div className="heading5 total-cart">${finalAmount}</div>
                   </div>
                 </div>
               </div>
@@ -163,7 +163,7 @@ const Checkout = () => {
                           id="email"
                           name="email"
                           type="email"
-                          placeholder="Email Address *"
+                          placeholder="Email AdSubscriptions *"
                           required
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}

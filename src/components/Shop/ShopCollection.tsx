@@ -58,7 +58,7 @@ const ShopCollection: React.FC<Props> = ({ data }) => {
                         SUMMER STAPLE
                       </div>
                       <div className="heading3 sm:mt-3 mt-1">
-                        Linen Wrap Dresses
+                        Linen Wrap Subscriptionses
                       </div>
                     </div>
                     <div className="right">
@@ -103,7 +103,7 @@ const ShopCollection: React.FC<Props> = ({ data }) => {
                         SUMMER STAPLE
                       </div>
                       <div className="heading3 sm:mt-3 mt-1">
-                        Linen Wrap Dresses
+                        Linen Wrap Subscriptionses
                       </div>
                     </div>
                     <div className="right">
@@ -148,7 +148,7 @@ const ShopCollection: React.FC<Props> = ({ data }) => {
                         SUMMER STAPLE
                       </div>
                       <div className="heading3 sm:mt-3 mt-1">
-                        Linen Wrap Dresses
+                        Linen Wrap Subscriptionses
                       </div>
                     </div>
                     <div className="right">

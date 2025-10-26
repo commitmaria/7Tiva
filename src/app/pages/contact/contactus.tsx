@@ -65,11 +65,10 @@ const ContactUs = () => {
               <div className="item">
                 <div className="heading4">Our Store</div>
                 <p className="mt-3">
-                  2163 Phillips Gap Rd, West Jefferson, North Carolina, United
-                  States
+                  Unit 122569 London W1A 6US United Kingdom
                 </p>
                 <p className="mt-3">
-                  Phone: <span className="whitespace-nowrap">+1 666 8888</span>
+                  Phone: <span className="whitespace-nowrap">+34 667 34 56 69</span>
                 </p>
                 <p className="mt-1">
                   Email:{" "}
