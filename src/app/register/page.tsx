@@ -65,7 +65,7 @@ const Register = () => {
                     className="border-line px-4 pt-3 pb-3 w-full rounded-lg"
                     id="username"
                     type="email"
-                    placeholder="Username or email adSubscriptions *"
+                    placeholder="Username or email address *"
                     required
                     value={email} // React state
                     onChange={(e) => setEmail(e.target.value)}

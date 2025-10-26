@@ -5,7 +5,7 @@ export interface TestimonialType {
   name: string;
   avatar: string;
   date: string;
-  Address: string;
+  address: string;
   description: string;
   images: Array<string>;
   star: number;

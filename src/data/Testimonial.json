@@ -6,7 +6,7 @@
         "name": "Fukuda E.",
         "avatar": "/images/avatar/1.png",
         "date": "November 10, 2023",
-        "adSubscriptions": "Tokyo, Japan",
+        "address": "Tokyo, Japan",
         "description": "Anvouge's exceptional customer service and attention to detail make shopping with them a pleasure. They understand my Digital needs and help me find the perfect pieces every time.",
         "images": [
             "/images/product/1000x1000.png",
@@ -21,7 +21,7 @@
         "name": "Georgina S.",
         "avatar": "/images/avatar/2.png",
         "date": "November 11, 2023",
-        "adSubscriptions": "Madrid, Spain",
+        "address": "Madrid, Spain",
         "description": "I absolutely love this shop! The products are high-quality and the customer service is excellent. I always leave with exactly what I need and a smile on my face.",
         "images": [
             "/images/product/1000x1000.png",
@@ -36,7 +36,7 @@
         "name": "Elizabeth A.",
         "avatar": "/images/avatar/3.png",
         "date": "November 13, 2023",
-        "adSubscriptions": "Manchester, UK",
+        "address": "Manchester, UK",
         "description": "I love this shop! The products are always top-quality, and the staff is incredibly friendly and helpful. They go out of their way to make sure that I'm satisfied with my purchase.",
         "images": [
             "/images/product/1000x1000.png",
@@ -51,7 +51,7 @@
         "name": "Christin H.",
         "avatar": "/images/avatar/4.png",
         "date": "November 15, 2023",
-        "adSubscriptions": "California, USA",
+        "address": "California, USA",
         "description": "I can't get enough of Anvouge's high-quality clothing. It's comfortable, stylish, and always on-trend. The products are high-quality and the customer service is excellent.",
         "images": [
             "/images/product/1000x1000.png",
@@ -66,7 +66,7 @@
         "name": "Emily G.",
         "avatar": "/images/avatar/5.png",
         "date": "November 18, 2023",
-        "adSubscriptions": "Paris, France",
+        "address": "Paris, France",
         "description": "Fantastic shop! Great selection, fair prices, and friendly staff. Highly recommended. The quality of the products is exceptional, and the prices are very reasonable!",
         "images": [
             "/images/product/1000x1000.png",
@@ -81,7 +81,7 @@
         "name": "Carolina C.",
         "avatar": "/images/avatar/6.png",
         "date": "November 19, 2023",
-        "adSubscriptions": "London, UK",
+        "address": "London, UK",
         "description": "Anvouge's Digital collection is a game-changer! Their unique and trendy pieces have completely transformed my style. It's comfortable, stylish, and always on-trend.",
         "images": [
             "/images/product/1000x1000.png",
@@ -96,7 +96,7 @@
         "name": "Christin H.",
         "avatar": "/images/avatar/4.png",
         "date": "November 15, 2023",
-        "adSubscriptions": "California, USA",
+        "address": "California, USA",
         "description": "Their unique and trendy pieces have completely transformed my style.",
         "images": [
             "/images/product/1000x1000.png",
@@ -111,7 +111,7 @@
         "name": "Emily G.",
         "avatar": "/images/avatar/5.png",
         "date": "November 18, 2023",
-        "adSubscriptions": "Paris, France",
+        "address": "Paris, France",
         "description": "Exceptional customer service and attention to detail make shopping with them a pleasure",
         "images": [
             "/images/product/1000x1000.png",
@@ -126,7 +126,7 @@
         "name": "Carolina C.",
         "avatar": "/images/avatar/6.png",
         "date": "November 19, 2023",
-        "adSubscriptions": "London, UK",
+        "address": "London, UK",
         "description": "I can't get enough of shopclud high-quality clothing. It's comfortable, stylish, and always on-trend.",
         "images": [
             "/images/product/1000x1000.png",
@@ -141,7 +141,7 @@
         "name": "Fukuda E.",
         "avatar": "/images/avatar/1.png",
         "date": "November 10, 2023",
-        "adSubscriptions": "Tokyo, Japan",
+        "address": "Tokyo, Japan",
         "description": "Exceptional customer service and attention to detail make shopping with them a pleasure",
         "images": [
             "/images/product/1000x1000.png",
@@ -156,7 +156,7 @@
         "name": "Georgina S.",
         "avatar": "/images/avatar/2.png",
         "date": "November 11, 2023",
-        "adSubscriptions": "Madrid, Spain",
+        "address": "Madrid, Spain",
         "description": "I love this shop! The products are high-quality, the customer service is excellent",
         "images": [
             "/images/product/1000x1000.png",
@@ -171,7 +171,7 @@
         "name": "Elizabeth A.",
         "avatar": "/images/avatar/3.png",
         "date": "November 13, 2023",
-        "adSubscriptions": "Manchester, UK",
+        "address": "Manchester, UK",
         "description": "The products are always top-quality, and the staff is incredibly friendly and helpful",
         "images": [
             "/images/product/1000x1000.png",

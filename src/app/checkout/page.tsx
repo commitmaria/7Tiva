@@ -163,7 +163,7 @@ const Checkout = () => {
                           id="email"
                           name="email"
                           type="email"
-                          placeholder="Email AdSubscriptions *"
+                          placeholder="Email address *"
                           required
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}

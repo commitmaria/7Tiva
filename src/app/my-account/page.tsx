@@ -11,16 +11,12 @@ import { motion } from "framer-motion";
 
 const MyAccount = () => {
   const [activeTab, setActiveTab] = useState<string | undefined>("dashboard");
-  const [activeAdSubscriptions, setActiveAdSubscriptions] = useState<
-    string | null
-  >("billing");
+  const [activeaddress, setActiveaddress] = useState<string | null>("billing");
   const [activeOrders, setActiveOrders] = useState<string | undefined>("all");
   const [openDetail, setOpenDetail] = useState<boolean | undefined>(false);
 
-  const handleActiveAdSubscriptions = (order: string) => {
-    setActiveAdSubscriptions((prevOrder) =>
-      prevOrder === order ? null : order
-    );
+  const handleActiveaddress = (order: string) => {
+    setActiveaddress((prevOrder) => (prevOrder === order ? null : order));
   };
 
   const handleActiveOrders = (order: string) => {
@@ -86,12 +82,12 @@ const MyAccount = () => {
                     href={"#!"}
                     scroll={false}
                     className={`item flex items-center gap-3 w-full px-5 py-4 rounded-lg cursor-pointer duration-300 hover:bg-white mt-1.5 ${
-                      activeTab === "adSubscriptions" ? "active" : ""
+                      activeTab === "address" ? "active" : ""
                     }`}
-                    onClick={() => setActiveTab("adSubscriptions")}
+                    onClick={() => setActiveTab("address")}
                   >
                     <Icon.Tag size={20} />
-                    <strong className="heading6">My AdSubscriptions</strong>
+                    <strong className="heading6">My address</strong>
                   </Link>
                   <Link
                     href={"#!"}
@@ -698,26 +694,24 @@ const MyAccount = () => {
                 </div>
               </div>
               <div
-                className={`tab_adSubscriptions text-content w-full p-7 border border-line rounded-xl ${
-                  activeTab === "adSubscriptions" ? "block" : "hidden"
+                className={`tab_address text-content w-full p-7 border border-line rounded-xl ${
+                  activeTab === "address" ? "block" : "hidden"
                 }`}
               >
                 <form>
                   <button
                     type="button"
                     className={`tab_btn flex items-center justify-between w-full pb-1.5 border-b border-line ${
-                      activeAdSubscriptions === "billing" ? "active" : ""
+                      activeaddress === "billing" ? "active" : ""
                     }`}
-                    onClick={() => handleActiveAdSubscriptions("billing")}
+                    onClick={() => handleActiveaddress("billing")}
                   >
-                    <strong className="heading6">
-                      Billing adSubscriptions
-                    </strong>
+                    <strong className="heading6">Billing address</strong>
                     <Icon.CaretDown className="text-2xl ic_down duration-300" />
                   </button>
                   <div
-                    className={`form_adSubscriptions ${
-                      activeAdSubscriptions === "billing" ? "block" : "hidden"
+                    className={`form_address ${
+                      activeaddress === "billing" ? "block" : "hidden"
                     }`}
                   >
                     <div className="grid sm:grid-cols-2 gap-4 gap-y-5 mt-5">
@@ -782,8 +776,7 @@ const MyAccount = () => {
                           htmlFor="billingStreet"
                           className="caption1 capitalize"
                         >
-                          street adSubscriptions{" "}
-                          <span className="text-red">*</span>
+                          street address <span className="text-red">*</span>
                         </label>
                         <input
                           className="border-line mt-2 px-4 py-3 w-full rounded-lg"
@@ -867,18 +860,16 @@ const MyAccount = () => {
                   <button
                     type="button"
                     className={`tab_btn flex items-center justify-between w-full mt-10 pb-1.5 border-b border-line ${
-                      activeAdSubscriptions === "shipping" ? "active" : ""
+                      activeaddress === "shipping" ? "active" : ""
                     }`}
-                    onClick={() => handleActiveAdSubscriptions("shipping")}
+                    onClick={() => handleActiveaddress("shipping")}
                   >
-                    <strong className="heading6">
-                      Shipping adSubscriptions
-                    </strong>
+                    <strong className="heading6">Shipping address</strong>
                     <Icon.CaretDown className="text-2xl ic_down duration-300" />
                   </button>
                   <div
-                    className={`form_adSubscriptions ${
-                      activeAdSubscriptions === "shipping" ? "block" : "hidden"
+                    className={`form_address ${
+                      activeaddress === "shipping" ? "block" : "hidden"
                     }`}
                   >
                     <div className="grid sm:grid-cols-2 gap-4 gap-y-5 mt-5">
@@ -943,8 +934,7 @@ const MyAccount = () => {
                           htmlFor="shippingStreet"
                           className="caption1 capitalize"
                         >
-                          street adSubscriptions{" "}
-                          <span className="text-red">*</span>
+                          street address <span className="text-red">*</span>
                         </label>
                         <input
                           className="border-line mt-2 px-4 py-3 w-full rounded-lg"
@@ -1026,9 +1016,7 @@ const MyAccount = () => {
                     </div>
                   </div>
                   <div className="block-button lg:mt-10 mt-6">
-                    <button className="button-main">
-                      Update AdSubscriptions
-                    </button>
+                    <button className="button-main">Update address</button>
                   </div>
                 </form>
               </div>
@@ -1126,15 +1114,14 @@ const MyAccount = () => {
                     </div>
                     <div className="email">
                       <label htmlFor="email" className="caption1 capitalize">
-                        Email AdSubscriptions{" "}
-                        <span className="text-red">*</span>
+                        Email address <span className="text-red">*</span>
                       </label>
                       <input
                         className="border-line mt-2 px-4 py-3 w-full rounded-lg"
                         id="email"
                         type="email"
                         defaultValue={"alexdev.end@gmail.com"}
-                        placeholder="Email adSubscriptions"
+                        placeholder="Email address"
                         required
                       />
                     </div>
@@ -1254,17 +1241,17 @@ const MyAccount = () => {
               </div>
               <div className="info_item">
                 <strong className="text-button-uppercase text-secondary">
-                  Shipping adSubscriptions
+                  Shipping address
                 </strong>
-                <h6 className="heading6 order_shipping_adSubscriptions mt-2">
+                <h6 className="heading6 order_shipping_address mt-2">
                   2163 Phillips Gap Rd, West Jefferson, North Carolina, US
                 </h6>
               </div>
               <div className="info_item">
                 <strong className="text-button-uppercase text-secondary">
-                  Billing adSubscriptions
+                  Billing address
                 </strong>
-                <h6 className="heading6 order_billing_adSubscriptions mt-2">
+                <h6 className="heading6 order_billing_address mt-2">
                   2163 Phillips Gap Rd, West Jefferson, North Carolina, US
                 </h6>
               </div>

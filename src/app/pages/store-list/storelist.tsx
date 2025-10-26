@@ -30,11 +30,11 @@ const StoreList = () => {
                 className="lg:absolute relative top-0 left-0 lg:bottom-0 lg:w-1/2 w-full h-full object-cover"
               />
               <div className="text-content lg:w-1/2 lg:pr-20 lg:pl-[100px] lg:py-14 sm:py-10 py-6 max-lg:px-6">
-                <div className="heading3">New York Office</div>
+                <div className="heading3">London Office</div>
                 <div className="list-featrue lg:mt-10 mt-6">
                   <div className="item flex lg:gap-10 gap-6">
                     <div className="w-1/2">
-                      <div className="heading6">Address:</div>
+                      <div className="heading6">address:</div>
                       <div className="text-secondary mt-2">
                         2163 Phillips Gap Rd West Jefferson, North Carolina
                       </div>
@@ -104,7 +104,7 @@ const StoreList = () => {
                 <div className="list-featrue lg:mt-10 mt-6">
                   <div className="item flex lg:gap-10 gap-6">
                     <div className="w-1/2">
-                      <div className="heading6">Address:</div>
+                      <div className="heading6">address:</div>
                       <div className="text-secondary mt-2">
                         2163 Phillips Gap Rd West Jefferson, North Carolina
                       </div>
@@ -188,7 +188,7 @@ const StoreList = () => {
                 <div className="list-featrue lg:mt-10 mt-6">
                   <div className="item flex lg:gap-10 gap-6">
                     <div className="w-1/2">
-                      <div className="heading6">Address:</div>
+                      <div className="heading6">address:</div>
                       <div className="text-secondary mt-2">
                         2163 Phillips Gap Rd West Jefferson, North Carolina
                       </div>
