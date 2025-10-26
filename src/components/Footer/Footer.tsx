@@ -26,7 +26,7 @@ const Footer = () => {
                   <div className="flex flex-col ">
                     <span className="text-button">Mail:</span>
                     <span className="text-button mt-3">Phone:</span>
-                    <span className="text-button mt-3">AdSubscriptions:</span>
+                    <span className="text-button mt-3">Address:</span>
                   </div>
                   <div className="flex flex-col ">
                     <span className="">alexdev.end@gmail.com</span>

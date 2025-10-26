@@ -14,7 +14,7 @@ const Instagram = () => {
         <div className="container">
           <div className="heading">
             <div className="heading3 text-center">shopclud On Instagram</div>
-            <div className="text-center mt-3">#Anvougetheme</div>
+            <div className="text-center mt-3">ShopClud Official</div>
           </div>
         </div>
         <div className="list-instagram mt-7">
