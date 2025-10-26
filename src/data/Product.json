@@ -559,7 +559,15 @@
     "sizes": [
       "freesize"
     ],
-    "variation": [""],
+    "variation": [
+      {
+        "color": "",
+        "colorCode": "",
+        "colorImage": "",
+        "image": ""
+      }
+    ],
+
     "thumbImage": [
       "/images/product/shopclud/CanvaProduct1.png",
       "/images/product/shopclud/CanvaProduct1.png"
@@ -574,7 +582,7 @@
     "action": "add to cart",
     "slug": "blouse"
   },
-  
+
   {
     "id": "12",
     "category": "Digital",
