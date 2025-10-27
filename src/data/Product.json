@@ -493,7 +493,7 @@
     ],
     "description": "Enjoy full creativity and power with Autodesk 3-Year Subscription for only $20. Professionally designed for creators and engineers, it offers all premium features with easy activation by code or email.",
     "action": "quick shop",
-    "slug": "Code activation"
+    "slug": "activation"
   },
 
   
@@ -542,186 +542,124 @@
   {
     "id": "12",
     "category": "Digital",
-    "type": "sets",
-    "name": "Kimono sleeve top",
-    "gender": "women",
+    "type": "d-apps",
+    "name": "Photoshop 1-Year Subscription",
+    "gender": "All",
     "new": false,
     "sale": true,
     "rate": 5,
-    "price": 24,
-    "originPrice": 32,
-    "brand": "adidas",
+    "price": 29.45,
+    "originPrice": 32.45,
+    "brand": "adobe",
     "sold": 17,
     "quantity": 100,
     "quantityPurchase": 1,
     "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
+      "A"
     ],
     "variation": [
       {
-        "color": "green",
-        "colorCode": "#D2EF9A",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "red",
-        "colorCode": "#DB4444",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "yellow",
-        "colorCode": "#ECB018",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "purple",
-        "colorCode": "#8684D4",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
+        "color": "",
+        "colorCode": "",
+        "colorImage": "",
+        "image": ""
       }
     ],
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/photoshop/Photoshop1.png",
+      "/images/product/photoshop/Photoshop1.png"
     ],
     "images": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/photoshop/Photoshop1.png",
+      "/images/product/photoshop/Photoshop1.png",
+      "/images/product/photoshop/Photoshop1.png",
+      "/images/product/photoshop/Photoshop1.png"
     ],
-    "description": "Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. Traditionally designed, they are perfect to be used in the any place where you need to store.",
+    "description": "Enhance your creativity with Photoshop 1-Year Subscription for only $29. Packed with advanced tools for editing and design, it’s perfect for professionals and beginners with easy activation by code or email.",
     "action": "add to cart",
-    "slug": "kimono"
+    "slug": "Photoshop"
   },
+
   {
     "id": "13",
     "category": "Digital",
     "type": "d-apps",
-    "name": "mesh Code activation",
-    "gender": "women",
+    "name": "Adobe Cloud Official 1-Year Subscription",
+    "gender": "All",
     "new": true,
     "sale": false,
     "rate": 4,
-    "price": 35,
-    "originPrice": 45,
-    "brand": "gucci",
+    "price": 50.45,
+    "originPrice": 70.45,
+    "brand": "adobe",
     "sold": 39,
     "quantity": 100,
     "quantityPurchase": 1,
     "sizes": [
-      "S",
-      "L",
-      "XL"
+      "A"
     ],
     "variation": [
       {
-        "color": "green",
-        "colorCode": "#D2EF9A",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "red",
-        "colorCode": "#DB4444",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "yellow",
-        "colorCode": "#ECB018",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "purple",
-        "colorCode": "#8684D4",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
+        "color": "",
+        "colorCode": "",
+        "colorImage": "",
+        "image": ""
       }
+    
     ],
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/adobe/Adobecloud1.png",
+      "/images/product/adobe/Adobecloud1.png"
     ],
     "images": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/adobe/Adobecloud1.png",
+      "/images/product/adobe/Adobecloud1.png",
+      "/images/product/adobe/Adobecloud1.png",
+      "/images/product/adobe/Adobecloud1.png"
     ],
-    "description": "Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. Traditionally designed, they are perfect to be used in the any place where you need to store.",
+    "description": "Unlock your creativity with Adobe Cloud 1-Year Subscription for only $50. Includes all premium Adobe apps and tools, perfect for designers and creators with easy activation by code or email.",
     "action": "quick shop",
-    "slug": "mesh-Code activation"
+    "slug": "Adobe cloud creative"
   },
   {
     "id": "14",
     "category": "Digital",
-    "type": "sets",
-    "name": "Raglan Sleeve d-apps",
-    "gender": "women",
+    "type": "d-apps",
+    "name": "Adobe Acrobat Pro Lifetime Subscription",
+    "gender": "All",
     "new": true,
     "sale": false,
     "rate": 5,
-    "price": 28,
-    "originPrice": 36,
-    "brand": "hermes",
+    "price": 20.45,
+    "originPrice": 40.45,
+    "brand": "Adobe",
     "sold": 9,
     "quantity": 200,
     "quantityPurchase": 1,
     "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL"
+      "A"
     ],
     "variation": [
       {
-        "color": "green",
-        "colorCode": "#D2EF9A",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "red",
-        "colorCode": "#DB4444",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "yellow",
-        "colorCode": "#ECB018",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "purple",
-        "colorCode": "#8684D4",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
+        "color": "",
+        "colorCode": "",
+        "colorImage": "",
+        "image": ""
       }
     ],
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/acrobat/Acrobat1.png",
+      "/images/product/acrobat/Acrobat1.png"
     ],
     "images": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/acrobat/Acrobat1.png",
+      "/images/product/acrobat/Acrobat1.png",
+      "/images/product/acrobat/Acrobat1.png",
+      "/images/product/acrobat/Acrobat1.png"
     ],
-    "description": "Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. Traditionally designed, they are perfect to be used in the any place where you need to store.",
+    "description": "Manage your documents easily with Adobe Acrobat Pro Lifetime for only $20. Enjoy all premium PDF tools and features, perfect for professionals and students with quick activation by code or email.",
     "action": "quick shop",
-    "slug": "Code activation"
+    "slug": "Adobe Acrobat"
   },
   {
     "id": "15",
