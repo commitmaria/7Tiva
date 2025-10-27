@@ -3,50 +3,41 @@
     "id": "1",
     "category": "Digital",
     "type": "top",
-    "name": "mesh Code activation",
-    "gender": "women",
+    "name": "Netflix 1-Year Subscription",
+    "gender": "All",
     "new": true,
     "sale": false,
     "rate": 4,
-    "price": 45,
-    "originPrice": 55,
-    "brand": "gucci",
+    "price": 22.45,
+    "originPrice": 55.45,
+    "brand": "netflix",
     "sold": 12,
     "quantity": 100,
     "quantityPurchase": 1,
     "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
+      "N"
     ],
     "variation": [
       {
-        "color": "red",
-        "colorCode": "#DB4444",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "yellow",
-        "colorCode": "#ECB018",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
+        "color": "",
+        "colorCode": "",
+        "colorImage": "",
+        "image": ""
       }
     ],
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/netflix/Netflix1.png",
+      "/images/product/netflix/Netflix1.png"
     ],
     "images": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/netflix/Netflix1.png",
+      "/images/product/netflix/Netflix1.png",
+      "/images/product/netflix/Netflix1.png",
+      "/images/product/netflix/Netflix1.png"
     ],
-    "description": "Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. Traditionally designed, they are perfect to be used in the any place where you need to store.",
+    "description": "Enjoy endless entertainment with Netflix 1-Year Subscription for only $22. Watch your favorite movies and shows in high quality, perfect for all devices with easy activation by code or email.",
     "action": "quick shop",
-    "slug": "mesh-Code activation"
+    "slug": "netflix"
   },
   {
     "id": "2",
@@ -59,7 +50,7 @@
     "rate": 5,
     "price": 28.45,
     "originPrice": 60.45,
-    "brand": "hermes",
+    "brand": "chatgpt",
     "sold": 23,
     "quantity": 200,
     "quantityPurchase": 1,
@@ -74,8 +65,6 @@
         "image": ""
       }
     ],
-
-
     "thumbImage": [
       "/images/product/chatgpt/Chatgpt1.png",
       "/images/product/chatgpt/Chatgpt1.png"
@@ -88,66 +77,54 @@
     ],
     "description": "Boost your productivity with ChatGPT Plus 1-Year Subscription for only $28. Designed for faster responses and smarter performance, it’s perfect for professionals and learners with easy activation by code or email.",
     "action": "quick shop",
-    "slug": "Chatgpt Plus"
+    "slug": "Chatgpt-Plus"
   },
   {
     "id": "3",
     "category": "Digital",
     "type": "Subscriptions",
-    "name": "Off-the-Shoulder Blouse",
-    "gender": "women",
+    "name": "Apple One 1-Year Subscription",
+    "gender": "All",
     "new": false,
     "sale": true,
     "rate": 4,
-    "price": 32,
-    "originPrice": 40,
-    "brand": "zara",
+    "price": 30.45,
+    "originPrice": 50.45,
+    "brand": "apple",
     "sold": 15,
     "quantity": 80,
     "quantityPurchase": 1,
     "sizes": [
-      "freesize"
+      "A"
     ],
     "variation": [
       {
-        "color": "pink",
-        "colorCode": "#F4407D",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "yellow",
-        "colorCode": "#ECB018",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "purple",
-        "colorCode": "#8684D4",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
+        "color": "",
+        "colorCode": "",
+        "colorImage": "",
+        "image": ""
       }
     ],
 
 
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/appleone/Appleone1.png",
+      "/images/product/appleone/Appleone1.png"
     ],
     "images": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/appleone/Appleone1.png",
+      "/images/product/appleone/Appleone1.png",
+      "/images/product/appleone/Appleone1.png",
+      "/images/product/appleone/Appleone1.png"
     ],
-    "description": "Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. Traditionally designed, they are perfect to be used in the any place where you need to store.",
+    "description": "Enjoy all your favorite Apple services with Apple One 1-Year Subscription for only $30. Includes Music, iCloud, TV+, and more — perfect for everyday use with easy activation by code or email.",
     "action": "add to cart",
-    "slug": "blouse"
+    "slug": "Apple-One"
   },
   {
     "id": "4",
     "category": "Digital",
-    "type": "apps",
+    "type": "d-apps",
     "name": "Canva Pro Lifetime Subscription",
     "gender": "All",
     "new": false,
@@ -159,199 +136,150 @@
     "sold": 14,
     "quantity": 100,
     "quantityPurchase": 1,
-    "sizes": ["L"],
-    "variation": [
+    "sizes": ["C"],
+    "variation": 
+    [
       {
         "color": "",
-        "colorCode": "#",
+        "colorCode": "",
         "colorImage": "",
         "image": ""
       }],
-
-
-
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/canva/Canvapro1.png",
+      "/images/product/canva/Canvapro1.png"
     ],
     "images": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/canva/Canvapro1.png",
+      "/images/product/canva/CanvaProduct1.png",
+      "/images/product/canva/CanvaProduct2.png",
+      "/images/product/canva/CanvaProduct3.png"
+
     ], 
-    "description": "Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. Traditionally designed, they are perfect to be used in the any place where you need to store.",
+    "description": "Get lifetime access to Canva Pro — the ultimate design tool for creators and businesses. Enjoy premium templates, photos, and features to create stunning designs effortlessly, forever.",
     "action": "add to cart",
-    "slug": "kimono"
+    "slug": "canva-pro"
   },
   {
     "id": "5",
     "category": "Digital",
-    "type": "Subscriptions",
-    "name": "mesh Code activation",
-    "gender": "women",
+    "type": "d-apps",
+    "name": "ExpressVPN 1-Year Subscription",
+    "gender": "All",
     "new": true,
     "sale": false,
     "rate": 4,
-    "price": 35,
-    "originPrice": 45,
-    "brand": "gucci",
+    "price": 20.45,
+    "originPrice": 100.45,
+    "brand": "expressvpn",
     "sold": 21,
     "quantity": 100,
     "quantityPurchase": 1,
     "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
+      "E"
     ],
     "variation": [
       {
-        "color": "black",
-        "colorCode": "#1F1F1F",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "yellow",
-        "colorCode": "#ECB018",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "purple",
-        "colorCode": "#8684D4",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
+        "color": "",
+        "colorCode": "",
+        "colorImage": "",
+        "image": ""
       }
     ],
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/expressvpn/Expressvpn1.png",
+      "/images/product/expressvpn/Expressvpn1.png"
     ],
     "images": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/expressvpn/Expressvpn1.png",
+      "/images/product/expressvpn/Expressvpn1.png",
+      "/images/product/expressvpn/Expressvpn1.png",
+      "/images/product/expressvpn/Expressvpn1.png"
+      
     ],
-    "description": "Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. Traditionally designed, they are perfect to be used in the any place where you need to store.",
+    "description": "Browse freely with ExpressVPN 1-Year Subscription for only $20. Enjoy fast, secure, and private connections worldwide, perfect for streaming and privacy with easy activation by code or email.",
     "action": "quick shop",
-    "slug": "mesh-Code activation"
+    "slug": "activation"
   },
   {
     "id": "6",
     "category": "Digital",
-    "type": "sets",
-    "name": "Raglan Sleeve d-apps",
-    "gender": "women",
+    "type": "d-apps",
+    "name": "Avast Premium Security 1-Year Subscription",
+    "gender": "All",
     "new": true,
     "sale": false,
     "rate": 5,
-    "price": 36,
+    "price": 15.45,
     "originPrice": 36.45,
-    "brand": "hermes",
+    "brand": "avast",
     "sold": 19,
     "quantity": 200,
     "quantityPurchase": 1,
     "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL"
+      "A"
     ],
     "variation": [
       {
-        "color": "green",
-        "colorCode": "#D2EF9A",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "red",
-        "colorCode": "#DB4444",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "yellow",
-        "colorCode": "#ECB018",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
+        "color": "",
+        "colorCode": "",
+        "colorImage": "",
+        "image": ""
       }
     ],
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/avast/Avast1.png",
+      "/images/product/avast/Avast1.png"
     ],
     "images": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/avast/Avast1.png",
+      "/images/product/avast/Avast1.png",
+      "/images/product/avast/Avast1.png",
+      "/images/product/avast/Avast1.png"
     ],
-    "description": "Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. Traditionally designed, they are perfect to be used in the any place where you need to store.",
+    "description": "Protect your PC with Avast 1-Year Subscription for only $15. Offers advanced antivirus and online security, perfect for safe browsing and privacy with easy activation by code or email.",
     "action": "quick shop",
-    "slug": "Code activation"
+    "slug": "activation"
   },
   {
     "id": "7",
     "category": "Digital",
-    "type": "Code activation",
-    "name": "Off-the-Shoulder Blouse",
-    "gender": "women",
+    "type": "activation",
+    "name": "NordVPN 1-Year Subscription",
+    "gender": "All",
     "new": false,
     "sale": true,
     "rate": 4,
-    "price": 32,
-    "originPrice": 40,
-    "brand": "zara",
+    "price": 10.45,
+    "originPrice":30.45,
+    "brand": "nordvpn",
     "sold": 22,
     "quantity": 80,
     "quantityPurchase": 1,
     "sizes": [
-      "freesize"
+      "N"
     ],
     "variation": [
       {
-        "color": "green",
-        "colorCode": "#D2EF9A",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "red",
-        "colorCode": "#DB4444",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "white",
-        "colorCode": "#F6EFDD",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "purple",
-        "colorCode": "#8684D4",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
+        "color": "",
+        "colorCode": "",
+        "colorImage": "",
+        "image": ""
       }
     ],
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/nordvpn/Nordvpn1.png",
+      "/images/product/nordvpn/Nordvpn1.png"
     ],
     "images": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/nordvpn/Nordvpn1.png",
+      "/images/product/nordvpn/Nordvpn1.png",
+      "/images/product/nordvpn/Nordvpn1.png",
+      "/images/product/nordvpn/Nordvpn1.png"
     ],
-    "description": "Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. Traditionally designed, they are perfect to be used in the any place where you need to store.",
+    "description": "Stay secure online with NordVPN 1-Year Subscription for only $10. Designed for fast, private, and safe browsing, it’s perfect for everyday internet use with simple activation by code or email.",
     "action": "add to cart",
-    "slug": "blouse"
+    "slug": "nordvpn"
   },
   {
     "id": "8",
@@ -480,19 +408,19 @@
     "id": "11",
     "category": "Digital",
     "type": "d-apps",
-    "name": "Canva Pro Lifetime Subscription",
+    "name": "Kaspersky Full Security 1-Year Subscription",
     "gender": "all",
     "new": false,
     "sale": true,
     "rate": 4,
-    "price": 2.45,
-    "originPrice": 20.45,
-    "brand": "canva",
+    "price": 19.45,
+    "originPrice": 40.45,
+    "brand": "kaspersky",
     "sold": 14,
     "quantity": 80,
     "quantityPurchase": 1,
     "sizes": [
-      "freesize"
+      "K"
     ],
     "variation": [
       {
@@ -504,18 +432,18 @@
     ],
 
     "thumbImage": [
-      "/images/product/canva/Canvapro1.png",
-      "/images/product/canva/Canvapro1.png"
+      "/images/product/kaspersky/Kaspersky1.png",
+      "/images/product/kaspersky/Kaspersky1.png"
     ],
     "images": [
-      "/images/product/canva/Canvapro1.png",
-      "/images/product/canva/CanvaProduct1.png",
-      "/images/product/canva/CanvaProduct2.png",
-      "/images/product/canva/CanvaProduct3.png"
+      "/images/product/kaspersky/Kaspersky1.png",
+      "/images/product/kaspersky/Kaspersky1.png",
+      "/images/product/kaspersky/Kaspersky1.png",
+      "/images/product/kaspersky/Kaspersky1.png"
     ],
-    "description": "Get lifetime access to Canva Pro — the ultimate design tool for creators and businesses. Enjoy premium templates, photos, and features to create stunning designs effortlessly, forever.",
+    "description": "Secure your devices with Kaspersky 1-Year Subscription for only $19. Provides powerful protection against viruses and threats, perfect for home or office use with easy activation by code or email.",
     "action": "add to cart",
-    "slug": "Canva-Pro"
+    "slug": "kaspersky-security"
   },
 
   {
@@ -644,59 +572,41 @@
     "id": "15",
     "category": "Digital",
     "type": "top",
-    "name": "Off-the-Shoulder Blouse",
-    "gender": "women",
+    "name": "Youtube Premium 1-Year Subscription",
+    "gender": "All",
     "new": false,
     "sale": true,
     "rate": 4,
-    "price": 32,
-    "originPrice": 40,
-    "brand": "zara",
+    "price": 30.45,
+    "originPrice": 50.45,
+    "brand": "youtube",
     "sold": 8,
     "quantity": 80,
     "quantityPurchase": 1,
     "sizes": [
-      "freesize"
+      "Y"
     ],
     "variation": [
       {
-        "color": "green",
-        "colorCode": "#D2EF9A",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "red",
-        "colorCode": "#DB4444",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "yellow",
-        "colorCode": "#ECB018",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "purple",
-        "colorCode": "#8684D4",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
+        "color": "",
+        "colorCode": "",
+        "colorImage": "",
+        "image": ""
       }
     ],
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/youtube/Youtubepremium1.png",
+      "/images/product/youtube/Youtubepremium1.png"
     ],
     "images": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/youtube/Youtubepremium1.png",
+      "/images/product/youtube/Youtubepremium1.png",
+      "/images/product/youtube/Youtubepremium1.png",
+      "/images/product/youtube/Youtubepremium1.png"
     ],
-    "description": "Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. Traditionally designed, they are perfect to be used in the any place where you need to store.",
+    "description": "Enjoy ad-free videos with YouTube Premium 1-Year Subscription for only $30. Stream music and content without limits, perfect for daily use on all devices with easy activation by code or email.",
     "action": "add to cart",
-    "slug": "blouse"
+    "slug": "youtube-premium"
   },
   {
     "id": "16",

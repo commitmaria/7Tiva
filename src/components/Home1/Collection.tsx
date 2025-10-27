@@ -142,7 +142,7 @@ const Collection = () => {
               >
                 <div className="bg-img">
                   <Image
-                    src={"/images/collection/d-apps.png"}
+                    src={"/images/collection/t-shirt.png"}
                     width={1000}
                     height={600}
                     alt="d-apps"
