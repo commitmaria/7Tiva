@@ -52,52 +52,43 @@
     "id": "2",
     "category": "Digital",
     "type": "d-apps",
-    "name": "Raglan Sleeve d-apps",
-    "gender": "women",
+    "name": "Chatgpt Plus Subscription",
+    "gender": "All",
     "new": true,
     "sale": false,
     "rate": 5,
-    "price": 28,
-    "originPrice": 36,
+    "price": 28.45,
+    "originPrice": 60.45,
     "brand": "hermes",
     "sold": 23,
     "quantity": 200,
     "quantityPurchase": 1,
     "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL"
+      "C"
     ],
     "variation": [
       {
-        "color": "white",
-        "colorCode": "#F6EFDD",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "purple",
-        "colorCode": "#8684D4",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
+        "color": "",
+        "colorCode": "",
+        "colorImage": "",
+        "image": ""
       }
     ],
+
+
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/chatgpt/Chatgpt1.png",
+      "/images/product/chatgpt/Chatgpt1.png"
     ],
     "images": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/chatgpt/Chatgpt1.png",
+      "/images/product/chatgpt/Chatgpt1.png",
+      "/images/product/chatgpt/Chatgpt1.png",
+      "/images/product/chatgpt/Chatgpt1.png"
     ],
-    "description": "Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. Traditionally designed, they are perfect to be used in the any place where you need to store.",
+    "description": "Boost your productivity with ChatGPT Plus 1-Year Subscription for only $28. Designed for faster responses and smarter performance, it’s perfect for professionals and learners with easy activation by code or email.",
     "action": "quick shop",
-    "slug": "Code activation"
+    "slug": "Chatgpt Plus"
   },
   {
     "id": "3",
@@ -427,56 +418,41 @@
     "id": "9",
     "category": "Digital",
     "type": "d-apps",
-    "name": "mesh Code activation",
-    "gender": "women",
+    "name": "CupCut Pro Subscription",
+    "gender": "All",
     "new": true,
     "sale": false,
     "rate": 4,
-    "price": 35,
-    "originPrice": 45,
-    "brand": "gucci",
+    "price": 20.45,
+    "originPrice": 60.45,
+    "brand": "Cupcut",
     "sold": 12,
     "quantity": 100,
     "quantityPurchase": 1,
     "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
+      "C"
     ],
     "variation": [
       {
-        "color": "green",
-        "colorCode": "#D2EF9A",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "red",
-        "colorCode": "#DB4444",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "white",
-        "colorCode": "#F6EFDD",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
+        "color": "",
+        "colorCode": "",
+        "colorImage": "",
+        "image": ""
       }
     ],
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/cupcut/Cupcutpro1.png",
+      "/images/product/cupcut/Cupcutpro1.png"
     ],
     "images": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/cupcut/Cupcutpro1.png",
+      "/images/product/cupcut/Cupcutpro1.png",
+      "/images/product/cupcut/Cupcutpro1.png",
+      "/images/product/cupcut/Cupcutpro1.png"
     ],
-    "description": "Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. Traditionally designed, they are perfect to be used in the any place where you need to store.",
+    "description": "Create stunning videos with CapCut Pro 1-Year Subscription for only $20. Packed with premium effects and tools, it’s perfect for editors who want smooth performance and easy activation by code or email.",
     "action": "quick shop",
-    "slug": "mesh-Code activation"
+    "slug": "CupCut activation"
   },
   {
     "id": "10",
@@ -549,18 +525,18 @@
     ],
 
     "thumbImage": [
-      "/images/product/shopclud/CanvaProduct1800x900.png",
-      "/images/product/shopclud/CanvaProduct1800x900.png"
+      "/images/product/canva/Canvapro1.png",
+      "/images/product/canva/Canvapro1.png"
     ],
     "images": [
-      "/images/product/shopclud/CanvaProduct1.png",
-      "/images/product/shopclud/CanvaProduct2.png",
-      "/images/product/shopclud/CanvaProduct3.png",
-      "/images/product/shopclud/CanvaProduct4.png"
+      "/images/product/canva/Canvapro1.png",
+      "/images/product/canva/CanvaProduct1.png",
+      "/images/product/canva/CanvaProduct2.png",
+      "/images/product/canva/CanvaProduct3.png"
     ],
     "description": "Get lifetime access to Canva Pro — the ultimate design tool for creators and businesses. Enjoy premium templates, photos, and features to create stunning designs effortlessly, forever.",
     "action": "add to cart",
-    "slug": "blouse"
+    "slug": "Canva Pro"
   },
 
   {
