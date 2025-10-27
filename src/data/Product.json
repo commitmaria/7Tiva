@@ -356,63 +356,42 @@
   {
     "id": "8",
     "category": "Digital",
-    "type": "sets",
-    "name": "Kimono sleeve top",
-    "gender": "women",
+    "type": "d-apps",
+    "name": "McAfee Total Protection 1-Year Subscription",
+    "gender": "All",
     "new": false,
     "sale": true,
     "rate": 5,
-    "price": 24,
-    "originPrice": 32,
-    "brand": "adidas",
+    "price": 19.45,
+    "originPrice": 42.45,
+    "brand": "mcafee",
     "sold": 45,
     "quantity": 100,
     "quantityPurchase": 1,
     "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
+      "M"
     ],
     "variation": [
       {
-        "color": "green",
-        "colorCode": "#D2EF9A",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "red",
-        "colorCode": "#DB4444",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "yellow",
-        "colorCode": "#ECB018",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "purple",
-        "colorCode": "#8684D4",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
+        "color": "",
+        "colorCode": "",
+        "colorImage": "",
+        "image": ""
       }
     ],
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/mcafee/Mcafee1.png",
+      "/images/product/mcafee/Mcafee1.png"
     ],
     "images": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/mcafee/Mcafee1.png",
+      "/images/product/mcafee/Mcafee1.png",
+      "/images/product/mcafee/Mcafee1.png",
+      "/images/product/mcafee/Mcafee1.png"
     ],
-    "description": "Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. Traditionally designed, they are perfect to be used in the any place where you need to store.",
+    "description": "Protect your devices with McAfee Premium Security for only $19. Offers complete antivirus and online protection, perfect for personal or business use with easy activation by code or email.",
     "action": "add to cart",
-    "slug": "kimono"
+    "slug": "mcafee-protection"
   },
   {
     "id": "9",
@@ -452,7 +431,7 @@
     ],
     "description": "Create stunning videos with CapCut Pro 1-Year Subscription for only $20. Packed with premium effects and tools, it’s perfect for editors who want smooth performance and easy activation by code or email.",
     "action": "quick shop",
-    "slug": "CupCut activation"
+    "slug": "CupCut-activation"
   },
   {
     "id": "10",
@@ -536,7 +515,7 @@
     ],
     "description": "Get lifetime access to Canva Pro — the ultimate design tool for creators and businesses. Enjoy premium templates, photos, and features to create stunning designs effortlessly, forever.",
     "action": "add to cart",
-    "slug": "Canva Pro"
+    "slug": "Canva-Pro"
   },
 
   {
@@ -619,7 +598,7 @@
     ],
     "description": "Unlock your creativity with Adobe Cloud 1-Year Subscription for only $50. Includes all premium Adobe apps and tools, perfect for designers and creators with easy activation by code or email.",
     "action": "quick shop",
-    "slug": "Adobe cloud creative"
+    "slug": "Adobe-cloud-creative"
   },
   {
     "id": "14",
@@ -659,7 +638,7 @@
     ],
     "description": "Manage your documents easily with Adobe Acrobat Pro Lifetime for only $20. Enjoy all premium PDF tools and features, perfect for professionals and students with quick activation by code or email.",
     "action": "quick shop",
-    "slug": "Adobe Acrobat"
+    "slug": "Adobe-Acrobat"
   },
   {
     "id": "15",
