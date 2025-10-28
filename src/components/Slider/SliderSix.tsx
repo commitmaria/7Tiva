@@ -30,7 +30,7 @@ const SliderSix = () => {
                   <div className="text-content basis-1/2">
                     <div className="text-sub-display">Sale! Up To 50% Off!</div>
                     <div className="text-display md:mt-5 mt-2">
-                      Summer Sale Collections
+                      Summer Digital Sale Collection
                     </div>
                     <Link
                       href="/shop/breadcrumb-img"
@@ -58,7 +58,7 @@ const SliderSix = () => {
                   <div className="text-content basis-1/2">
                     <div className="text-sub-display">Sale! Up To 50% Off!</div>
                     <div className="text-display md:mt-5 mt-2">
-                      Digital for Every Occasion
+                      Everything in digital products
                     </div>
                     <Link
                       href="/shop/breadcrumb-img"
@@ -86,7 +86,7 @@ const SliderSix = () => {
                   <div className="text-content basis-1/2">
                     <div className="text-sub-display">Sale! Up To 50% Off!</div>
                     <div className="text-display md:mt-5 mt-2">
-                      Stylish Looks for Any Season
+                      Everything in digital products
                     </div>
                     <Link
                       href="/shop/breadcrumb-img"

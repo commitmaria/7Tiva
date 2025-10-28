@@ -34,7 +34,7 @@ const SliderSeven = () => {
                       Sale! Up To 50% Off!
                     </div>
                     <div className="text-display text-center md:mt-4 mt-2">
-                      Summer Sale Collections
+                      Summer Digital Sale Collection
                     </div>
                     <Link
                       href="/shop/breadcrumb-img"

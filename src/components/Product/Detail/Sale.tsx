@@ -629,15 +629,18 @@ const Sale: React.FC<Props> = ({ data, productId }) => {
                   <div className="left">
                     <div className="heading6">Description</div>
                     <div className="text-secondary mt-2">
-                      Keep your home organized, yet elegant with storage
-                      cabinets by Onita Patio Furniture. These cabinets not only
-                      make a great storage units, but also bring a great
-                      decorative accent to your decor. Traditionally designed,
-                      they are perfect to be used in the hallway, living room,
-                      bedroom, office or any place where you need to store or
-                      display things. Made of high quality materials, they are
-                      sturdy and durable for years. Bring one-of-a-kind look to
-                      your interior with furniture from Onita Furniture!
+                      This is a fully licensed digital product, legally provided
+                      through our network of authorized partners and
+                      distributors to ensure a safe and reliable experience. We
+                      do not sell or provide any cracked or pirated versions;
+                      every license comes directly from an official provider or
+                      authorized distributor. Once your payment is completed,
+                      you will immediately receive a message containing a
+                      download link or license code along with step-by-step
+                      activation instructions. Our support team is available to
+                      assist you with any activation or usage issues. We are
+                      committed to transparency, compliance with the law, and
+                      respecting intellectual property rights.
                     </div>
                   </div>
                   <div className="right">
@@ -646,34 +649,36 @@ const Sale: React.FC<Props> = ({ data, productId }) => {
                       <div className="item flex gap-1 text-secondary mt-1">
                         <Icon.Dot size={28} />
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit.
+                          This is a fully licensed digital product, legally
+                          provided through our authorized partners.
                         </p>
                       </div>
                       <div className="item flex gap-1 text-secondary mt-1">
                         <Icon.Dot size={28} />
                         <p>
-                          Nulla luctus libero quis mauris vestibulum dapibus.
+                          We do not provide cracked or pirated versions; each
+                          license comes from an official distributor.
                         </p>
                       </div>
                       <div className="item flex gap-1 text-secondary mt-1">
                         <Icon.Dot size={28} />
                         <p>
-                          Maecenas ullamcorper erat mi, vel consequat enim
-                          suscipit at.
+                          After payment, you will immediately receive a download
+                          link or license code with step-by-step instructions.
                         </p>
                       </div>
                       <div className="item flex gap-1 text-secondary mt-1">
                         <Icon.Dot size={28} />
                         <p>
-                          Quisque consectetur nibh ac urna molestie scelerisque.
+                          Our support team is ready to assist with any
+                          activation or usage issues you may encounter.
                         </p>
                       </div>
                       <div className="item flex gap-1 text-secondary mt-1">
                         <Icon.Dot size={28} />
                         <p>
-                          Mauris in nisl scelerisque massa consectetur pretium
-                          sed et mauris.
+                          We guarantee full compliance with legal and
+                          intellectual property regulations.
                         </p>
                       </div>
                     </div>

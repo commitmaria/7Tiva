@@ -732,15 +732,19 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                     <div className="left">
                       <div className="heading6">Description</div>
                       <div className="text-secondary mt-2">
-                        Keep your home organized, yet elegant with storage
-                        cabinets by Onita Patio Furniture. These cabinets not
-                        only make a great storage units, but also bring a great
-                        decorative accent to your decor. Traditionally designed,
-                        they are perfect to be used in the hallway, living room,
-                        bedroom, office or any place where you need to store or
-                        display things. Made of high quality materials, they are
-                        sturdy and durable for years. Bring one-of-a-kind look
-                        to your interior with furniture from Onita Furniture!
+                        This is a fully licensed digital product, legally
+                        provided through our network of authorized partners and
+                        distributors to ensure a safe and reliable experience.
+                        We do not sell or provide any cracked or pirated
+                        versions; every license comes directly from an official
+                        provider or authorized distributor. Once your payment is
+                        completed, you will immediately receive a message
+                        containing a download link or license code along with
+                        step-by-step activation instructions. Our support team
+                        is available to assist you with any activation or usage
+                        issues. We are committed to transparency, compliance
+                        with the law, and respecting intellectual property
+                        rights.
                       </div>
                     </div>
                     <div className="right">

@@ -93,12 +93,12 @@ const SliderEleven = () => {
               <SwiperSlide>
                 <div className="slider-item h-full w-full flex items-center bg-linear relative">
                   <div className="text-content relative z-[1] md:pl-[60px] pl-5 basis-1/2">
-                    <div className="text-button-uppercase">Fresh and Tasty</div>
+                    <div className="text-button-uppercase">Smart and Digital</div>
                     <div className="heading2 lg:mt-3 mt-2">
-                      Summer Sale Collections
+                      Summer Digital Sale Collection
                     </div>
                     <div className="body1 lg:mt-4 mt-3">
-                      Discover the beauty of Digital living
+                      Discover the beauty of digital products.
                     </div>
                     <Link
                       href="/shop/breadcrumb-img"
