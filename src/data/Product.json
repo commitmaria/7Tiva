@@ -82,7 +82,7 @@
   {
     "id": "3",
     "category": "Digital",
-    "type": "Subscriptions",
+    "type": "top",
     "name": "Apple One 1-Year Subscription",
     "gender": "All",
     "new": false,
@@ -162,7 +162,7 @@
   {
     "id": "5",
     "category": "Digital",
-    "type": "d-apps",
+    "type": "Subscriptions",
     "name": "ExpressVPN 1-Year Subscription",
     "gender": "All",
     "new": true,
@@ -203,7 +203,7 @@
   {
     "id": "6",
     "category": "Digital",
-    "type": "d-apps",
+    "type": "Subscriptions",
     "name": "Avast Premium Security 1-Year Subscription",
     "gender": "All",
     "new": true,
@@ -283,7 +283,7 @@
   {
     "id": "8",
     "category": "Digital",
-    "type": "d-apps",
+    "type": "Subscriptions",
     "name": "McAfee Total Protection 1-Year Subscription",
     "gender": "All",
     "new": false,
@@ -362,7 +362,7 @@
   },
   {
     "id": "10",
-    "category": "Digital",
+    "category": "top",
     "type": "d-apps",
     "name": "AutoDesk 3-Years Subscription",
     "gender": "All",
@@ -406,7 +406,7 @@
   {
     "id": "11",
     "category": "Digital",
-    "type": "d-apps",
+    "type": "Subscriptions",
     "name": "Kaspersky Full Security 1-Year Subscription",
     "gender": "all",
     "new": false,
@@ -448,7 +448,7 @@
   {
     "id": "12",
     "category": "Digital",
-    "type": "d-apps",
+    "type": "top",
     "name": "Photoshop 1-Year Subscription",
     "gender": "All",
     "new": false,
@@ -489,7 +489,7 @@
   {
     "id": "13",
     "category": "Digital",
-    "type": "d-apps",
+    "type": "top",
     "name": "Adobe Cloud Official 1-Year Subscription",
     "gender": "All",
     "new": true,
@@ -530,7 +530,7 @@
   {
     "id": "14",
     "category": "Digital",
-    "type": "d-apps",
+    "type": "tools",
     "name": "Adobe Acrobat Pro Lifetime Subscription",
     "gender": "All",
     "new": true,
@@ -611,67 +611,50 @@
     "id": "16",
     "category": "Digital",
     "type": "top",
-    "name": "Kimono sleeve top",
-    "gender": "women",
+    "name": "Canva Pro Private Account Lifetime",
+    "gender": "All",
     "new": false,
     "sale": true,
     "rate": 5,
-    "price": 24,
-    "originPrice": 32,
-    "brand": "adidas",
+    "price": 14.45,
+    "originPrice": 32.45,
+    "brand": "canva",
     "sold": 12,
     "quantity": 100,
     "quantityPurchase": 1,
     "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
+      "C"
     ],
     "variation": [
       {
-        "color": "green",
-        "colorCode": "#D2EF9A",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "red",
-        "colorCode": "#DB4444",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "yellow",
-        "colorCode": "#ECB018",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "purple",
-        "colorCode": "#8684D4",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
+        "color": "",
+        "colorCode": "",
+        "colorImage": "",
+        "image": ""
       }
     ],
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/canvaprivate/Canvaproprivate1.png",
+      "/images/product/canvaprivate/Canvaproprivate1.png"
     ],
     "images": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/canvaprivate/Canvaproprivate1.png",
+      "/images/product/canvaprivate/Canvaproprivate1.png",
+      "/images/product/canvaprivate/Canvaproprivate1.png",
+      "/images/product/canvaprivate/Canvaproprivate1.png"
     ],
-    "description": "Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. Traditionally designed, they are perfect to be used in the any place where you need to store.",
+    "description": "Keep your creativity organized and effortless with Canva Private Account for only $14. Professionally designed for creators, it’s perfect for lifetime access to premium design tools and templates.",
     "action": "add to cart",
-    "slug": "kimono"
+    "slug": "canva-private"
   },
+
+
+
+
   {
     "id": "22",
     "category": "Digital",
-    "type": "d-apps",
+    "type": "subscriptions",
     "name": "d-apps Pockets",
     "gender": "men",
     "new": false,
@@ -729,10 +712,15 @@
     "action": "add to cart",
     "slug": "d-apps"
   },
+
+
+
+
+
   {
     "id": "23",
     "category": "Digital",
-    "type": "d-apps",
+    "type": "tools",
     "name": "d-apps Pockets",
     "gender": "men",
     "new": false,
@@ -791,129 +779,86 @@
     "action": "quick shop",
     "slug": "d-apps"
   },
+
   {
     "id": "17",
     "category": "Digital",
     "type": "d-apps",
-    "name": "mesh Code activation",
-    "gender": "women",
-    "new": true,
-    "sale": false,
+    "name": "Canva Pro Panel 500 Users Lifetime",
+    "gender": "All",
+    "new": false,
+    "sale": true,
     "rate": 4,
-    "price": 35,
-    "originPrice": 45,
-    "brand": "gucci",
+    "price": 15.45,
+    "originPrice": 30.45,
+    "brand": "canva",
     "sold": 22,
     "quantity": 100,
     "quantityPurchase": 1,
     "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
+      "C"
     ],
     "variation": [
       {
-        "color": "green",
-        "colorCode": "#D2EF9A",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "red",
-        "colorCode": "#DB4444",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "yellow",
-        "colorCode": "#ECB018",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "purple",
-        "colorCode": "#8684D4",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
+        "color": "",
+        "colorCode": "",
+        "colorImage": "",
+        "image": ""
       }
     ],
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/canvapanel500/Canvapanel500users1.png",
+      "/images/product/canvapanel500/Canvapanel500users1.png"
     ],
     "images": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/canvapanel500/Canvapanel500users1.png",
+      "/images/product/canvapanel500/Canvapanel500users1.png",
+      "/images/product/canvapanel500/Canvapanel500users1.png",
+      "/images/product/canvapanel500/Canvapanel500users1.png"
     ],
-    "description": "Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. Traditionally designed, they are perfect to be used in the any place where you need to store.",
+    "description": "Keep your team creative and productive with Canva Pro Panel for 500 users, available for lifetime access. Professionally built for businesses, it’s perfect for managing designs and collaboration in one place.",
     "action": "quick shop",
-    "slug": "mesh-Code activation"
+    "slug": "canva-pro-panel"
   },
   {
     "id": "18",
     "category": "Digital",
-    "type": "Code activation",
-    "name": "Raglan Sleeve d-apps",
-    "gender": "women",
+    "type": "top",
+    "name": "Canva Pro Panel 3000 Users Lifetime",
+    "gender": "All",
     "new": true,
     "sale": false,
     "rate": 5,
-    "price": 28,
-    "originPrice": 36,
-    "brand": "hermes",
+    "price": 30.45,
+    "originPrice": 60.45,
+    "brand": "canva",
     "sold": 46,
     "quantity": 200,
     "quantityPurchase": 1,
     "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL"
+      "C"
     ],
     "variation": [
       {
-        "color": "green",
-        "colorCode": "#D2EF9A",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "red",
-        "colorCode": "#DB4444",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "yellow",
-        "colorCode": "#ECB018",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
-      },
-      {
-        "color": "purple",
-        "colorCode": "#8684D4",
-        "colorImage": "/images/product/color/48x48.png",
-        "image": "/images/product/1000x1000.png"
+        "color": "",
+        "colorCode": "",
+        "colorImage": "",
+        "image": ""
       }
     ],
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/canvapanel3000/Canvapanel3000users1.png",
+      "/images/product/canvapanel3000/Canvapanel3000users1.png"
     ],
     "images": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/canvapanel3000/Canvapanel3000users1.png",
+      "/images/product/canvapanel3000/Canvapanel3000users1.png",
+      "/images/product/canvapanel3000/Canvapanel3000users1.png",
+      "/images/product/canvapanel3000/Canvapanel3000users1.png"
     ],
-    "description": "Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. Traditionally designed, they are perfect to be used in the any place where you need to store.",
+    "description": "Keep your business creative and organized with Canva Pro Panel for 3000 users, available for lifetime access at only $30. Perfect for managing large design teams and projects effortlessly.",
     "action": "quick shop",
-    "slug": "Code activation"
+    "slug": "canva-pro-panel-3000"
   },
   {
     "id": "19",

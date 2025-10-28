@@ -598,35 +598,37 @@ const Grouped: React.FC<Props> = ({ data, productId }) => {
                         <div className="item flex gap-1 text-secondary mt-1">
                           <Icon.Dot size={28} />
                           <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit.
+                            This is a fully licensed digital product, legally
+                            provided through our authorized partners.
                           </p>
                         </div>
                         <div className="item flex gap-1 text-secondary mt-1">
                           <Icon.Dot size={28} />
                           <p>
-                            Nulla luctus libero quis mauris vestibulum dapibus.
+                            We do not provide cracked or pirated versions; each
+                            license comes from an official distributor.
                           </p>
                         </div>
                         <div className="item flex gap-1 text-secondary mt-1">
                           <Icon.Dot size={28} />
                           <p>
-                            Maecenas ullamcorper erat mi, vel consequat enim
-                            suscipit at.
+                            After payment, you will immediately receive a
+                            download link or license code with step-by-step
+                            instructions.
                           </p>
                         </div>
                         <div className="item flex gap-1 text-secondary mt-1">
                           <Icon.Dot size={28} />
                           <p>
-                            Quisque consectetur nibh ac urna molestie
-                            scelerisque.
+                            Our support team is ready to assist with any
+                            activation or usage issues you may encounter.
                           </p>
                         </div>
                         <div className="item flex gap-1 text-secondary mt-1">
                           <Icon.Dot size={28} />
                           <p>
-                            Mauris in nisl scelerisque massa consectetur pretium
-                            sed et mauris.
+                            We guarantee full compliance with legal and
+                            intellectual property regulations.
                           </p>
                         </div>
                       </div>

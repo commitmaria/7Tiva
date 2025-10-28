@@ -78,25 +78,25 @@ const Footer = () => {
                       className="caption1 has-line-before duration-300 w-fit"
                       href={"/shop/breadcrumb1"}
                     >
-                      Women
+                      Apps
                     </Link>
                     <Link
                       className="caption1 has-line-before duration-300 w-fit pt-2"
                       href={"/shop/breadcrumb1"}
                     >
-                      Men
+                      Software
                     </Link>
                     <Link
                       className="caption1 has-line-before duration-300 w-fit pt-2"
                       href={"/shop/breadcrumb1"}
                     >
-                      Clothes
+                      Subscriptions
                     </Link>
                     <Link
                       className="caption1 has-line-before duration-300 w-fit pt-2"
                       href={"/shop/breadcrumb1"}
                     >
-                      Accessories
+                      Serial Keys
                     </Link>
                     <Link
                       className="caption1 has-line-before duration-300 w-fit pt-2"
@@ -119,7 +119,7 @@ const Footer = () => {
                       className="caption1 has-line-before duration-300 w-fit pt-2"
                       href={"/pages/faqs"}
                     >
-                      Shipping
+                      Delivery
                     </Link>
                     <Link
                       className="caption1 has-line-before duration-300 w-fit pt-2"
@@ -177,7 +177,7 @@ const Footer = () => {
             <div className="footer-bottom py-3 flex items-center justify-between gap-5 max-lg:justify-center max-lg:flex-col border-t border-line">
               <div className="left flex items-center gap-8">
                 <div className="copyright caption1 text-secondary">
-                  ©2023 shopclud. All Rights Reserved.
+                  ©{new Date().getFullYear()} shopclud. All Rights Reserved.
                 </div>
                 <div className="select-block flex items-center gap-5 max-md:hidden">
                   <div className="choose-language flex items-center gap-1.5">

@@ -753,35 +753,37 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                         <div className="item flex gap-1 text-secondary mt-1">
                           <Icon.Dot size={28} />
                           <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit.
+                            This is a fully licensed digital product, legally
+                            provided through our authorized partners.
                           </p>
                         </div>
                         <div className="item flex gap-1 text-secondary mt-1">
                           <Icon.Dot size={28} />
                           <p>
-                            Nulla luctus libero quis mauris vestibulum dapibus.
+                            We do not provide cracked or pirated versions; each
+                            license comes from an official distributor.
                           </p>
                         </div>
                         <div className="item flex gap-1 text-secondary mt-1">
                           <Icon.Dot size={28} />
                           <p>
-                            Maecenas ullamcorper erat mi, vel consequat enim
-                            suscipit at.
+                            After payment, you will immediately receive a
+                            download link or license code with step-by-step
+                            instructions.
                           </p>
                         </div>
                         <div className="item flex gap-1 text-secondary mt-1">
                           <Icon.Dot size={28} />
                           <p>
-                            Quisque consectetur nibh ac urna molestie
-                            scelerisque.
+                            Our support team is ready to assist with any
+                            activation or usage issues you may encounter.
                           </p>
                         </div>
                         <div className="item flex gap-1 text-secondary mt-1">
                           <Icon.Dot size={28} />
                           <p>
-                            Mauris in nisl scelerisque massa consectetur pretium
-                            sed et mauris.
+                            We guarantee full compliance with legal and
+                            intellectual property regulations.
                           </p>
                         </div>
                       </div>
@@ -790,34 +792,35 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                   <div className="grid lg:grid-cols-4 grid-cols-2 gap-[30px] md:mt-10 mt-6">
                     <div className="item">
                       <div className="icon-delivery-truck text-4xl"></div>
-                      <div className="heading6 mt-4">Shipping Faster</div>
+                      <div className="heading6 mt-4">Instant Delivery</div>
                       <div className="text-secondary mt-2">
-                        Use on walls, furniture, doors and many more surfaces.
-                        The possibilities are endless.
+                        Receive your license or download link immediately after
+                        purchase. Start using the product without delay.
                       </div>
                     </div>
                     <div className="item">
                       <div className="icon-cotton text-4xl"></div>
-                      <div className="heading6 mt-4">Cotton Material</div>
+                      <div className="heading6 mt-4">Fully Licensed</div>
                       <div className="text-secondary mt-2">
-                        Use on walls, furniture, doors and many more surfaces.
-                        The possibilities are endless.
+                        Every product is legally provided through authorized
+                        partners and distributors. No cracks or pirated
+                        versions.
                       </div>
                     </div>
                     <div className="item">
                       <div className="icon-guarantee text-4xl"></div>
                       <div className="heading6 mt-4">High Quality</div>
                       <div className="text-secondary mt-2">
-                        Use on walls, furniture, doors and many more surfaces.
-                        The possibilities are endless.
+                        Our support team is available to assist with activation
+                        or usage issues, ensuring a smooth experience.
                       </div>
                     </div>
                     <div className="item">
                       <div className="icon-leaves-compatible text-4xl"></div>
-                      <div className="heading6 mt-4">highly compatible</div>
+                      <div className="heading6 mt-4">100% Legal & Safe</div>
                       <div className="text-secondary mt-2">
-                        Use on walls, furniture, doors and many more surfaces.
-                        The possibilities are endless.
+                        We guarantee full compliance with legal and intellectual
+                        property regulations for peace of mind.
                       </div>
                     </div>
                   </div>

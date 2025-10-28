@@ -673,34 +673,30 @@ const BoughtTogether: React.FC<Props> = ({ data, productId }) => {
                 <div className="grid lg:grid-cols-4 grid-cols-2 gap-[30px] md:mt-10 mt-6">
                   <div className="item">
                     <div className="icon-delivery-truck text-4xl"></div>
-                    <div className="heading6 mt-4">Shipping Faster</div>
+                    <div className="heading6 mt-4">Instant Delivery</div>
                     <div className="text-secondary mt-2">
-                      Use on walls, furniture, doors and many more surfaces. The
-                      possibilities are endless.
+                      Receive your license or download link immediately after purchase. Start using the product without delay.
                     </div>
                   </div>
                   <div className="item">
                     <div className="icon-cotton text-4xl"></div>
-                    <div className="heading6 mt-4">Cotton Material</div>
+                    <div className="heading6 mt-4">Fully Licensed</div>
                     <div className="text-secondary mt-2">
-                      Use on walls, furniture, doors and many more surfaces. The
-                      possibilities are endless.
+                      Every product is legally provided through authorized partners and distributors. No cracks or pirated versions.
                     </div>
                   </div>
                   <div className="item">
                     <div className="icon-guarantee text-4xl"></div>
                     <div className="heading6 mt-4">High Quality</div>
                     <div className="text-secondary mt-2">
-                      Use on walls, furniture, doors and many more surfaces. The
-                      possibilities are endless.
+                      Our support team is available to assist with activation or usage issues, ensuring a smooth experience.
                     </div>
                   </div>
                   <div className="item">
                     <div className="icon-leaves-compatible text-4xl"></div>
-                    <div className="heading6 mt-4">highly compatible</div>
+                    <div className="heading6 mt-4">100% Legal & Safe</div>
                     <div className="text-secondary mt-2">
-                      Use on walls, furniture, doors and many more surfaces. The
-                      possibilities are endless.
+                      We guarantee full compliance with legal and intellectual property regulations for peace of mind..
                     </div>
                   </div>
                 </div>
