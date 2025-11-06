@@ -69,9 +69,9 @@ export default function RootLayout({
           {/* Yandex */}
           <meta name="yandex-verification" content="e14503bce1b56e8a" />
         </head>
-        <body className={instrument.className}>
-          <SpeedInsights />
+        <body className={instrument.className}>        
           {children}
+          <SpeedInsights />
           <ModalCart serverTimeLeft={serverTimeLeft} />
           <ModalWishlist />
           <ModalSearch />
