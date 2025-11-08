@@ -41,7 +41,7 @@ const Checkout = () => {
     <PayPalScriptProvider
       options={{
         clientId:
-          "Your PayPal id Here",
+          "AYW-U8C4ouJJ4EP3_AZt_6R5OOnWvo1eXnWpJzCz3IJTE0sDaZWk84aWmriEh5l_ia0j3PuNiUuDihLr",
         currency: "USD",
       }}
     >
