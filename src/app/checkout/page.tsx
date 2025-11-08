@@ -17,6 +17,7 @@ const Checkout = () => {
   const ship = Number(searchParams.get("ship") || 0);
 
   const { cartState } = useCart();
+  const productMain = cartState.cartArray[0]; // assuming single product checkout
 
   // Correct total calculation using reduce
   const totalCart = cartState.cartArray.reduce(
@@ -193,6 +194,58 @@ const Checkout = () => {
                                   Pay securely with PayPal. Your order will be
                                   processed immediately.
                                 </div>
+
+                                {/* Buy Now button */}
+                                <div className="w-full max-w-sm mx-auto space-y-4">
+                                  {/* Buy Now button (PayPal style) */}
+                                  {productMain?.paypalLink ? (
+                                    <a
+                                      href={productMain.paypalLink}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className="w-full text-center bg-[#FFC439] hover:bg-[#FFB800] text-black font-semibold text-base py-3 px-6 rounded-lg inline-block transition-colors duration-200"
+                                    >
+                                      Buy Now
+                                    </a>
+                                  ) : (
+                                    <button
+                                      disabled
+                                      className="w-full text-center bg-[#FFC439] text-black font-semibold text-base py-3 px-6 rounded-lg cursor-not-allowed opacity-60 transition-colors duration-200"
+                                    >
+                                      Buy Now
+                                    </button>
+                                  )}
+
+                                  {/* Divider */}
+                                  <div className="flex items-center">
+                                    <hr className="flex-grow border-gray-300" />
+                                    <span className="mx-2 text-gray-500 text-sm">
+                                      or pay with card
+                                    </span>
+                                    <hr className="flex-grow border-gray-300" />
+                                  </div>
+
+                                  {/* Debit/Credit Card button (black/grey) */}
+                                  {productMain?.paypalLink ? (
+                                    <a
+                                      href={productMain.paypalLink}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className="w-full text-center bg-black hover:bg-gray-800 text-white font-semibold text-base py-3 px-6 rounded-lg inline-block transition-colors duration-200"
+                                    >
+                                      Debit / Credit Card
+                                    </a>
+                                  ) : (
+                                    <button
+                                      disabled
+                                      className="w-full text-center bg-gray-700 text-white font-semibold text-base py-3 px-6 rounded-lg cursor-not-allowed opacity-60 transition-colors duration-200"
+                                    >
+                                      Debit / Credit Card
+                                    </button>
+                                  )}
+                                </div>
+
+                                {/*
                                 <PayPalButtons
                                   style={{
                                     layout: "vertical",
@@ -266,6 +319,7 @@ const Checkout = () => {
                                     }
                                   }}
                                 />
+                                */}
                               </div>
                             </div>
                           )}

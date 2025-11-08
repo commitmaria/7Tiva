@@ -136,6 +136,7 @@
     "sold": 14,
     "quantity": 100,
     "quantityPurchase": 1,
+    "paypalLink": "https://www.paypal.com/ncp/payment/GALUJPDDNH2GS",
     "sizes": ["C"],
     "variation": 
     [
@@ -335,6 +336,7 @@
     "sold": 12,
     "quantity": 100,
     "quantityPurchase": 1,
+    "paypalLink": "https://www.paypal.com/ncp/payment/TN6DMN6YK3SWQ",
     "sizes": [
       "C"
     ],

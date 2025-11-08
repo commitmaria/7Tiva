@@ -427,12 +427,62 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                     <div className="type bg-surface p-5 border border-line rounded-lg open">
                       <div className="infor">
                         {/* keep your explanatory text if you want (optional) */}
-                        <div className="text-on-surface-variant1 pt-4 mb-3">
+                        <div className="text-center text-on-surface-variant1 pt-4 mb-3">
                           Pay securely with PayPal. Your order will be processed
                           immediately.
                         </div>
 
                         {/* PayPal Buttons (TypeScript-safe) */}
+                        <div className="w-full max-w-sm mx-auto space-y-4">
+                          {/* Pay Now button (PayPal style) */}
+                          {productMain?.paypalLink ? (
+                            <a
+                              href={productMain.paypalLink} // Redirects to PayPal
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="w-full text-center bg-[#FFC439] hover:bg-[#FFB800] text-black font-semibold text-base py-3 px-6 rounded-lg inline-block transition-colors duration-200"
+                            >
+                              Pay Now
+                            </a>
+                          ) : (
+                            <button
+                              disabled
+                              className="w-full text-center bg-[#FFC439] text-black font-semibold text-base py-3 px-6 rounded-lg cursor-not-allowed opacity-60 dark:bg-black dark:text-white dark:opacity-60 transition-colors duration-200"
+                            >
+                              Pay Now
+                            </button>
+                          )}
+
+                          {/* Divider */}
+                          <div className="flex items-center">
+                            <hr className="flex-grow border-gray-300" />
+                            <span className="mx-2 text-gray-500 text-sm">
+                              or pay with card
+                            </span>
+                            <hr className="flex-grow border-gray-300" />
+                          </div>
+
+                          {/* Debit/Credit Card button (black/grey) */}
+                          {productMain?.paypalLink ? (
+                            <a
+                              href={productMain.paypalLink} // Same link as PayPal
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="w-full text-center bg-black hover:bg-gray-800 text-white font-semibold text-base py-3 px-6 rounded-lg inline-block transition-colors duration-200"
+                            >
+                              Debit / Credit Card
+                            </a>
+                          ) : (
+                            <button
+                              disabled
+                              className="w-full text-center bg-gray-700 text-white font-semibold text-base py-3 px-6 rounded-lg cursor-not-allowed opacity-60 transition-colors duration-200"
+                            >
+                              Debit / Credit Card
+                            </button>
+                          )}
+                        </div>
+
+                        {/* 
                         <PayPalButtons
                           style={{
                             layout: "vertical",
@@ -502,7 +552,8 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                               "An error occurred during payment. Please try again."
                             );
                           }}
-                        />
+                        />  
+                        */}
                       </div>
                     </div>
                   </div>
