@@ -14,6 +14,7 @@
     "sold": 12,
     "quantity": 100,
     "quantityPurchase": 1,
+    "paypalLink": "https://www.paypal.com/ncp/payment/39YADKSJSB8LG",
     "sizes": [
       "N"
     ],
@@ -43,7 +44,7 @@
     "id": "2",
     "category": "Digital",
     "type": "d-apps",
-    "name": "Chatgpt Plus Subscription",
+    "name": "Chatgpt Plus 1-Year Subscription",
     "gender": "All",
     "new": true,
     "sale": false,
@@ -54,6 +55,7 @@
     "sold": 23,
     "quantity": 200,
     "quantityPurchase": 1,
+    "paypalLink": "https://www.paypal.com/ncp/payment/98HSUSLSQJU6A",
     "sizes": [
       "C"
     ],
@@ -94,6 +96,7 @@
     "sold": 15,
     "quantity": 80,
     "quantityPurchase": 1,
+    "paypalLink": "https://www.paypal.com/ncp/payment/K6JWXTSQZYZ9Y",
     "sizes": [
       "A"
     ],
@@ -175,6 +178,7 @@
     "sold": 21,
     "quantity": 100,
     "quantityPurchase": 1,
+    "paypalLink": "https://www.paypal.com/ncp/payment/FBHKRLF2GTNRG",
     "sizes": [
       "E"
     ],
@@ -216,6 +220,7 @@
     "sold": 19,
     "quantity": 200,
     "quantityPurchase": 1,
+    "paypalLink": "https://www.paypal.com/ncp/payment/YUXTE3AD3TUYL",
     "sizes": [
       "A"
     ],
@@ -256,6 +261,7 @@
     "sold": 22,
     "quantity": 80,
     "quantityPurchase": 1,
+    "paypalLink": "https://www.paypal.com/ncp/payment/4VCPPJQBFS2G8",
     "sizes": [
       "N"
     ],
@@ -296,6 +302,7 @@
     "sold": 45,
     "quantity": 100,
     "quantityPurchase": 1,
+    "paypalLink": "https://www.paypal.com/ncp/payment/FW4CJVCRVAZSY",
     "sizes": [
       "M"
     ],
@@ -377,6 +384,7 @@
     "sold": 12,
     "quantity": 200,
     "quantityPurchase": 1,
+    "paypalLink": "https://www.paypal.com/ncp/payment/J7N3NM983BVDN",
     "sizes": [
       "L"
     ],
@@ -420,6 +428,7 @@
     "sold": 14,
     "quantity": 80,
     "quantityPurchase": 1,
+    "paypalLink": "https://www.paypal.com/ncp/payment/8V9N5BAVPJJ9E",
     "sizes": [
       "K"
     ],
@@ -462,6 +471,7 @@
     "sold": 17,
     "quantity": 100,
     "quantityPurchase": 1,
+    "paypalLink": "https://www.paypal.com/ncp/payment/C258MWP4A5P3N",
     "sizes": [
       "A"
     ],
@@ -503,6 +513,7 @@
     "sold": 39,
     "quantity": 100,
     "quantityPurchase": 1,
+    "paypalLink": "https://www.paypal.com/ncp/payment/4YNLHZMZ76CSW",
     "sizes": [
       "A"
     ],
@@ -544,6 +555,7 @@
     "sold": 9,
     "quantity": 200,
     "quantityPurchase": 1,
+    "paypalLink": "https://www.paypal.com/ncp/payment/8Q6T9VVYHFNK8",
     "sizes": [
       "A"
     ],
@@ -584,6 +596,7 @@
     "sold": 8,
     "quantity": 80,
     "quantityPurchase": 1,
+    "paypalLink": "https://www.paypal.com/ncp/payment/23ER4DNU89FJE",
     "sizes": [
       "Y"
     ],
@@ -624,6 +637,7 @@
     "sold": 12,
     "quantity": 100,
     "quantityPurchase": 1,
+    "paypalLink": "https://www.paypal.com/ncp/payment/LMU8BK98WZFL4",
     "sizes": [
       "C"
     ],
@@ -797,6 +811,7 @@
     "sold": 22,
     "quantity": 100,
     "quantityPurchase": 1,
+    "paypalLink": "https://www.paypal.com/ncp/payment/JZX7CKGNB88JY",
     "sizes": [
       "C"
     ],
@@ -837,6 +852,7 @@
     "sold": 46,
     "quantity": 200,
     "quantityPurchase": 1,
+    "paypalLink": "https://www.paypal.com/ncp/payment/93QZAN592H6JU",
     "sizes": [
       "C"
     ],
