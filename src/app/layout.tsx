@@ -10,6 +10,7 @@ import ModalCompare from "@/components/Modal/ModalCompare";
 import CountdownTimeType from "@/type/CountdownType";
 import { countdownTime } from "@/store/countdownTime";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 const serverTimeLeft: CountdownTimeType = countdownTime();
 
@@ -77,6 +78,7 @@ export default function RootLayout({
         <body className={instrument.className}>        
           {children}
           <SpeedInsights />
+          <Analytics />
           <ModalCart serverTimeLeft={serverTimeLeft} />
           <ModalWishlist />
           <ModalSearch />
