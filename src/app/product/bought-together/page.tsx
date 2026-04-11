@@ -1,32 +1,36 @@
-'use client'
-import React from 'react'
-import { useSearchParams } from 'next/navigation';
+import React, { Suspense } from 'react'
 import TopNavOne from '@/components/Header/TopNav/TopNavOne'
 import MenuOne from '@/components/Header/Menu/MenuOne'
 import BreadcrumbProduct from '@/components/Breadcrumb/BreadcrumbProduct'
-import BoughtTogether from '@/components/Product/Detail/BoughtTogether';
 import Footer from '@/components/Footer/Footer'
+import BoughtTogetherClient from './BoughtTogetherClient'
 import productData from '@/data/Product.json'
 
-const ProductBoughtTogether = () => {
-    const searchParams = useSearchParams()
-    let productId = searchParams.get('id')
+const ProductBoughtTogetherPage = () => {
+  return (
+    <>
+      <TopNavOne
+        props="style-one bg-black"
+        slogan="New customers save 10% with the code GET10"
+      />
+      <div id="header" className="relative w-full">
+        <MenuOne props="bg-white" />
+        {/* Render breadcrumb with default productId, safe for SSR */}
+        <BreadcrumbProduct
+          data={productData}
+          productPage="bought-together"
+          productId="1"
+        />
+      </div>
 
-    if (productId === null) {
-        productId = '1'
-    }
+      {/* Client component wrapped in Suspense */}
+      <Suspense fallback={<div>Loading products...</div>}>
+        <BoughtTogetherClient data={productData} />
+      </Suspense>
 
-    return (
-        <>
-            <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
-            <div id="header" className='relative w-full'>
-                <MenuOne props="bg-white" />
-                <BreadcrumbProduct data={productData} productPage='bought-together' productId={productId} />
-            </div>
-            <BoughtTogether data={productData} productId={productId} />
-            <Footer />
-        </>
-    )
+      <Footer />
+    </>
+  )
 }
 
-export default ProductBoughtTogether
+export default ProductBoughtTogetherPage

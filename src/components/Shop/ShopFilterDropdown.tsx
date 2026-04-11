@@ -244,7 +244,7 @@ const ShopFilterDropdown: React.FC<Props> = ({
                   "d-apps",
                   "Subscriptions",
                   "top",
-                  "swimwear",
+                  "streaming",
                   "Code activation",
                 ].map((item, index) => (
                   <div
@@ -444,10 +444,10 @@ const ShopFilterDropdown: React.FC<Props> = ({
                     "d-apps",
                     "Subscriptions",
                     "top",
-                    "swimwear",
+                    "streaming",
                     "Code activation",
-                    "underwear",
-                    "sets",
+                    "BusinessTools",
+                    "SofTools",
                     "accessories",
                   ].map((item, index) => (
                     <div

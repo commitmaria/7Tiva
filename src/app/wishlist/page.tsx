@@ -189,10 +189,10 @@ const Wishlist = () => {
                       "d-apps",
                       "Subscriptions",
                       "top",
-                      "swimwear",
+                      "streaming",
                       "Code activation",
-                      "underwear",
-                      "sets",
+                      "BusinessTools",
+                      "SofTools",
                       "accessories",
                     ].map((item, index) => (
                       <option

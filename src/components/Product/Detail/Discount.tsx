@@ -153,7 +153,7 @@ const Discount: React.FC<Props> = ({ data, productId }) => {
   return (
     <>
       <div className="product-detail grouped">
-        <div className="featured-product underwear md:pt-8 md:pb-[60px] pt-6 pb-8 bg-linear">
+        <div className="featured-product BusinessTools md:pt-8 md:pb-[60px] pt-6 pb-8 bg-linear">
           <div className="container flex justify-between gap-y-6 flex-wrap">
             <div className="list-img md:w-1/2 md:pr-[45px] w-full">
               <Swiper

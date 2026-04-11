@@ -199,10 +199,10 @@ const MenuYoga = () => {
                       </li>
                       <li>
                         <Link
-                          href="/homepages/underwear"
+                          href="/homepages/BusinessTools"
                           className="text-secondary duration-300"
                         >
-                          Home Underwear
+                          Home BusinessTools
                         </Link>
                       </li>
                     </ul>
@@ -1547,14 +1547,14 @@ const MenuYoga = () => {
                         <ul>
                           <li>
                             <Link
-                              href="/homepages/underwear"
+                              href="/homepages/BusinessTools"
                               className={`nav-item-mobile text-secondary duration-300 ${
-                                pathname === "/homepages/underwear"
+                                pathname === "/homepages/BusinessTools"
                                   ? "active"
                                   : ""
                               }`}
                             >
-                              Home Underwear
+                              Home BusinessTools
                             </Link>
                           </li>
                           <li>

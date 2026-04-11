@@ -227,12 +227,12 @@ const MenuWatch: React.FC<Props> = ({ props }) => {
                       </li>
                       <li>
                         <Link
-                          href="/homepages/underwear"
+                          href="/homepages/BusinessTools"
                           className={`text-secondary duration-300 ${
-                            pathname === "/homepages/underwear" ? "active" : ""
+                            pathname === "/homepages/BusinessTools" ? "active" : ""
                           }`}
                         >
-                          Home Underwear
+                          Home BusinessTools
                         </Link>
                       </li>
                     </ul>
@@ -1582,14 +1582,14 @@ const MenuWatch: React.FC<Props> = ({ props }) => {
                         <ul>
                           <li>
                             <Link
-                              href="/homepages/underwear"
+                              href="/homepages/BusinessTools"
                               className={`nav-item-mobile text-secondary duration-300 ${
-                                pathname === "/homepages/underwear"
+                                pathname === "/homepages/BusinessTools"
                                   ? "active"
                                   : ""
                               }`}
                             >
-                              Home Underwear
+                              Home BusinessTools
                             </Link>
                           </li>
                           <li>

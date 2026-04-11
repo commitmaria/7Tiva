@@ -149,7 +149,7 @@ const BoughtTogether: React.FC<Props> = ({ data, productId }) => {
   return (
     <>
       <div className="product-detail sale">
-        <div className="featured-product underwear md:py-20 py-10">
+        <div className="featured-product BusinessTools md:py-20 py-10">
           <div className="container flex justify-between gap-y-6 flex-wrap">
             <div className="list-img grid grid-cols-2 gap-5 h-fit md:w-1/2 md:pr-[45px] w-full">
               {productMain.images.map((item, index) => (

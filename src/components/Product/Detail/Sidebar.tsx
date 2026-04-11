@@ -168,7 +168,7 @@ const Sidebar: React.FC<Props> = ({ data, productId }) => {
   return (
     <>
       <div className="product-detail sale sidebar">
-        <div className="featured-product underwear md:py-20 py-10">
+        <div className="featured-product BusinessTools md:py-20 py-10">
           <div className="container flex justify-between gap-y-6 flex-wrap max-sm:flex-col-reverse">
             <div className="sidebar lg:w-1/4 sm:w-[40%] lg:pr-12 sm:pr-10 w-full">
               <div className="filter-type pb-8 border-b border-line">
@@ -178,10 +178,10 @@ const Sidebar: React.FC<Props> = ({ data, productId }) => {
                     "d-apps",
                     "Subscriptions",
                     "top",
-                    "swimwear",
+                    "streaming",
                     "Code activation",
-                    "underwear",
-                    "sets",
+                    "BusinessTools",
+                    "SofTools",
                     "accessories",
                   ].map((item, index) => (
                     <div

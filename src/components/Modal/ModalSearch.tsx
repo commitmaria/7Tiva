@@ -66,9 +66,9 @@ const ModalSearch = () => {
               </div>
               <div
                 className="item px-4 py-1.5 border border-line rounded-full cursor-pointer duration-300 hover:bg-black hover:text-white"
-                onClick={() => handleSearch("underwear")}
+                onClick={() => handleSearch("BusinessTools")}
               >
-                Underwear
+                BusinessTools
               </div>
               <div
                 className="item px-4 py-1.5 border border-line rounded-full cursor-pointer duration-300 hover:bg-black hover:text-white"

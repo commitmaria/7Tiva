@@ -1,32 +1,34 @@
-'use client'
-import React from 'react'
-import { useSearchParams } from 'next/navigation';
+import React, { Suspense } from 'react'
 import TopNavOne from '@/components/Header/TopNav/TopNavOne'
 import MenuOne from '@/components/Header/Menu/MenuOne'
 import BreadcrumbProduct from '@/components/Breadcrumb/BreadcrumbProduct'
-import OutOfStock from '@/components/Product/Detail/OutOfStock';
+import OutOfStockClient from './OutOfStockClient'
 import Footer from '@/components/Footer/Footer'
 import productData from '@/data/Product.json'
 
-const ProductOutOfStock = () => {
-    const searchParams = useSearchParams()
-    let productId = searchParams.get('id')
+const ProductOutOfStockPage = () => {
+  return (
+    <>
+      <TopNavOne
+        props="style-one bg-black"
+        slogan="New customers save 10% with the code GET10"
+      />
+      <div id="header" className="relative w-full">
+        <MenuOne props="bg-white" />
+        <BreadcrumbProduct
+          data={productData}
+          productPage="out-of-stock"
+          productId="1"
+        />
+      </div>
 
-    if (productId === null) {
-        productId = '1'
-    }
+      <Suspense fallback={<div>Loading product...</div>}>
+        <OutOfStockClient />
+      </Suspense>
 
-    return (
-        <>
-            <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
-            <div id="header" className='relative w-full'>
-                <MenuOne props="bg-white" />
-                <BreadcrumbProduct data={productData} productPage='out-of-stock' productId={productId} />
-            </div>
-            <OutOfStock data={productData} productId={productId} />
-            <Footer />
-        </>
-    )
+      <Footer />
+    </>
+  )
 }
 
-export default ProductOutOfStock
+export default ProductOutOfStockPage

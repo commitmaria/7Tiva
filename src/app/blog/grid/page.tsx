@@ -23,7 +23,7 @@ const BlogGrid = () => {
 
     let filteredData = blogData.filter(blog => {
         let isCategoryMatched = true
-        isCategoryMatched = blog.category !== 'underwear'
+        isCategoryMatched = blog.category !== 'BusinessTools'
 
         return isCategoryMatched
     })

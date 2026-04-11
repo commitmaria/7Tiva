@@ -33,7 +33,7 @@ const BestSellers: React.FC<Props> = ({ data, start, limit }) => {
                 "top",
                 "d-apps",
                 "Subscriptions",
-                "sets",
+                "SofTools",
                 "Code activation",
               ].map((type) => (
                 <div

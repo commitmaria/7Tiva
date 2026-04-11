@@ -1,32 +1,36 @@
-'use client'
-import React from 'react'
-import { useSearchParams } from 'next/navigation';
+import React, { Suspense } from 'react'
 import TopNavOne from '@/components/Header/TopNav/TopNavOne'
 import MenuOne from '@/components/Header/Menu/MenuOne'
 import BreadcrumbProduct from '@/components/Breadcrumb/BreadcrumbProduct'
-import External from '@/components/Product/Detail/External';
 import Footer from '@/components/Footer/Footer'
+import CombinedTwoClient from './CombinedTwoClient'
 import productData from '@/data/Product.json'
 
-const ProductCombinedTwo = () => {
-    const searchParams = useSearchParams()
-    let productId = searchParams.get('id')
+const ProductCombinedTwoPage = () => {
+  return (
+    <>
+      <TopNavOne
+        props="style-one bg-black"
+        slogan="New customers save 10% with the code GET10"
+      />
+      <div id="header" className="relative w-full">
+        <MenuOne props="bg-white" />
+        {/* Breadcrumb is SSR-safe with default id */}
+        <BreadcrumbProduct
+          data={productData}
+          productPage="external"
+          productId="1"
+        />
+      </div>
 
-    if (productId === null) {
-        productId = '1'
-    }
+      {/* Client component inside Suspense */}
+      <Suspense fallback={<div>Loading product...</div>}>
+        <CombinedTwoClient data={productData} />
+      </Suspense>
 
-    return (
-        <>
-            <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
-            <div id="header" className='relative w-full'>
-                <MenuOne props="bg-white" />
-                <BreadcrumbProduct data={productData} productPage='external' productId={productId} />
-            </div>
-            <External data={productData} productId={productId} />
-            <Footer />
-        </>
-    )
+      <Footer />
+    </>
+  )
 }
 
-export default ProductCombinedTwo
+export default ProductCombinedTwoPage

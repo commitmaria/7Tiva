@@ -225,7 +225,7 @@ const ShopFilterOptions: React.FC<Props> = ({ data, productPerPage }) => {
                   "d-apps",
                   "Subscriptions",
                   "top",
-                  "swimwear",
+                  "streaming",
                   "Code activation",
                 ].map((item, index) => (
                   <div
@@ -322,10 +322,10 @@ const ShopFilterOptions: React.FC<Props> = ({ data, productPerPage }) => {
                       "d-apps",
                       "Subscriptions",
                       "top",
-                      "swimwear",
+                      "streaming",
                       "Code activation",
-                      "underwear",
-                      "sets",
+                      "BusinessTools",
+                      "SofTools",
                       "accessories",
                     ].map((item, index) => (
                       <option

@@ -13,17 +13,22 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const serverTimeLeft: CountdownTimeType = countdownTime();
 
-const instrument = Instrument_Sans({ subsets: ["latin"] });
+const instrument = Instrument_Sans({
+  subsets: ["latin"],
+  variable: "--font-instrument-sans",
+  display: "swap",
+});
+
 
 export const metadata: Metadata = {
   title: "ShopClud | Best Digital Products & Exclusive Deals Online",
   description:
-    "Discover high-quality digital products at ShopClud. Enjoy exclusive deals, fast delivery, and secure checkout on sets, eBooks, courses, and more.",
+    "Discover high-quality digital products at ShopClud. Enjoy exclusive deals, fast delivery, and secure checkout on SofTools, eBooks, courses, and more.",
 
   openGraph: {
     title: "ShopClud | Best Digital Products & Exclusive Deals Online",
     description:
-      "Discover high-quality digital products at ShopClud. Enjoy exclusive deals, fast delivery, and secure checkout on sets, eBooks, courses, and more.",
+      "Discover high-quality digital products at ShopClud. Enjoy exclusive deals, fast delivery, and secure checkout on SofTools, eBooks, courses, and more.",
     url: "https://www.shopclud.com",
     siteName: "ShopClud",
     images: [
@@ -42,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ShopClud | Best Digital Products & Exclusive Deals Online",
     description:
-      "Discover high-quality digital products at ShopClud. Enjoy exclusive deals, fast delivery, and secure checkout on sets, eBooks, courses, and more.",
+      "Discover high-quality digital products at ShopClud. Enjoy exclusive deals, fast delivery, and secure checkout on SofTools, eBooks, courses, and more.",
     images: ["https://www.shopclud.com/open_graph.jpeg"],
   },
 };
@@ -54,7 +59,7 @@ export default function RootLayout({
 }) {
   return (
     <GlobalProvider>
-      <html lang="en">
+      <html lang="en" className={instrument.variable}>
         <head>
           {/* Google */}
           <meta

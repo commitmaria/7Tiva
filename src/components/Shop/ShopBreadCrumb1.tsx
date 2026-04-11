@@ -250,7 +250,7 @@ const ShopBreadCrumb1: React.FC<Props> = ({
                   "d-apps",
                   "Subscriptions",
                   "top",
-                  "swimwear",
+                  "streaming",
                   "Code activation",
                 ].map((item, index) => (
                   <div
@@ -280,10 +280,10 @@ const ShopBreadCrumb1: React.FC<Props> = ({
                     "d-apps",
                     "Subscriptions",
                     "top",
-                    "swimwear",
+                    "streaming",
                     "Code activation",
-                    "underwear",
-                    "sets",
+                    "BusinessTools",
+                    "SofTools",
                     "accessories",
                   ].map((item, index) => (
                     <div

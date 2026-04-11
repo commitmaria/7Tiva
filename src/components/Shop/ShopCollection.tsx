@@ -134,7 +134,7 @@ const ShopCollection: React.FC<Props> = ({ data }) => {
               <div className="main flex max-sm:flex-wrap gap-y-8 items-center justify-between">
                 <div className="bg-img sm:w-1/2 lg:pr-[90px] sm:pr-14">
                   <Image
-                    src={"/images/collection/outerwear.png"}
+                    src={"/images/collection/OnlineServices.png"}
                     width={3000}
                     height={3000}
                     alt="bg"

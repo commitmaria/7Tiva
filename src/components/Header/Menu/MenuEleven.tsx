@@ -447,10 +447,10 @@ const MenuEleven = () => {
                           </li>
                           <li>
                             <Link
-                              href="/homepages/underwear"
+                              href="/homepages/BusinessTools"
                               className="text-secondary duration-300"
                             >
-                              Home Underwear
+                              Home BusinessTools
                             </Link>
                           </li>
                         </ul>
@@ -585,11 +585,11 @@ const MenuEleven = () => {
                                   <li>
                                     <div
                                       onClick={() =>
-                                        handleTypeClick("outerwear")
+                                        handleTypeClick("OnlineServices")
                                       }
                                       className={`link text-secondary duration-300 cursor-pointer`}
                                     >
-                                      Outerwear | Coats
+                                      OnlineServices | Coats
                                     </div>
                                   </li>
                                   <li>
@@ -654,11 +654,11 @@ const MenuEleven = () => {
                                   <li>
                                     <div
                                       onClick={() =>
-                                        handleTypeClick("swimwear")
+                                        handleTypeClick("streaming")
                                       }
                                       className={`link text-secondary duration-300 cursor-pointer`}
                                     >
-                                      Swimwear | Underwear
+                                      Streaming | BusinessTools
                                     </div>
                                   </li>
                                   <li>
@@ -930,7 +930,7 @@ const MenuEleven = () => {
                             <div className="banner-ads-block pl-2.5 basis-1/3">
                               <div
                                 className="banner-ads-item bg-linear rounded-2xl relative overflow-hidden cursor-pointer"
-                                onClick={() => handleTypeClick("swimwear")}
+                                onClick={() => handleTypeClick("streaming")}
                               >
                                 <div className="text-content py-14 pl-8 relative z-[1]">
                                   <div className="text-button-uppercase text-white bg-red px-2 py-0.5 inline-block rounded-sm">
@@ -938,7 +938,7 @@ const MenuEleven = () => {
                                   </div>
                                   <div className="heading6 mt-2">
                                     Dive into Savings <br />
-                                    on Swimwear
+                                    on Streaming
                                   </div>
                                   <div className="body1 mt-3 text-secondary">
                                     Starting at{" "}
@@ -1933,14 +1933,14 @@ const MenuEleven = () => {
                         <ul>
                           <li>
                             <Link
-                              href="/homepages/underwear"
+                              href="/homepages/BusinessTools"
                               className={`nav-item-mobile text-secondary duration-300 ${
-                                pathname === "/homepages/underwear"
+                                pathname === "/homepages/BusinessTools"
                                   ? "active"
                                   : ""
                               }`}
                             >
-                              Home Underwear
+                              Home BusinessTools
                             </Link>
                           </li>
                           <li>
@@ -2109,10 +2109,10 @@ const MenuEleven = () => {
                               </li>
                               <li>
                                 <div
-                                  onClick={() => handleTypeClick("outerwear")}
+                                  onClick={() => handleTypeClick("OnlineServices")}
                                   className={`link text-secondary duration-300 cursor-pointer`}
                                 >
-                                  Outerwear | Coats
+                                  OnlineServices | Coats
                                 </div>
                               </li>
                               <li>
@@ -2392,7 +2392,7 @@ const MenuEleven = () => {
                         <div className="banner-ads-block grid sm:grid-cols-2 items-center gap-6 pt-6">
                           <div
                             className="banner-ads-item bg-linear rounded-2xl relative overflow-hidden"
-                            onClick={() => handleTypeClick("swimwear")}
+                            onClick={() => handleTypeClick("streaming")}
                           >
                             <div className="text-content py-14 pl-8 relative z-[1]">
                               <div className="text-button-uppercase text-white bg-red px-2 py-0.5 inline-block rounded-sm">
@@ -2400,7 +2400,7 @@ const MenuEleven = () => {
                               </div>
                               <div className="heading6 mt-2">
                                 Dive into Savings <br />
-                                on Swimwear
+                                on Streaming
                               </div>
                               <div className="body1 mt-3 text-secondary">
                                 Starting at{" "}

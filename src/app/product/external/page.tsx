@@ -1,32 +1,34 @@
-'use client'
-import React from 'react'
-import { useSearchParams } from 'next/navigation';
+import React, { Suspense } from 'react'
 import TopNavOne from '@/components/Header/TopNav/TopNavOne'
 import MenuOne from '@/components/Header/Menu/MenuOne'
 import BreadcrumbProduct from '@/components/Breadcrumb/BreadcrumbProduct'
-import External from '@/components/Product/Detail/External';
+import ExternalProductClient from './ExternalProductClient'
 import Footer from '@/components/Footer/Footer'
 import productData from '@/data/Product.json'
 
-const ProductExternal = () => {
-    const searchParams = useSearchParams()
-    let productId = searchParams.get('id')
+const ProductExternalPage = () => {
+  return (
+    <>
+      <TopNavOne
+        props="style-one bg-black"
+        slogan="New customers save 10% with the code GET10"
+      />
+      <div id="header" className="relative w-full">
+        <MenuOne props="bg-white" />
+        <BreadcrumbProduct
+          data={productData}
+          productPage="external"
+          productId="1"
+        />
+      </div>
 
-    if (productId === null) {
-        productId = '1'
-    }
+      <Suspense fallback={<div>Loading product...</div>}>
+        <ExternalProductClient data={productData} />
+      </Suspense>
 
-    return (
-        <>
-            <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
-            <div id="header" className='relative w-full'>
-                <MenuOne props="bg-white" />
-                <BreadcrumbProduct data={productData} productPage='external' productId={productId} />
-            </div>
-            <External data={productData} productId={productId} />
-            <Footer />
-        </>
-    )
+      <Footer />
+    </>
+  )
 }
 
-export default ProductExternal
+export default ProductExternalPage

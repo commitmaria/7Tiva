@@ -148,7 +148,7 @@ const FixedPrice: React.FC<Props> = ({ data, productId }) => {
   return (
     <>
       <div className="product-detail grouped">
-        <div className="featured-product underwear">
+        <div className="featured-product BusinessTools">
           <div className="container md:pt-20 pt-10">
             <div className="list-img grid md:grid-rows-2 md:grid-cols-3 grid-cols-2 lg:gap-[30px] gap-4 w-full">
               <div

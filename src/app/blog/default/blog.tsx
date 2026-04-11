@@ -36,7 +36,7 @@ const BlogDefault = () => {
     let isCategoryMatched = true;
     if (category) {
       isCategoryMatched =
-        blog.category === category && blog.category !== "underwear";
+        blog.category === category && blog.category !== "BusinessTools";
     }
 
     return isCategoryMatched;

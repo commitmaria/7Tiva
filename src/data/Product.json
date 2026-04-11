@@ -1358,7 +1358,7 @@
   {
     "id": "28",
     "category": "Digital",
-    "type": "underwear",
+    "type": "BusinessTools",
     "name": "Kimono sleeve top",
     "gender": "women",
     "new": false,
@@ -1419,7 +1419,7 @@
   {
     "id": "29",
     "category": "Digital",
-    "type": "swimwear",
+    "type": "streaming",
     "name": "mesh Code activation",
     "gender": "women",
     "new": true,
@@ -1480,7 +1480,7 @@
   {
     "id": "30",
     "category": "Digital",
-    "type": "swimwear",
+    "type": "streaming",
     "name": "Raglan Sleeve d-apps",
     "gender": "women",
     "new": true,
@@ -1543,7 +1543,7 @@
   {
     "id": "31",
     "category": "Digital",
-    "type": "underwear",
+    "type": "BusinessTools",
     "name": "Off-the-Shoulder Blouse",
     "gender": "women",
     "new": false,
@@ -1601,7 +1601,7 @@
   {
     "id": "32",
     "category": "Digital",
-    "type": "swimwear",
+    "type": "streaming",
     "name": "Kimono sleeve top",
     "gender": "women",
     "new": false,
@@ -1662,7 +1662,7 @@
   {
     "id": "33",
     "category": "Digital",
-    "type": "underwear",
+    "type": "BusinessTools",
     "name": "d-apps Pockets",
     "gender": "women",
     "new": true,
@@ -1724,7 +1724,7 @@
   {
     "id": "34",
     "category": "Digital",
-    "type": "underwear",
+    "type": "BusinessTools",
     "name": "d-apps Pockets",
     "gender": "women",
     "new": true,
@@ -1779,7 +1779,7 @@
   {
     "id": "35",
     "category": "Digital",
-    "type": "swimwear",
+    "type": "streaming",
     "name": "d-apps Pockets",
     "gender": "women",
     "new": true,
@@ -1835,7 +1835,7 @@
   {
     "id": "36",
     "category": "Digital",
-    "type": "swimwear",
+    "type": "streaming",
     "name": "d-apps Pockets",
     "gender": "women",
     "new": false,
@@ -1885,7 +1885,7 @@
   {
     "id": "37",
     "category": "Digital",
-    "type": "swimwear",
+    "type": "streaming",
     "name": "Code activation Pockets",
     "gender": "women",
     "new": true,
@@ -1941,7 +1941,7 @@
   {
     "id": "38",
     "category": "Digital",
-    "type": "swimwear",
+    "type": "streaming",
     "name": "d-apps Pockets",
     "gender": "women",
     "new": false,
@@ -1991,7 +1991,7 @@
   {
     "id": "39",
     "category": "Digital",
-    "type": "swimwear",
+    "type": "streaming",
     "name": "d-apps Pockets",
     "gender": "women",
     "new": false,
@@ -6703,8 +6703,8 @@
   {
     "id": "141",
     "category": "Digital",
-    "type": "outerwear",
-    "name": "women office outerwear",
+    "type": "OnlineServices",
+    "name": "women office OnlineServices",
     "gender": "women",
     "new": false,
     "sale": true,
@@ -6750,8 +6750,8 @@
   {
     "id": "142",
     "category": "Digital",
-    "type": "outerwear",
-    "name": "men outerwear",
+    "type": "OnlineServices",
+    "name": "men OnlineServices",
     "gender": "men",
     "new": true,
     "sale": false,

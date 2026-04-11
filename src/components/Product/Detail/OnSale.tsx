@@ -166,7 +166,7 @@ const OnSale: React.FC<Props> = ({ data, productId }) => {
   return (
     <>
       <div className="product-detail grouped">
-        <div className="featured-product underwear">
+        <div className="featured-product BusinessTools">
           <div className="list-img slider-main w-full">
             <Swiper
               slidesPerView={2}

@@ -1,32 +1,31 @@
-'use client'
-import React from 'react'
-import { useSearchParams } from 'next/navigation';
+import React, { Suspense } from 'react'
 import TopNavOne from '@/components/Header/TopNav/TopNavOne'
 import MenuOne from '@/components/Header/Menu/MenuOne'
 import BreadcrumbProduct from '@/components/Breadcrumb/BreadcrumbProduct'
-import Discount from '@/components/Product/Detail/Discount';
+import DiscountProductClient from './DiscountProductClient'
 import Footer from '@/components/Footer/Footer'
 import productData from '@/data/Product.json'
 
-const ProductDiscount = () => {
-    const searchParams = useSearchParams()
-    let productId = searchParams.get('id')
+const ProductDiscountPage = () => {
+  return (
+    <>
+      <TopNavOne
+        props="style-one bg-black"
+        slogan="New customers save 10% with the code GET10"
+      />
+      <div id="header" className="relative w-full style-discount">
+        <MenuOne props="bg-white" />
+        {/* Breadcrumb is safe to render in SSR */}
+        <BreadcrumbProduct data={productData} productPage="discount" productId="1" />
+      </div>
 
-    if (productId === null) {
-        productId = '1'
-    }
+      <Suspense fallback={<div>Loading product...</div>}>
+        <DiscountProductClient data={productData} />
+      </Suspense>
 
-    return (
-        <>
-            <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
-            <div id="header" className='relative w-full style-discount'>
-                <MenuOne props="bg-white" />
-                <BreadcrumbProduct data={productData} productPage='discount' productId={productId} />
-            </div>
-            <Discount data={productData} productId={productId} />
-            <Footer />
-        </>
-    )
+      <Footer />
+    </>
+  )
 }
 
-export default ProductDiscount
+export default ProductDiscountPage

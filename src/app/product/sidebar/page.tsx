@@ -1,34 +1,30 @@
-'use client'
-import React, { useState } from 'react'
-import { useSearchParams } from 'next/navigation';
-import Link from 'next/link'
+import React, { Suspense } from 'react'
 import TopNavOne from '@/components/Header/TopNav/TopNavOne'
 import MenuOne from '@/components/Header/Menu/MenuOne'
 import BreadcrumbProduct from '@/components/Breadcrumb/BreadcrumbProduct'
-import Sidebar from '@/components/Product/Detail/Sidebar';
+import SidebarClient from './SidebarClient'
 import Footer from '@/components/Footer/Footer'
-import { ProductType } from '@/type/ProductType'
 import productData from '@/data/Product.json'
 
-const ProductSidebar = () => {
-    const searchParams = useSearchParams()
-    let productId = searchParams.get('id')
+const ProductSidebarPage = () => {
+  return (
+    <>
+      <TopNavOne
+        props="style-one bg-black"
+        slogan="New customers save 10% with the code GET10"
+      />
+      <div id="header" className="relative w-full">
+        <MenuOne props="bg-white" />
+        <BreadcrumbProduct data={productData} productPage="sidebar" productId="1" />
+      </div>
 
-    if (productId === null) {
-        productId = '1'
-    }
+      <Suspense fallback={<div>Loading product...</div>}>
+        <SidebarClient />
+      </Suspense>
 
-    return (
-        <>
-            <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
-            <div id="header" className='relative w-full'>
-                <MenuOne props="bg-white" />
-                <BreadcrumbProduct data={productData} productPage='sidebar' productId={productId} />
-            </div>
-            <Sidebar data={productData} productId={productId} />
-            <Footer />
-        </>
-    )
+      <Footer />
+    </>
+  )
 }
 
-export default ProductSidebar
+export default ProductSidebarPage

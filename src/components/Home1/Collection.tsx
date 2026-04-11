@@ -48,18 +48,18 @@ const Collection = () => {
             <SwiperSlide>
               <div
                 className="collection-item block relative rounded-2xl overflow-hidden cursor-pointer"
-                onClick={() => handleTypeClick("swimwear")}
+                onClick={() => handleTypeClick("streaming")}
               >
                 <div className="bg-img">
                   <Image
-                    src={"/images/collection/swimwear.png"}
+                    src={"/images/collection/streaming.png"}
                     width={1000}
                     height={600}
-                    alt="swimwear"
+                    alt="streaming"
                   />
                 </div>
                 <div className="collection-name heading5 text-center sm:bottom-8 bottom-4 lg:w-[200px] md:w-[160px] w-[100px] md:py-3 py-1.5 bg-white rounded-xl duration-500">
-                  swimwear
+                  streaming
                 </div>
               </div>
             </SwiperSlide>
@@ -84,54 +84,54 @@ const Collection = () => {
             <SwiperSlide>
               <div
                 className="collection-item block relative rounded-2xl overflow-hidden cursor-pointer"
-                onClick={() => handleTypeClick("sets")}
+                onClick={() => handleTypeClick("SofTools")}
               >
                 <div className="bg-img">
                   <Image
-                    src={"/images/collection/sets.png"}
+                    src={"/images/collection/SofTools.png"}
                     width={1000}
                     height={600}
-                    alt="sets"
+                    alt="SofTools"
                   />
                 </div>
                 <div className="collection-name heading5 text-center sm:bottom-8 bottom-4 lg:w-[200px] md:w-[160px] w-[100px] md:py-3 py-1.5 bg-white rounded-xl duration-500">
-                  sets
+                  SofTools
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div
                 className="collection-item block relative rounded-2xl overflow-hidden cursor-pointer"
-                onClick={() => handleTypeClick("outerwear")}
+                onClick={() => handleTypeClick("OnlineServices")}
               >
                 <div className="bg-img">
                   <Image
-                    src={"/images/collection/outerwear.png"}
+                    src={"/images/collection/OnlineServices.png"}
                     width={1000}
                     height={600}
-                    alt="outerwear"
+                    alt="OnlineServices"
                   />
                 </div>
                 <div className="collection-name heading5 text-center sm:bottom-8 bottom-4 lg:w-[200px] md:w-[160px] w-[100px] md:py-3 py-1.5 bg-white rounded-xl duration-500">
-                  outerwear
+                  OnlineServices
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div
                 className="collection-item block relative rounded-2xl overflow-hidden cursor-pointer"
-                onClick={() => handleTypeClick("underwear")}
+                onClick={() => handleTypeClick("BusinessTools")}
               >
                 <div className="bg-img">
                   <Image
-                    src={"/images/collection/underwear.png"}
+                    src={"/images/collection/BusinessTools.png"}
                     width={1000}
                     height={600}
-                    alt="underwear"
+                    alt="BusinessTools"
                   />
                 </div>
                 <div className="collection-name heading5 text-center sm:bottom-8 bottom-4 lg:w-[200px] md:w-[160px] w-[100px] md:py-3 py-1.5 bg-white rounded-xl duration-500">
-                  underwear
+                  BusinessTools
                 </div>
               </div>
             </SwiperSlide>

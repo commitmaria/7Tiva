@@ -1,34 +1,25 @@
-'use client'
-import React, { useState } from 'react'
-import { useSearchParams } from 'next/navigation';
-import Link from 'next/link'
+import React, { Suspense } from 'react'
 import TopNavOne from '@/components/Header/TopNav/TopNavOne'
 import MenuOne from '@/components/Header/Menu/MenuOne'
 import BreadcrumbProduct from '@/components/Breadcrumb/BreadcrumbProduct'
-import Default from '@/components/Product/Detail/Default';
 import Footer from '@/components/Footer/Footer'
-import { ProductType } from '@/type/ProductType'
 import productData from '@/data/Product.json'
+import ThumbnailLeftClient from './ThumbnailLeftClient'
 
-const ProductThumbnailLeft = () => {
-    const searchParams = useSearchParams()
-    let productId = searchParams.get('id')
+export default function ProductThumbnailLeftPage() {
+  return (
+    <>
+      <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
+      <div id="header" className='relative w-full'>
+        <MenuOne props="bg-white" />
+        <BreadcrumbProduct data={productData} productPage='default' productId='1' />
+      </div>
 
-    if (productId === null) {
-        productId = '1'
-    }
+      <Suspense fallback={<div>Loading product...</div>}>
+        <ThumbnailLeftClient />
+      </Suspense>
 
-    return (
-        <>
-            <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
-            <div id="header" className='relative w-full'>
-                <MenuOne props="bg-white" />
-                <BreadcrumbProduct data={productData} productPage='default' productId={productId} />
-            </div>
-            <Default data={productData} productId={productId} />
-            <Footer />
-        </>
-    )
+      <Footer />
+    </>
+  )
 }
-
-export default ProductThumbnailLeft
