@@ -29,7 +29,7 @@ const Footer = () => {
                     <span className="text-button mt-3">address:</span>
                   </div>
                   <div className="flex flex-col ">
-                    <span className="">alexdev.end@gmail.com</span>
+                    <span className="">orders@codeclud.com</span>
                     <span className="mt-3">+34 667 34 56 69</span>
                     <span className="mt-3 pt-px">
                       Unit 122569 London W1A 6US United Kingdom

@@ -73,7 +73,7 @@ const ContactUs = () => {
                 <p className="mt-1">
                   Email:{" "}
                   <span className="whitespace-nowrap">
-                    alexdev.end@gmail.com
+                    orders@codeclud.com
                   </span>
                 </p>
               </div>

@@ -213,9 +213,9 @@ const Sidebar: React.FC<Props> = ({ data, productId }) => {
                   <div className="item flex gap-4">
                     <div className="icon-delivery-truck text-4xl"></div>
                     <div>
-                      <div className="text-title">Free Shipping</div>
+                      <div className="text-title">Instant Download</div>
                       <div className="text-secondary mt-1">
-                        Free Shipping for orders over $90
+                        Instant Download for orders over $90
                       </div>
                     </div>
                   </div>

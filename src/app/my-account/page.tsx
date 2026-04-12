@@ -52,7 +52,7 @@ const MyAccount = () => {
                     Tony Nguyen
                   </div>
                   <div className="mail heading6 font-normal normal-case text-secondary text-center mt-1">
-                    alexdev.end@gmail.com
+                    orders@codeclud.com
                   </div>
                 </div>
                 <div className="menu-tab w-full max-w-none lg:mt-10 mt-6">
@@ -1120,7 +1120,7 @@ const MyAccount = () => {
                         className="border-line mt-2 px-4 py-3 w-full rounded-lg"
                         id="email"
                         type="email"
-                        defaultValue={"alexdev.end@gmail.com"}
+                        defaultValue={"orders@codeclud.com"}
                         placeholder="Email address"
                         required
                       />
@@ -1230,7 +1230,7 @@ const MyAccount = () => {
                   (+12) 345 - 678910
                 </h6>
                 <h6 className="heading6 normal-case order_email mt-2">
-                  alexdev.end@gmail.com
+                  orders@codeclud.com
                 </h6>
               </div>
               <div className="info_item">

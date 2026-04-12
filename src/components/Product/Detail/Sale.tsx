@@ -568,9 +568,9 @@ const Sale: React.FC<Props> = ({ data, productId }) => {
                 <div className="item flex items-center gap-3 mt-4">
                   <div className="icon-delivery-truck text-4xl"></div>
                   <div>
-                    <div className="text-title">Free shipping</div>
+                    <div className="text-title">Instant Download</div>
                     <div className="caption1 text-secondary mt-1">
-                      Free shipping on orders over $75.
+                      You have 30 minutes to request a refund if you are not satisfied with your purchase to receive your money immediately. After one hour, you will need to contact support to open a refund ticket..
                     </div>
                   </div>
                 </div>

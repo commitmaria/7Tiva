@@ -380,7 +380,7 @@ const Cart = () => {
                           />
                         )}
                         <label className="pl-1" htmlFor="shipping">
-                          Free Shipping:
+                          Instant Download:
                         </label>
                       </div>
                       <div className="type mt-1">

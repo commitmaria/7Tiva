@@ -63,7 +63,7 @@ const StoreList = () => {
                       <div className="text-secondary mt-2">
                         +1 666 234 8888
                         <br />
-                        alexdev.end@gmail.com
+                        orders@codeclud.com
                       </div>
                     </div>
                     <div className="w-1/2">
@@ -133,7 +133,7 @@ const StoreList = () => {
                       <div className="text-secondary mt-2">
                         +1 666 234 8888
                         <br />
-                        alexdev.end@gmail.com
+                        orders@codeclud.com
                       </div>
                     </div>
                     <div className="w-1/2">
@@ -217,7 +217,7 @@ const StoreList = () => {
                       <div className="text-secondary mt-2">
                         +1 666 234 8888
                         <br />
-                        alexdev.end@gmail.com
+                        orders@codeclud.com
                       </div>
                     </div>
                     <div className="w-1/2">
