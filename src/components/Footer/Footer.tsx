@@ -47,12 +47,7 @@ const Footer = () => {
                     >
                       Contact us
                     </Link>
-                    <Link
-                      className="caption1 has-line-before duration-300 w-fit pt-2"
-                      href={"#!"}
-                    >
-                      Career
-                    </Link>
+                    
                     <Link
                       className="caption1 has-line-before duration-300 w-fit pt-2"
                       href={"/my-account"}
