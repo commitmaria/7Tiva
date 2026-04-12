@@ -197,7 +197,7 @@ const Grouped: React.FC<Props> = ({ data, productId }) => {
                 {productMain.images.map((item, index) => (
                   <SwiperSlide
                     key={index}
-                    // className={`${activeImage === item ? 'swiper-slide-thumb-active' : ''}`}
+                  // className={`${activeImage === item ? 'swiper-slide-thumb-active' : ''}`}
                   >
                     <Image
                       src={item}
@@ -260,13 +260,12 @@ const Grouped: React.FC<Props> = ({ data, productId }) => {
                   <div className="heading4 mt-1">{productMain.name}</div>
                 </div>
                 <div
-                  className={`add-wishlist-btn w-12 h-12 flex items-center justify-center border border-line cursor-pointer rounded-xl duration-300 hover:bg-black hover:text-white ${
-                    wishlistState.wishlistArray.some(
-                      (item) => item.id === productMain.id
-                    )
+                  className={`add-wishlist-btn w-12 h-12 flex items-center justify-center border border-line cursor-pointer rounded-xl duration-300 hover:bg-black hover:text-white ${wishlistState.wishlistArray.some(
+                    (item) => item.id === productMain.id
+                  )
                       ? "active"
                       : ""
-                  }`}
+                    }`}
                   onClick={handleAddToWishlist}
                 >
                   {wishlistState.wishlistArray.some(
@@ -358,9 +357,8 @@ const Grouped: React.FC<Props> = ({ data, productId }) => {
                                 );
                               }
                             }}
-                            className={`${
-                              quantity[item.id] === 1 ? "disabled" : ""
-                            } cursor-pointer`}
+                            className={`${quantity[item.id] === 1 ? "disabled" : ""
+                              } cursor-pointer`}
                           />
                           <div className="body1 font-semibold">
                             {quantity[item.id] || 1}
@@ -409,8 +407,7 @@ const Grouped: React.FC<Props> = ({ data, productId }) => {
                     onSuccess={(details) => {
                       console.log("✅ PayPal payment completed:", details);
                       alert(
-                        `Payment successful! Transaction ID: ${
-                          details.id || details.orderID || "N/A"
+                        `Payment successful! Transaction ID: ${details.id || details.orderID || "N/A"
                         }`
                       );
                       // optionally: addToCart / updateCart or other post-payment flows here
@@ -579,18 +576,16 @@ const Grouped: React.FC<Props> = ({ data, productId }) => {
               <div className="desc-tab">
                 <div className="desc-block pb-6 border-b border-line mt-6">
                   <div
-                    className={`tab-item heading5 flex items-center justify-between cursor-pointer ${
-                      activeTab === "description" ? "active" : ""
-                    }`}
+                    className={`tab-item heading5 flex items-center justify-between cursor-pointer ${activeTab === "description" ? "active" : ""
+                      }`}
                     onClick={() => handleActiveTab("description")}
                   >
                     <span className="heading5">Description</span>
                     <Icon.CaretDown />
                   </div>
                   <div
-                    className={`desc-item md:pt-8 pt-5 description ${
-                      activeTab === "description" ? "open" : ""
-                    }`}
+                    className={`desc-item md:pt-8 pt-5 description ${activeTab === "description" ? "open" : ""
+                      }`}
                   >
                     <div className="right">
                       <div className="heading6">About This Products</div>
@@ -636,19 +631,20 @@ const Grouped: React.FC<Props> = ({ data, productId }) => {
                     <div className="left md:mt-8 mt-5">
                       <div className="heading6">Description</div>
                       <div className="text-secondary mt-2">
-                        This is a fully licensed digital product, legally
-                        provided through our network of authorized partners and
-                        distributors to ensure a safe and reliable experience.
-                        We do not sell or provide any cracked or pirated
-                        versions; every license comes directly from an official
-                        provider or authorized distributor. Once your payment is
-                        completed, you will immediately receive a message
-                        containing a download link or license code along with
-                        step-by-step activation instructions. Our support team
-                        is available to assist you with any activation or usage
-                        issues. We are committed to transparency, compliance
-                        with the law, and respecting intellectual property
-                        rights.
+                        100% Genuine & Licensed Digital Product
+
+                        This product is a fully licensed digital item, legally provided through our network of authorized partners and official distributors to guarantee a safe and reliable experience.
+
+                        We strictly do not sell or distribute any cracked, modified, or pirated versions. All licenses are sourced directly from official providers or verified distributors.
+
+                        Instant Delivery
+                        Once your payment is successfully completed, you will immediately receive a secure download link or license key along with clear, step-by-step activation instructions.
+
+                        Dedicated Support
+                        Our support team is available to assist you with installation, activation, or any questions you may have.
+
+                        Transparency & Compliance
+                        We are fully committed to legal compliance, respecting intellectual property rights, and providing a safe, transparent, and trustworthy service.
                       </div>
                     </div>
                     <div className="grid grid-cols-2 gap-[30px] md:mt-8 mt-5">
@@ -689,18 +685,16 @@ const Grouped: React.FC<Props> = ({ data, productId }) => {
                 </div>
                 <div className="desc-block pb-6 border-b border-line mt-6">
                   <div
-                    className={`tab-item heading5 flex items-center justify-between cursor-pointer ${
-                      activeTab === "specifications" ? "active" : ""
-                    }`}
+                    className={`tab-item heading5 flex items-center justify-between cursor-pointer ${activeTab === "specifications" ? "active" : ""
+                      }`}
                     onClick={() => handleActiveTab("specifications")}
                   >
                     <span className="heading5">Specifications</span>
                     <Icon.CaretDown />
                   </div>
                   <div
-                    className={`desc-item md:pt-8 pt-5 specifications flex items-center justify-center ${
-                      activeTab === "specifications" ? "open" : ""
-                    }`}
+                    className={`desc-item md:pt-8 pt-5 specifications flex items-center justify-center ${activeTab === "specifications" ? "open" : ""
+                      }`}
                   >
                     <div className="w-full">
                       <div className="item bg-surface flex items-center gap-8 py-3 px-10">
@@ -831,18 +825,16 @@ const Grouped: React.FC<Props> = ({ data, productId }) => {
                 </div>
                 <div className="desc-block mt-6">
                   <div
-                    className={`tab-item heading5 flex items-center justify-between cursor-pointer ${
-                      activeTab === "review" ? "active" : ""
-                    }`}
+                    className={`tab-item heading5 flex items-center justify-between cursor-pointer ${activeTab === "review" ? "active" : ""
+                      }`}
                     onClick={() => handleActiveTab("review")}
                   >
                     <span className="heading5">Review</span>
                     <Icon.CaretDown />
                   </div>
                   <div
-                    className={`desc-item md:pt-8 pt-5 review-block ${
-                      activeTab === "review" ? "open" : ""
-                    }`}
+                    className={`desc-item md:pt-8 pt-5 review-block ${activeTab === "review" ? "open" : ""
+                      }`}
                   >
                     <div className="top-overview">
                       <div className="left flex items-center justify-between w-full">

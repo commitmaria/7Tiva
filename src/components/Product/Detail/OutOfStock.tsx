@@ -192,7 +192,7 @@ const OutOfStock: React.FC<Props> = ({ data, productId }) => {
                 {productMain.images.map((item, index) => (
                   <SwiperSlide
                     key={index}
-                    // className={`${activeImage === item ? 'swiper-slide-thumb-active' : ''}`}
+                  // className={`${activeImage === item ? 'swiper-slide-thumb-active' : ''}`}
                   >
                     <Image
                       src={item}
@@ -255,13 +255,12 @@ const OutOfStock: React.FC<Props> = ({ data, productId }) => {
                   <div className="heading4 mt-1">{productMain.name}</div>
                 </div>
                 <div
-                  className={`add-wishlist-btn w-12 h-12 flex items-center justify-center border border-line cursor-pointer rounded-xl duration-300 hover:bg-black hover:text-white ${
-                    wishlistState.wishlistArray.some(
-                      (item) => item.id === productMain.id
-                    )
+                  className={`add-wishlist-btn w-12 h-12 flex items-center justify-center border border-line cursor-pointer rounded-xl duration-300 hover:bg-black hover:text-white ${wishlistState.wishlistArray.some(
+                    (item) => item.id === productMain.id
+                  )
                       ? "active"
                       : ""
-                  }`}
+                    }`}
                   onClick={handleAddToWishlist}
                 >
                   {wishlistState.wishlistArray.some(
@@ -349,9 +348,8 @@ const OutOfStock: React.FC<Props> = ({ data, productId }) => {
                   <div className="list-size flex items-center gap-2 flex-wrap mt-3">
                     {productMain.sizes.map((item, index) => (
                       <div
-                        className={`size-item ${
-                          item === "freesize" ? "px-3 py-2" : "w-12 h-12"
-                        } relative flex items-center justify-center text-button rounded-full bg-surface text-secondary2`}
+                        className={`size-item ${item === "freesize" ? "px-3 py-2" : "w-12 h-12"
+                          } relative flex items-center justify-center text-button rounded-full bg-surface text-secondary2`}
                         key={index}
                       >
                         {item}
@@ -533,25 +531,22 @@ const OutOfStock: React.FC<Props> = ({ data, productId }) => {
             <div className="flex items-center justify-center w-full">
               <div className="menu-tab flex items-center md:gap-[60px] gap-8">
                 <div
-                  className={`tab-item heading5 has-line-before text-secondary2 hover:text-black duration-300 ${
-                    activeTab === "description" ? "active" : ""
-                  }`}
+                  className={`tab-item heading5 has-line-before text-secondary2 hover:text-black duration-300 ${activeTab === "description" ? "active" : ""
+                    }`}
                   onClick={() => handleActiveTab("description")}
                 >
                   Description
                 </div>
                 <div
-                  className={`tab-item heading5 has-line-before text-secondary2 hover:text-black duration-300 ${
-                    activeTab === "specifications" ? "active" : ""
-                  }`}
+                  className={`tab-item heading5 has-line-before text-secondary2 hover:text-black duration-300 ${activeTab === "specifications" ? "active" : ""
+                    }`}
                   onClick={() => handleActiveTab("specifications")}
                 >
                   Specifications
                 </div>
                 <div
-                  className={`tab-item heading5 has-line-before text-secondary2 hover:text-black duration-300 ${
-                    activeTab === "review" ? "active" : ""
-                  }`}
+                  className={`tab-item heading5 has-line-before text-secondary2 hover:text-black duration-300 ${activeTab === "review" ? "active" : ""
+                    }`}
                   onClick={() => handleActiveTab("review")}
                 >
                   Review
@@ -560,26 +555,27 @@ const OutOfStock: React.FC<Props> = ({ data, productId }) => {
             </div>
             <div className="desc-block mt-8">
               <div
-                className={`desc-item description ${
-                  activeTab === "description" ? "open" : ""
-                }`}
+                className={`desc-item description ${activeTab === "description" ? "open" : ""
+                  }`}
               >
                 <div className="grid md:grid-cols-2 gap-8 gap-y-5">
                   <div className="left">
                     <div className="heading6">Description</div>
                     <div className="text-secondary mt-2">
-                      This is a fully licensed digital product, legally provided
-                      through our network of authorized partners and
-                      distributors to ensure a safe and reliable experience. We
-                      do not sell or provide any cracked or pirated versions;
-                      every license comes directly from an official provider or
-                      authorized distributor. Once your payment is completed,
-                      you will immediately receive a message containing a
-                      download link or license code along with step-by-step
-                      activation instructions. Our support team is available to
-                      assist you with any activation or usage issues. We are
-                      committed to transparency, compliance with the law, and
-                      respecting intellectual property rights.
+                      100% Genuine & Licensed Digital Product
+
+                      This product is a fully licensed digital item, legally provided through our network of authorized partners and official distributors to guarantee a safe and reliable experience.
+
+                      We strictly do not sell or distribute any cracked, modified, or pirated versions. All licenses are sourced directly from official providers or verified distributors.
+
+                      Instant Delivery
+                      Once your payment is successfully completed, you will immediately receive a secure download link or license key along with clear, step-by-step activation instructions.
+
+                      Dedicated Support
+                      Our support team is available to assist you with installation, activation, or any questions you may have.
+
+                      Transparency & Compliance
+                      We are fully committed to legal compliance, respecting intellectual property rights, and providing a safe, transparent, and trustworthy service.
                     </div>
                   </div>
                   <div className="right">
@@ -659,9 +655,8 @@ const OutOfStock: React.FC<Props> = ({ data, productId }) => {
                 </div>
               </div>
               <div
-                className={`desc-item specifications flex items-center justify-center ${
-                  activeTab === "specifications" ? "open" : ""
-                }`}
+                className={`desc-item specifications flex items-center justify-center ${activeTab === "specifications" ? "open" : ""
+                  }`}
               >
                 <div className="lg:w-1/2 sm:w-3/4 w-full">
                   <div className="item bg-surface flex items-center gap-8 py-3 px-10">
@@ -784,9 +779,8 @@ const OutOfStock: React.FC<Props> = ({ data, productId }) => {
                 </div>
               </div>
               <div
-                className={`desc-item review-block ${
-                  activeTab === "review" ? "open" : ""
-                }`}
+                className={`desc-item review-block ${activeTab === "review" ? "open" : ""
+                  }`}
               >
                 <div className="top-overview flex max-sm:flex-col items-center justify-between gap-12 gap-y-4">
                   <div className="left flex max-sm:flex-col gap-y-4 items-center justify-between lg:w-1/2 sm:w-2/3 w-full sm:pr-5">
