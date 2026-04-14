@@ -384,7 +384,7 @@
     "sold": 12,
     "quantity": 200,
     "quantityPurchase": 1,
-    "paypalLink": "https://www.paypal.com/ncp/payment/J7N3NM983BVDN",
+    "paypalLink": "https://shop.shopclud.com/products/autodesk-plus?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web",
     "sizes": [
       "L"
     ],
@@ -728,11 +728,7 @@
     "quantity": 100,
     "quantityPurchase": 1,
     "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL"
+      "U"
     ],
     "variation": [
       {
