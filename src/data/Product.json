@@ -371,12 +371,12 @@
   },
   {
     "id": "10",
-    "category": "top",
+    "category": "Digital",
     "type": "d-apps",
     "name": "AutoDesk 3-Years Subscription",
     "gender": "All",
-    "new": true,
-    "sale": false,
+    "new": false,
+    "sale": true,
     "rate": 5,
     "price": 20.45,
     "originPrice": 36.45,
@@ -384,7 +384,7 @@
     "sold": 12,
     "quantity": 200,
     "quantityPurchase": 1,
-    "paypalLink": "https://shop.shopclud.com/products/autodesk-plus?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web",
+    "paypalLink": "https://shop.shopclud.com/checkouts/cn/hWNB1ko1h0CaAI2gW3NEpMlX/en-de?_r=AQABWsFzxYp2NV5K2wktoh4PkTWTggSloIlQca8Rc9Z_lZU&skip_shop_pay=true",
     "sizes": [
       "L"
     ],
