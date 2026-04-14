@@ -671,17 +671,18 @@
     "id": "22",
     "category": "Digital",
     "type": "subscriptions",
-    "name": "unavailable",
+    "name": "LinkedIn Premium – 1 Year Subscription",
     "gender": "all",
     "new": false,
     "sale": true,
     "rate": 5,
-    "price": 0,
-    "originPrice": 0,
+    "price": 60.45,
+    "originPrice": 240,
     "brand": "Digital",
     "sold": 41,
     "quantity": 100,
     "quantityPurchase": 1,
+    "paypalLink": "https://shop.shopclud.com/checkouts/cn/hWNB1okj1Uhw9UpoX5vYRSqJ/en-de?_r=AQAB-JUnCTCykxxplaTcdQgz4Rcf4CW1iRY2WgZ6gd0cZKE&skip_shop_pay=true",
     "sizes": [
       "U"
     ],
@@ -694,23 +695,19 @@
       }
     ],
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/linkedinpremuim/Linkedinpremuim.png",
+      "/images/product/linkedinpremuim/Linkedinpremuim.png"
     ],
     "images": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/linkedinpremuim/Linkedinpremuim.png",
+      "/images/product/linkedinpremuim/Linkedinpremuim.png",
+      "/images/product/linkedinpremuim/Linkedinpremuim.png",
+      "/images/product/linkedinpremuim/Linkedinpremuim.png"
     ],
-    "description": "This product will be available soon. Stay tuned for updates!.",
+    "description": "Upgrade your professional presence with a LinkedIn Premium 1-Year Subscription. Gain access to powerful tools designed to help you grow your network, find job opportunities, and stand out in your industry.",
     "action": "add to cart",
     "slug": "d-apps"
   },
-
-
-
-
 
   {
     "id": "23",
