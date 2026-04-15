@@ -252,9 +252,8 @@ const ShopBreadCrumbImg: React.FC<Props> = ({
                 ].map((item, index) => (
                   <div
                     key={index}
-                    className={`tab-item text-button-uppercase cursor-pointer has-line-before line-2px ${
-                      dataType === item ? "active" : ""
-                    }`}
+                    className={`tab-item text-button-uppercase cursor-pointer has-line-before line-2px ${dataType === item ? "active" : ""
+                      }`}
                     onClick={() => handleType(item)}
                   >
                     {item}
@@ -262,9 +261,9 @@ const ShopBreadCrumbImg: React.FC<Props> = ({
                 ))}
               </div>
             </div>
-            <div className="bg-img absolute top-2 -right-6 max-lg:bottom-0 max-lg:top-auto w-1/3 max-lg:w-[26%] z-[0] max-sm:w-[45%]">
+            <div className="bg-img absolute top-2 -right-6 max-lg:bottom-16 max-lg:top-auto w-1/4 max-lg:w-[22%] z-[0] max-sm:w-[38%]">
               <Image
-                src={"/images/slider/bg1-1.png"}
+                src={"/images/slider/bg1-3.png"}
                 width={1000}
                 height={1000}
                 alt=""
@@ -359,9 +358,8 @@ const ShopBreadCrumbImg: React.FC<Props> = ({
                 </div>
                 <div className="choose-layout flex items-center gap-2">
                   <div
-                    className={`item three-col p-2 border border-line rounded flex items-center justify-center cursor-pointer ${
-                      layoutCol === 3 ? "active" : ""
-                    }`}
+                    className={`item three-col p-2 border border-line rounded flex items-center justify-center cursor-pointer ${layoutCol === 3 ? "active" : ""
+                      }`}
                     onClick={() => handleLayoutCol(3)}
                   >
                     <div className="flex items-center gap-0.5">
@@ -371,9 +369,8 @@ const ShopBreadCrumbImg: React.FC<Props> = ({
                     </div>
                   </div>
                   <div
-                    className={`item four-col p-2 border border-line rounded flex items-center justify-center cursor-pointer ${
-                      layoutCol === 4 ? "active" : ""
-                    }`}
+                    className={`item four-col p-2 border border-line rounded flex items-center justify-center cursor-pointer ${layoutCol === 4 ? "active" : ""
+                      }`}
                     onClick={() => handleLayoutCol(4)}
                   >
                     <div className="flex items-center gap-0.5">
@@ -384,9 +381,8 @@ const ShopBreadCrumbImg: React.FC<Props> = ({
                     </div>
                   </div>
                   <div
-                    className={`item five-col p-2 border border-line rounded flex items-center justify-center cursor-pointer ${
-                      layoutCol === 5 ? "active" : ""
-                    }`}
+                    className={`item five-col p-2 border border-line rounded flex items-center justify-center cursor-pointer ${layoutCol === 5 ? "active" : ""
+                      }`}
                     onClick={() => handleLayoutCol(5)}
                   >
                     <div className="flex items-center gap-0.5">
@@ -445,9 +441,8 @@ const ShopBreadCrumbImg: React.FC<Props> = ({
             </div>
 
             <div
-              className={`sidebar style-dropdown bg-white grid md:grid-cols-4 grid-cols-2 md:gap-[30px] gap-6 ${
-                openSidebar ? "open" : ""
-              }`}
+              className={`sidebar style-dropdown bg-white grid md:grid-cols-4 grid-cols-2 md:gap-[30px] gap-6 ${openSidebar ? "open" : ""
+                }`}
             >
               <div className="filter-type">
                 <div className="heading6">Products Type</div>
@@ -464,9 +459,8 @@ const ShopBreadCrumbImg: React.FC<Props> = ({
                   ].map((item, index) => (
                     <div
                       key={index}
-                      className={`item flex items-center justify-between cursor-pointer ${
-                        dataType === item ? "active" : ""
-                      }`}
+                      className={`item flex items-center justify-between cursor-pointer ${dataType === item ? "active" : ""
+                        }`}
                       onClick={() => handleType(item)}
                     >
                       <div className="text-secondary has-line-before hover:text-black capitalize">
@@ -495,9 +489,8 @@ const ShopBreadCrumbImg: React.FC<Props> = ({
                       (item, index) => (
                         <div
                           key={index}
-                          className={`size-item text-button w-[44px] h-[44px] flex items-center justify-center rounded-full border border-line ${
-                            size === item ? "active" : ""
-                          }`}
+                          className={`size-item text-button w-[44px] h-[44px] flex items-center justify-center rounded-full border border-line ${size === item ? "active" : ""
+                            }`}
                           onClick={() => handleSize(item)}
                         >
                           {item}
@@ -505,9 +498,8 @@ const ShopBreadCrumbImg: React.FC<Props> = ({
                       )
                     )}
                     <div
-                      className={`size-item text-button px-4 py-2 flex items-center justify-center rounded-full border border-line ${
-                        size === "freesize" ? "active" : ""
-                      }`}
+                      className={`size-item text-button px-4 py-2 flex items-center justify-center rounded-full border border-line ${size === "freesize" ? "active" : ""
+                        }`}
                       onClick={() => handleSize("freesize")}
                     >
                       Freesize
@@ -544,63 +536,56 @@ const ShopBreadCrumbImg: React.FC<Props> = ({
                 <div className="heading6">colors</div>
                 <div className="list-color flex items-center flex-wrap gap-3 gap-y-4 mt-4">
                   <div
-                    className={`color-item px-3 py-[5px] flex items-center justify-center gap-2 rounded-full border border-line ${
-                      color === "pink" ? "active" : ""
-                    }`}
+                    className={`color-item px-3 py-[5px] flex items-center justify-center gap-2 rounded-full border border-line ${color === "pink" ? "active" : ""
+                      }`}
                     onClick={() => handleColor("pink")}
                   >
                     <div className="color bg-[#F4C5BF] w-5 h-5 rounded-full"></div>
                     <div className="caption1 capitalize">pink</div>
                   </div>
                   <div
-                    className={`color-item px-3 py-[5px] flex items-center justify-center gap-2 rounded-full border border-line ${
-                      color === "red" ? "active" : ""
-                    }`}
+                    className={`color-item px-3 py-[5px] flex items-center justify-center gap-2 rounded-full border border-line ${color === "red" ? "active" : ""
+                      }`}
                     onClick={() => handleColor("red")}
                   >
                     <div className="color bg-red w-5 h-5 rounded-full"></div>
                     <div className="caption1 capitalize">red</div>
                   </div>
                   <div
-                    className={`color-item px-3 py-[5px] flex items-center justify-center gap-2 rounded-full border border-line ${
-                      color === "green" ? "active" : ""
-                    }`}
+                    className={`color-item px-3 py-[5px] flex items-center justify-center gap-2 rounded-full border border-line ${color === "green" ? "active" : ""
+                      }`}
                     onClick={() => handleColor("green")}
                   >
                     <div className="color bg-green w-5 h-5 rounded-full"></div>
                     <div className="caption1 capitalize">green</div>
                   </div>
                   <div
-                    className={`color-item px-3 py-[5px] flex items-center justify-center gap-2 rounded-full border border-line ${
-                      color === "yellow" ? "active" : ""
-                    }`}
+                    className={`color-item px-3 py-[5px] flex items-center justify-center gap-2 rounded-full border border-line ${color === "yellow" ? "active" : ""
+                      }`}
                     onClick={() => handleColor("yellow")}
                   >
                     <div className="color bg-yellow w-5 h-5 rounded-full"></div>
                     <div className="caption1 capitalize">yellow</div>
                   </div>
                   <div
-                    className={`color-item px-3 py-[5px] flex items-center justify-center gap-2 rounded-full border border-line ${
-                      color === "purple" ? "active" : ""
-                    }`}
+                    className={`color-item px-3 py-[5px] flex items-center justify-center gap-2 rounded-full border border-line ${color === "purple" ? "active" : ""
+                      }`}
                     onClick={() => handleColor("purple")}
                   >
                     <div className="color bg-purple w-5 h-5 rounded-full"></div>
                     <div className="caption1 capitalize">purple</div>
                   </div>
                   <div
-                    className={`color-item px-3 py-[5px] flex items-center justify-center gap-2 rounded-full border border-line ${
-                      color === "black" ? "active" : ""
-                    }`}
+                    className={`color-item px-3 py-[5px] flex items-center justify-center gap-2 rounded-full border border-line ${color === "black" ? "active" : ""
+                      }`}
                     onClick={() => handleColor("black")}
                   >
                     <div className="color bg-black w-5 h-5 rounded-full"></div>
                     <div className="caption1 capitalize">black</div>
                   </div>
                   <div
-                    className={`color-item px-3 py-[5px] flex items-center justify-center gap-2 rounded-full border border-line ${
-                      color === "white" ? "active" : ""
-                    }`}
+                    className={`color-item px-3 py-[5px] flex items-center justify-center gap-2 rounded-full border border-line ${color === "white" ? "active" : ""
+                      }`}
                     onClick={() => handleColor("white")}
                   >
                     <div className="color bg-[#F6EFDD] w-5 h-5 rounded-full"></div>
@@ -666,68 +651,68 @@ const ShopBreadCrumbImg: React.FC<Props> = ({
                 selectedSize ||
                 selectedColor ||
                 selectedBrand) && (
-                <>
-                  <div className="list flex items-center gap-3">
-                    <div className="w-px h-4 bg-line"></div>
-                    {selectedType && (
-                      <div
-                        className="item flex items-center px-2 py-1 gap-1 bg-linear rounded-full capitalize"
-                        onClick={() => {
-                          setType(null);
-                        }}
-                      >
-                        <Icon.X className="cursor-pointer" />
-                        <span>{selectedType}</span>
-                      </div>
-                    )}
-                    {selectedSize && (
-                      <div
-                        className="item flex items-center px-2 py-1 gap-1 bg-linear rounded-full capitalize"
-                        onClick={() => {
-                          setsize(null);
-                        }}
-                      >
-                        <Icon.X className="cursor-pointer" />
-                        <span>{selectedSize}</span>
-                      </div>
-                    )}
-                    {selectedColor && (
-                      <div
-                        className="item flex items-center px-2 py-1 gap-1 bg-linear rounded-full capitalize"
-                        onClick={() => {
-                          setColor(null);
-                        }}
-                      >
-                        <Icon.X className="cursor-pointer" />
-                        <span>{selectedColor}</span>
-                      </div>
-                    )}
-                    {selectedBrand && (
-                      <div
-                        className="item flex items-center px-2 py-1 gap-1 bg-linear rounded-full capitalize"
-                        onClick={() => {
-                          setBrand(null);
-                        }}
-                      >
-                        <Icon.X className="cursor-pointer" />
-                        <span>{selectedBrand}</span>
-                      </div>
-                    )}
-                  </div>
-                  <div
-                    className="clear-btn flex items-center px-2 py-1 gap-1 rounded-full border border-red cursor-pointer"
-                    onClick={handleClearAll}
-                  >
-                    <Icon.X
-                      color="rgb(219, 68, 68)"
-                      className="cursor-pointer"
-                    />
-                    <span className="text-button-uppercase text-red">
-                      Clear All
-                    </span>
-                  </div>
-                </>
-              )}
+                  <>
+                    <div className="list flex items-center gap-3">
+                      <div className="w-px h-4 bg-line"></div>
+                      {selectedType && (
+                        <div
+                          className="item flex items-center px-2 py-1 gap-1 bg-linear rounded-full capitalize"
+                          onClick={() => {
+                            setType(null);
+                          }}
+                        >
+                          <Icon.X className="cursor-pointer" />
+                          <span>{selectedType}</span>
+                        </div>
+                      )}
+                      {selectedSize && (
+                        <div
+                          className="item flex items-center px-2 py-1 gap-1 bg-linear rounded-full capitalize"
+                          onClick={() => {
+                            setsize(null);
+                          }}
+                        >
+                          <Icon.X className="cursor-pointer" />
+                          <span>{selectedSize}</span>
+                        </div>
+                      )}
+                      {selectedColor && (
+                        <div
+                          className="item flex items-center px-2 py-1 gap-1 bg-linear rounded-full capitalize"
+                          onClick={() => {
+                            setColor(null);
+                          }}
+                        >
+                          <Icon.X className="cursor-pointer" />
+                          <span>{selectedColor}</span>
+                        </div>
+                      )}
+                      {selectedBrand && (
+                        <div
+                          className="item flex items-center px-2 py-1 gap-1 bg-linear rounded-full capitalize"
+                          onClick={() => {
+                            setBrand(null);
+                          }}
+                        >
+                          <Icon.X className="cursor-pointer" />
+                          <span>{selectedBrand}</span>
+                        </div>
+                      )}
+                    </div>
+                    <div
+                      className="clear-btn flex items-center px-2 py-1 gap-1 rounded-full border border-red cursor-pointer"
+                      onClick={handleClearAll}
+                    >
+                      <Icon.X
+                        color="rgb(219, 68, 68)"
+                        className="cursor-pointer"
+                      />
+                      <span className="text-button-uppercase text-red">
+                        Clear All
+                      </span>
+                    </div>
+                  </>
+                )}
             </div>
 
             <div

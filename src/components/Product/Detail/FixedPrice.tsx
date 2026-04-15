@@ -287,7 +287,7 @@ const FixedPrice: React.FC<Props> = ({ data, productId }) => {
                   <div>
                     <div className="text-title">100 Day Returns</div>
                     <div className="caption1 text-secondary mt-1">
-                      Not impressed? Get a refund. You have 100 days to break
+                      Not impressed? Get a refund. You have 6 days to break
                       our hearts.
                     </div>
                   </div>
