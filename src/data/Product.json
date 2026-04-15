@@ -713,17 +713,18 @@
     "id": "23",
     "category": "Digital",
     "type": "tools",
-    "name": "unavailable",
+    "name": "TOD Subscription 6 Months",
     "gender": "all",
     "new": false,
     "sale": true,
     "rate": 5,
-    "price": 0,
-    "originPrice": 0,
+    "price": 25.45,
+    "originPrice": 60,
     "brand": "Digital",
     "sold": 15,
     "quantity": 100,
     "quantityPurchase": 1,
+    "paypalLink": "https://shop.shopclud.com/checkouts/cn/hWNB36y60Ci4cIQSrZfhOf9X/en-de?_r=AQAB87l-BSprAmIqPUH9T0CDX_FxpAMTN354qf0QwW-Wgvo&skip_shop_pay=true",
     "sizes": [
       "U"
     ],
@@ -736,16 +737,16 @@
       }
     ],
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/tod/Tod.png",
+      "/images/product/tod/Tod.png"
     ],
     "images": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/product/tod/Tod.png",
+      "/images/product/tod/Tod.png",
+      "/images/product/tod/Tod.png",
+      "/images/product/tod/Tod.png"
     ],
-    "description": "This product will be available soon. Stay tuned for updates!",
+    "description": "Get unlimited access to a wide range of live sports, movies, and exclusive content with TOD. Perfect for football fans and entertainment lovers, this subscription gives you high-quality streaming anytime, anywhere.",
     "action": "quick shop",
     "slug": "d-apps"
   },
