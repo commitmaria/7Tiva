@@ -832,5 +832,89 @@
     "description": "Keep your business creative and organized with Canva Pro Panel for 3000 users, available for lifetime access at only $30. Perfect for managing large design teams and projects effortlessly.",
     "action": "quick shop",
     "slug": "canva-pro-panel-3000"
+  },
+
+  {
+    "id": "24",
+    "category": "Digital",
+    "type": "tools",
+    "name": "CupCut Pro 3 Months Subscription",
+    "gender": "all",
+    "new": false,
+    "sale": true,
+    "rate": 5,
+    "price": 5.45,
+    "originPrice": 20.45,
+    "brand": "Digital",
+    "sold": 15,
+    "quantity": 100,
+    "quantityPurchase": 1,
+    "paypalLink": "https://shop.shopclud.com/checkouts/cn/hWNB6SqTxG1nrr0hFjMmbkIN/en-de?_r=AQAB-HfT0yBlCnoY6Ln9qssKYo9aYEnJGpH3qaRbm77cDZE&skip_shop_pay=true",
+    "sizes": [
+      "U"
+    ],
+    "variation": [
+      {
+        "color": "",
+        "colorCode": "",
+        "colorImage": "",
+        "image": ""
+      }
+    ],
+    "thumbImage": [
+      "/images/product/cupcut3months/cupcut3month.webp",
+      "/images/product/cupcut3months/cupcut3month.webp"
+    ],
+    "images": [
+      "/images/product/cupcut3months/cupcut3month.webp",
+      "/images/product/cupcut3months/cupcut3month.webp",
+      "/images/product/cupcut3months/cupcut3month.webp",
+      "/images/product/cupcut3months/cupcut3month.webp"
+    ],
+    "description": "Get unlimited access to powerful video editing tools with CapCut Pro. Designed for content creators, influencers, and professionals, this 3-month subscription unlocks all premium features to help you create high-quality videos without limitations.",
+    "action": "quick shop",
+    "slug": "d-apps"
+  },
+
+  {
+    "id": "25",
+    "category": "Digital",
+    "type": "tools",
+    "name": "Gemini AI Pro – 3 Month Subscription",
+    "gender": "all",
+    "new": false,
+    "sale": true,
+    "rate": 5,
+    "price": 7.45,
+    "originPrice": 374.97,
+    "brand": "Digital",
+    "sold": 15,
+    "quantity": 100,
+    "quantityPurchase": 1,
+    "paypalLink": "https://shop.shopclud.com/checkouts/cn/hWNB6WuIks84uAz1RirhBlfX/en-de?_r=AQABzOLiaRUKYVCiG4UUhmlpVRyIqtHInHzXHrAW7-71QLk&skip_shop_pay=true",
+    "sizes": [
+      "U"
+    ],
+    "variation": [
+      {
+        "color": "",
+        "colorCode": "",
+        "colorImage": "",
+        "image": ""
+      }
+    ],
+    "thumbImage": [
+      "/images/product/geminiultra/geminiultra.png",
+      "/images/product/geminiultra/geminiultra.png"
+    ],
+    "images": [
+      "/images/product/geminiultra/geminiultra.png",
+      "/images/product/geminiultra/geminiultra.png",
+      "/images/product/geminiultra/geminiultra.png",
+      "/images/product/geminiultra/geminiultra.png"
+    ],
+    "description": "Unlock the full power of advanced AI with Google Gemini Pro. This 3-month subscription gives you access to cutting-edge tools designed for productivity, creativity, and smarter workflows.",
+    "action": "quick shop",
+    "slug": "d-apps"
   }
 ]
