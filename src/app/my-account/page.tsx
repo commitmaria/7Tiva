@@ -49,7 +49,7 @@ const MyAccount = () => {
                     />
                   </div>
                   <div className="name heading6 mt-4 text-center">
-                    Tony Nguyen
+                    Monica
                   </div>
                   <div className="mail heading6 font-normal normal-case text-secondary text-center mt-1">
                     orders@codeclud.com
@@ -1225,7 +1225,7 @@ const MyAccount = () => {
                 <strong className="text-button-uppercase text-secondary">
                   Contact Information
                 </strong>
-                <h6 className="heading6 order_name mt-2">Tony nguyen</h6>
+                <h6 className="heading6 order_name mt-2">Lee Art</h6>
                 <h6 className="heading6 order_phone mt-2">
                   (+12) 345 - 678910
                 </h6>

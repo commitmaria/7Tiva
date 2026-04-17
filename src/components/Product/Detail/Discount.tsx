@@ -967,16 +967,13 @@ const Discount: React.FC<Props> = ({ data, productId }) => {
                           </div>
                           <div className="user">
                             <div className="flex items-center gap-2">
-                              <div className="text-title">Tony Nguyen</div>
+                              <div className="text-title">Jen R.</div>
                               <div className="span text-line">-</div>
                               <Rate currentRate={5} size={12} />
                             </div>
                             <div className="flex items-center gap-2">
                               <div className="text-secondary2">1 days ago</div>
-                              <div className="text-secondary2">-</div>
-                              <div className="text-secondary2">
-                                <span>Yellow</span> / <span>XL</span>
-                              </div>
+                              
                             </div>
                           </div>
                         </div>
@@ -994,7 +991,7 @@ const Discount: React.FC<Props> = ({ data, productId }) => {
                         <div className="flex items-center gap-4">
                           <div className="like-btn flex items-center gap-1 cursor-pointer">
                             <Icon.HandsClapping size={18} />
-                            <div className="text-button">20</div>
+                            <div className="text-button">2</div>
                           </div>
                           <Link
                             href={"#form-review"}
@@ -1046,7 +1043,7 @@ const Discount: React.FC<Props> = ({ data, productId }) => {
                         <div className="flex items-center gap-4">
                           <div className="like-btn flex items-center gap-1 cursor-pointer">
                             <Icon.HandsClapping size={18} />
-                            <div className="text-button">20</div>
+                            <div className="text-button">1</div>
                           </div>
                           <Link
                             href={"#form-review"}
@@ -1098,7 +1095,7 @@ const Discount: React.FC<Props> = ({ data, productId }) => {
                         <div className="flex items-center gap-4">
                           <div className="like-btn flex items-center gap-1 cursor-pointer">
                             <Icon.HandsClapping size={18} />
-                            <div className="text-button">20</div>
+                            <div className="text-button">2</div>
                           </div>
                           <Link
                             href={"#form-review"}

@@ -1206,29 +1206,13 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                         alt="img"
                         className="w-[60px] aspect-square rounded-lg"
                       />
-                      <Image
-                        src={"/images/product/1000x1000.png"}
-                        width={200}
-                        height={200}
-                        alt="img"
-                        className="w-[60px] aspect-square rounded-lg"
-                      />
-                      <Image
-                        src={"/images/product/1000x1000.png"}
-                        width={200}
-                        height={200}
-                        alt="img"
-                        className="w-[60px] aspect-square rounded-lg"
-                      />
+                     
                     </div>
                     <div className="user mt-3">
-                      <div className="text-title">Tony Nguyen</div>
+                      <div className="text-title">Monica</div>
                       <div className="flex items-center gap-2">
                         <div className="text-secondary2">1 days ago</div>
-                        <div className="text-secondary2">-</div>
-                        <div className="text-secondary2">
-                          <span>Yellow</span> / <span>XL</span>
-                        </div>
+                       
                       </div>
                     </div>
                   </div>
@@ -1248,7 +1232,7 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                       <div className="flex items-center gap-4">
                         <div className="like-btn flex items-center gap-1 cursor-pointer">
                           <Icon.HandsClapping size={18} />
-                          <div className="text-button">20</div>
+                          <div className="text-button">6</div>
                         </div>
                         <Link
                           href={"#form-review"}
@@ -1270,29 +1254,13 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                         alt="img"
                         className="w-[60px] aspect-square rounded-lg"
                       />
-                      <Image
-                        src={"/images/product/1000x1000.png"}
-                        width={200}
-                        height={200}
-                        alt="img"
-                        className="w-[60px] aspect-square rounded-lg"
-                      />
-                      <Image
-                        src={"/images/product/1000x1000.png"}
-                        width={200}
-                        height={200}
-                        alt="img"
-                        className="w-[60px] aspect-square rounded-lg"
-                      />
+                     
                     </div>
                     <div className="user mt-3">
-                      <div className="text-title">Tony Nguyen</div>
+                      <div className="text-title">Amanda</div>
                       <div className="flex items-center gap-2">
                         <div className="text-secondary2">1 days ago</div>
-                        <div className="text-secondary2">-</div>
-                        <div className="text-secondary2">
-                          <span>Yellow</span> / <span>XL</span>
-                        </div>
+                        
                       </div>
                     </div>
                   </div>
@@ -1312,7 +1280,7 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                       <div className="flex items-center gap-4">
                         <div className="like-btn flex items-center gap-1 cursor-pointer">
                           <Icon.HandsClapping size={18} />
-                          <div className="text-button">20</div>
+                          <div className="text-button">7</div>
                         </div>
                         <Link
                           href={"#form-review"}
@@ -1334,29 +1302,13 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                         alt="img"
                         className="w-[60px] aspect-square rounded-lg"
                       />
-                      <Image
-                        src={"/images/product/1000x1000.png"}
-                        width={200}
-                        height={200}
-                        alt="img"
-                        className="w-[60px] aspect-square rounded-lg"
-                      />
-                      <Image
-                        src={"/images/product/1000x1000.png"}
-                        width={200}
-                        height={200}
-                        alt="img"
-                        className="w-[60px] aspect-square rounded-lg"
-                      />
+                     
                     </div>
                     <div className="user mt-3">
-                      <div className="text-title">Tony Nguyen</div>
+                      <div className="text-title">Kim</div>
                       <div className="flex items-center gap-2">
                         <div className="text-secondary2">1 days ago</div>
-                        <div className="text-secondary2">-</div>
-                        <div className="text-secondary2">
-                          <span>Yellow</span> / <span>XL</span>
-                        </div>
+                       
                       </div>
                     </div>
                   </div>
@@ -1376,7 +1328,7 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                       <div className="flex items-center gap-4">
                         <div className="like-btn flex items-center gap-1 cursor-pointer">
                           <Icon.HandsClapping size={18} />
-                          <div className="text-button">20</div>
+                          <div className="text-button">3</div>
                         </div>
                         <Link
                           href={"#form-review"}
