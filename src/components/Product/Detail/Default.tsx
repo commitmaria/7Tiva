@@ -1200,7 +1200,7 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                   <div className="left lg:w-1/4 w-full lg:pr-[15px]">
                     <div className="list-img-review flex gap-2">
                       <Image
-                        src={"/images/product/1000x1000.png"}
+                        src={"/images/product/monica/1000x1000.png"}
                         width={200}
                         height={200}
                         alt="img"
@@ -1248,7 +1248,7 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                   <div className="left lg:w-1/4 w-full lg:pr-[15px]">
                     <div className="list-img-review flex gap-2">
                       <Image
-                        src={"/images/product/1000x1000.png"}
+                        src={"/images/product/amanda/1000x1000.png"}
                         width={200}
                         height={200}
                         alt="img"
@@ -1296,7 +1296,7 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                   <div className="left lg:w-1/4 w-full lg:pr-[15px]">
                     <div className="list-img-review flex gap-2">
                       <Image
-                        src={"/images/product/1000x1000.png"}
+                        src={"/images/product/kim/1000x1000.png"}
                         width={200}
                         height={200}
                         alt="img"
@@ -1307,7 +1307,7 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                     <div className="user mt-3">
                       <div className="text-title">Kim</div>
                       <div className="flex items-center gap-2">
-                        <div className="text-secondary2">1 days ago</div>
+                        <div className="text-secondary2">3 days ago</div>
                        
                       </div>
                     </div>
