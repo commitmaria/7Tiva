@@ -1109,7 +1109,7 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                     >
                       <SwiperSlide>
                         <Image
-                          src={"/images/product/1000x1000.png"}
+                          src={"/images/product/reviewsfotos/review1.png"}
                           width={400}
                           height={400}
                           alt=""
@@ -1118,7 +1118,7 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                       </SwiperSlide>
                       <SwiperSlide>
                         <Image
-                          src={"/images/product/1000x1000.png"}
+                          src={"/images/product/reviewsfotos/review2.png"}
                           width={400}
                           height={400}
                           alt=""
@@ -1127,7 +1127,7 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                       </SwiperSlide>
                       <SwiperSlide>
                         <Image
-                          src={"/images/product/1000x1000.png"}
+                          src={"/images/product/reviewsfotos/review3.png"}
                           width={400}
                           height={400}
                           alt=""
@@ -1136,7 +1136,7 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                       </SwiperSlide>
                       <SwiperSlide>
                         <Image
-                          src={"/images/product/1000x1000.png"}
+                          src={"/images/product/reviewsfotos/review4.png"}
                           width={400}
                           height={400}
                           alt=""
@@ -1145,7 +1145,7 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                       </SwiperSlide>
                       <SwiperSlide>
                         <Image
-                          src={"/images/product/1000x1000.png"}
+                          src={"/images/product/reviewsfotos/review5.png"}
                           width={400}
                           height={400}
                           alt=""
@@ -1154,7 +1154,7 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                       </SwiperSlide>
                       <SwiperSlide>
                         <Image
-                          src={"/images/product/1000x1000.png"}
+                          src={"/images/product/reviewsfotos/review6.png"}
                           width={400}
                           height={400}
                           alt=""
@@ -1163,7 +1163,7 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                       </SwiperSlide>
                       <SwiperSlide>
                         <Image
-                          src={"/images/product/1000x1000.png"}
+                          src={"/images/product/reviewsfotos/review7.png"}
                           width={400}
                           height={400}
                           alt=""
