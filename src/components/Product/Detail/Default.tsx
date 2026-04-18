@@ -1219,14 +1219,10 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                   <div className="right lg:w-3/4 w-full lg:pl-[15px]">
                     <Rate currentRate={5} size={16} />
                     <div className="heading5 mt-3">
-                      Unbeatable Style and Quality: A Digital Brand That
-                      Delivers
+                      Canva Pro Subscription
                     </div>
                     <div className="body1 mt-3">
-                      I can{String.raw`'t`} get enough of the Digital pieces
-                      from this brand. They have a great selection for every
-                      occasion and the prices are reasonable. The shipping is
-                      fast and the items always arrive in perfect condition.
+                      What should I do when my subscription expires?
                     </div>
                     <div className="action mt-3">
                       <div className="flex items-center gap-4">
@@ -1267,14 +1263,10 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                   <div className="right lg:w-3/4 w-full lg:pl-[15px]">
                     <Rate currentRate={5} size={16} />
                     <div className="heading5 mt-3">
-                      Exceptional Digital: The Perfect Blend of Style and
-                      Durability
+                      Chatgpt Plus Subscription
                     </div>
                     <div className="body1 mt-3">
-                      The Digital brand{String.raw`'s`} online shopping
-                      experience is seamless. The website is user-friendly, the
-                      product images are clear, and the checkout process is
-                      quick.
+                      Can I change the email linked to my ChatGPT subscription?
                     </div>
                     <div className="action mt-3">
                       <div className="flex items-center gap-4">
@@ -1315,14 +1307,10 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                   <div className="right lg:w-3/4 w-full lg:pl-[15px]">
                     <Rate currentRate={5} size={16} />
                     <div className="heading5 mt-3">
-                      Elevate Your Wardrobe: Stunning Subscriptionses That Make
-                      a Statement
+                      Autodesk Subscription
                     </div>
                     <div className="body1 mt-3">
-                      I love how sustainable and ethically conscious this
-                      Digital brand is. They prioritize eco-friendly materials
-                      and fair trade practices, which makes me feel good about
-                      supporting them.
+                      Autodesk support was really helpful whenever I needed assistance, they responded quickly and solved my issues clearly.
                     </div>
                     <div className="action mt-3">
                       <div className="flex items-center gap-4">
