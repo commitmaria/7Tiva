@@ -1084,5 +1084,47 @@
     "description": "Grow your Instagram presence with a powerful visibility boost designed to build social proof and increase reach. This service helps enhance your profile’s credibility, making it more attractive to new followers and supporting faster organic growth.",
     "action": "quick shop",
     "slug": "d-apps"
+  },
+
+  {
+    "id": "30",
+    "category": "Digital",
+    "type": "tools",
+    "name": "Get 10K Facebook Comments Fast | Boost Likes, Comments & Social Proof",
+    "gender": "all",
+    "new": true,
+    "sale": false,
+    "rate": 5,
+    "price": 18.45,
+    "originPrice": 30.45,
+    "brand": "Digital",
+    "sold": 15,
+    "quantity": 100,
+    "quantityPurchase": 1,
+    "paypalLink": "https://shop.shopclud.com/checkouts/cn/hWNBJl5KA8Qa1tOB40f0dGTL/en-de?_r=AQABCrxybgONBg7LF9ggJucacPM_gW0VrXOCI7dwzD0dvII&skip_shop_pay=true",
+    "sizes": [
+      "U"
+    ],
+    "variation": [
+      {
+        "color": "",
+        "colorCode": "",
+        "colorImage": "",
+        "image": ""
+      }
+    ],
+    "thumbImage": [
+      "/images/product/cofacebook/10k.png",
+      "/images/product/cofacebook/10k.png"
+    ],
+    "images": [
+      "/images/product/cofacebook/10k.png",
+      "/images/product/cofacebook/10k.png",
+      "/images/product/cofacebook/10k.png",
+      "/images/product/cofacebook/10k.png"
+    ],
+    "description": "Grow your Facebook presence with a powerful engagement boost designed to build social proof and increase reach. This service helps enhance your post’s visibility and credibility, making it more attractive to new audiences and supporting stronger organic interaction.",
+    "action": "quick shop",
+    "slug": "d-apps"
   }
 ]
