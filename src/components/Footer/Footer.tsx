@@ -29,8 +29,18 @@ const Footer = () => {
                     <span className="text-button mt-3">address:</span>
                   </div>
                   <div className="flex flex-col ">
-                    <span className="">orders@shopclud.com</span>
-                    <span className="mt-3">+34 667 34 56 69</span>
+                    <a href="mailto:orders@shopclud.com" className="">
+                      orders@shopclud.com
+                    </a>
+                    <span className="mt-3 block">
+                      <a
+                        href="https://wa.me/34667345669"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        +34 667 34 56 69
+                      </a>
+                    </span>
                     <span className="mt-3 pt-px">
                       Unit 122569 London W1A 6US United Kingdom
                     </span>
@@ -47,7 +57,7 @@ const Footer = () => {
                     >
                       Contact us
                     </Link>
-                    
+
                     <Link
                       className="caption1 has-line-before duration-300 w-fit pt-2"
                       href={"/my-account"}
