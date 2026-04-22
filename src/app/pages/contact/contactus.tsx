@@ -68,12 +68,12 @@ const ContactUs = () => {
                   Unit 122569 London W1A 6US United Kingdom
                 </p>
                 <p className="mt-3">
-                  Phone: <span className="whitespace-nowrap">+34 667 34 56 69</span>
+                  Whatsapp: <span className="whitespace-nowrap">+34 667 34 56 69</span>
                 </p>
                 <p className="mt-1">
                   Email:{" "}
                   <span className="whitespace-nowrap">
-                    orders@codeclud.com
+                    orders@shopclud.com
                   </span>
                 </p>
               </div>

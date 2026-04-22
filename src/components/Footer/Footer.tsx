@@ -25,11 +25,11 @@ const Footer = () => {
                 <div className="flex gap-3 mt-3">
                   <div className="flex flex-col ">
                     <span className="text-button">Mail:</span>
-                    <span className="text-button mt-3">Phone:</span>
+                    <span className="text-button mt-3">Whatsapp:</span>
                     <span className="text-button mt-3">address:</span>
                   </div>
                   <div className="flex flex-col ">
-                    <span className="">orders@codeclud.com</span>
+                    <span className="">orders@shopclud.com</span>
                     <span className="mt-3">+34 667 34 56 69</span>
                     <span className="mt-3 pt-px">
                       Unit 122569 London W1A 6US United Kingdom
