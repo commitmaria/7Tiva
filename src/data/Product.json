@@ -1126,5 +1126,131 @@
     "description": "Grow your Facebook presence with a powerful engagement boost designed to build social proof and increase reach. This service helps enhance your post’s visibility and credibility, making it more attractive to new audiences and supporting stronger organic interaction.",
     "action": "quick shop",
     "slug": "d-apps"
+  },
+
+  {
+    "id": "31",
+    "category": "Digital",
+    "type": "tools",
+    "name": "5k Instagram Followers – Boost Your Profile Instantly",
+    "gender": "all",
+    "new": true,
+    "sale": false,
+    "rate": 5,
+    "price": 9.45,
+    "originPrice": 30.45,
+    "brand": "Digital",
+    "sold": 15,
+    "quantity": 100,
+    "quantityPurchase": 1,
+    "paypalLink": "https://shop.shopclud.com/checkouts/cn/hWNBOAQuZX0cMKDSapfVOlxj/en-de?_r=AQABB-THa5C5-6-iw3YtlwW40lP9KBylQigHh90d3bdd2LM&skip_shop_pay=true",
+    "sizes": [
+      "U"
+    ],
+    "variation": [
+      {
+        "color": "",
+        "colorCode": "",
+        "colorImage": "",
+        "image": ""
+      }
+    ],
+    "thumbImage": [
+      "/images/product/insta/5k.png",
+      "/images/product/insta/5k.png"
+    ],
+    "images": [
+      "/images/product/insta/5k.png",
+      "/images/product/insta/5k.png",
+      "/images/product/insta/5k.png",
+      "/images/product/insta/5k.png"
+    ],
+    "description": "Accelerate your Instagram growth with high-quality followers designed to enhance credibility, increase visibility, and drive engagement. This service is ideal for influencers, brands, and content creators who want to build strong social proof and expand their audience effectively.",
+    "action": "quick shop",
+    "slug": "d-apps"
+  },
+
+  {
+    "id": "32",
+    "category": "Digital",
+    "type": "tools",
+    "name": "10k Instagram Followers – Boost Your Profile Instantly",
+    "gender": "all",
+    "new": true,
+    "sale": false,
+    "rate": 5,
+    "price": 18.45,
+    "originPrice": 30.45,
+    "brand": "Digital",
+    "sold": 15,
+    "quantity": 100,
+    "quantityPurchase": 1,
+    "paypalLink": "https://shop.shopclud.com/checkouts/cn/hWNBOAEB8uJMLPtyOxpO4W39/en-de?_r=AQABePVJXcgBBQEmMG_6R0UnkZxUiKDTlDuYTVct6JR0C7o&skip_shop_pay=true",
+    "sizes": [
+      "U"
+    ],
+    "variation": [
+      {
+        "color": "",
+        "colorCode": "",
+        "colorImage": "",
+        "image": ""
+      }
+    ],
+    "thumbImage": [
+      "/images/product/insta/10k.png",
+      "/images/product/insta/10k.png"
+    ],
+    "images": [
+      "/images/product/insta/10k.png",
+      "/images/product/insta/10k.png",
+      "/images/product/insta/10k.png",
+      "/images/product/insta/10k.png"
+    ],
+    "description": "Accelerate your Instagram growth with high-quality followers designed to enhance credibility, increase visibility, and drive engagement. This service is ideal for influencers, brands, and content creators who want to build strong social proof and expand their audience effectively.",
+    "action": "quick shop",
+    "slug": "d-apps"
+  },
+
+  {
+    "id": "33",
+    "category": "Digital",
+    "type": "tools",
+    "name": "1k Instagram Followers – Boost Your Profile Instantly",
+    "gender": "all",
+    "new": true,
+    "sale": false,
+    "rate": 5,
+    "price": 4.45,
+    "originPrice": 30.45,
+    "brand": "Digital",
+    "sold": 15,
+    "quantity": 100,
+    "quantityPurchase": 1,
+    "paypalLink": "https://shop.shopclud.com/checkouts/cn/hWNBOAc4yPGTp2CnLiGa4aaR/en-de?_r=AQABYFniDn8sCGkzFgnNfHZMKRX_lRlhDy2cHWwTUVFIg30&skip_shop_pay=true",
+    "sizes": [
+      "U"
+    ],
+    "variation": [
+      {
+        "color": "",
+        "colorCode": "",
+        "colorImage": "",
+        "image": ""
+      }
+    ],
+    "thumbImage": [
+      "/images/product/insta/1k.png",
+      "/images/product/insta/1k.png"
+    ],
+    "images": [
+      "/images/product/insta/1k.png",
+      "/images/product/insta/1k.png",
+      "/images/product/insta/1k.png",
+      "/images/product/insta/1k.png"
+    ],
+    "description": "Accelerate your Instagram growth with high-quality followers designed to enhance credibility, increase visibility, and drive engagement. This service is ideal for influencers, brands, and content creators who want to build strong social proof and expand their audience effectively.",
+    "action": "quick shop",
+    "slug": "d-apps"
   }
 ]
