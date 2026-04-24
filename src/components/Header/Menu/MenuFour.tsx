@@ -74,9 +74,8 @@ const MenuFour: React.FC<Props> = ({ props }) => {
   return (
     <>
       <div
-        className={`header-menu style-one ${
-          fixedHeader ? " fixed" : "relative"
-        } w-full md:h-[74px] h-[56px] ${props}`}
+        className={`header-menu style-one ${fixedHeader ? " fixed" : "relative"
+          } w-full md:h-[74px] h-[56px] ${props}`}
       >
         <div className="container mx-auto h-full">
           <div className="header-main flex items-center justify-between h-full">
@@ -122,17 +121,16 @@ const MenuFour: React.FC<Props> = ({ props }) => {
                   <Link
                     href="/"
                     className={`text-button-uppercase duration-300 h-full flex items-center justify-center gap-1 
-                                            ${
-                                              pathname.includes("/homepages/")
-                                                ? "active"
-                                                : ""
-                                            }`}
+                                            ${pathname.includes("/homepages/")
+                        ? "active"
+                        : ""
+                      }`}
                   >
                     Home
                   </Link>
-                  
+
                 </li>
-                
+
                 <li className="h-full">
                   <Link
                     href="/shop/default"
@@ -140,7 +138,7 @@ const MenuFour: React.FC<Props> = ({ props }) => {
                   >
                     Shop
                   </Link>
-                 
+
                 </li>
                 <li className="h-full">
                   <Link
@@ -149,14 +147,14 @@ const MenuFour: React.FC<Props> = ({ props }) => {
                   >
                     Contact us
                   </Link>
-                  
+
                 </li>
                 <li className="h-full flex items-center justify-center logo">
                   <Link href={"/"} className="heading4">
                     shopclud
                   </Link>
                 </li>
-                
+
                 <li className="h-full relative">
                   <Link
                     href="/blog/list"
@@ -164,7 +162,7 @@ const MenuFour: React.FC<Props> = ({ props }) => {
                   >
                     Blog
                   </Link>
-                  
+
                 </li>
                 <li className="h-full relative">
                   <Link
@@ -178,20 +176,18 @@ const MenuFour: React.FC<Props> = ({ props }) => {
                       <li>
                         <Link
                           href="/pages/about"
-                          className={`text-secondary duration-300 ${
-                            pathname === "/pages/about" ? "active" : ""
-                          }`}
+                          className={`text-secondary duration-300 ${pathname === "/pages/about" ? "active" : ""
+                            }`}
                         >
                           About Us
                         </Link>
                       </li>
-                      
+
                       <li>
                         <Link
                           href="/pages/page-not-found"
-                          className={`text-secondary duration-300 ${
-                            pathname === "/pages/page-not-found" ? "active" : ""
-                          }`}
+                          className={`text-secondary duration-300 ${pathname === "/pages/page-not-found" ? "active" : ""
+                            }`}
                         >
                           404
                         </Link>
@@ -199,9 +195,8 @@ const MenuFour: React.FC<Props> = ({ props }) => {
                       <li>
                         <Link
                           href="/pages/faqs"
-                          className={`text-secondary duration-300 ${
-                            pathname === "/pages/faqs" ? "active" : ""
-                          }`}
+                          className={`text-secondary duration-300 ${pathname === "/pages/faqs" ? "active" : ""
+                            }`}
                         >
                           FAQs
                         </Link>
@@ -209,9 +204,8 @@ const MenuFour: React.FC<Props> = ({ props }) => {
                       <li>
                         <Link
                           href="/pages/coming-soon"
-                          className={`text-secondary duration-300 ${
-                            pathname === "/pages/coming-soon" ? "active" : ""
-                          }`}
+                          className={`text-secondary duration-300 ${pathname === "/pages/coming-soon" ? "active" : ""
+                            }`}
                         >
                           Coming Soon
                         </Link>
@@ -219,11 +213,10 @@ const MenuFour: React.FC<Props> = ({ props }) => {
                       <li>
                         <Link
                           href="/pages/customer-feedbacks"
-                          className={`text-secondary duration-300 ${
-                            pathname === "/pages/customer-feedbacks"
+                          className={`text-secondary duration-300 ${pathname === "/pages/customer-feedbacks"
                               ? "active"
                               : ""
-                          }`}
+                            }`}
                         >
                           Customer Feedbacks
                         </Link>
@@ -267,7 +260,7 @@ const MenuFour: React.FC<Props> = ({ props }) => {
                       Dashboard
                     </Link>
                     <div className="bottom mt-4 pt-4 border-t border-line"></div>
-                    <Link href={"#!"} className="body1 hover:underline">
+                    <Link href="mailto:orders@shopclud.com" className="body1 hover:underline">
                       Support
                     </Link>
                   </div>
@@ -357,7 +350,7 @@ const MenuFour: React.FC<Props> = ({ props }) => {
                         <Icon.CaretRight size={20} />
                       </span>
                     </a>
-                    
+
                   </li>
                   <li
                     className={`${openSubNavMobile === 2 ? "open" : ""}`}
@@ -372,7 +365,7 @@ const MenuFour: React.FC<Props> = ({ props }) => {
                         <Icon.CaretRight size={20} />
                       </span>
                     </a>
-                    
+
                   </li>
                   <li
                     className={`${openSubNavMobile === 3 ? "open" : ""}`}
@@ -387,9 +380,9 @@ const MenuFour: React.FC<Props> = ({ props }) => {
                         <Icon.CaretRight size={20} />
                       </span>
                     </a>
-                    
+
                   </li>
-                 
+
                   <li
                     className={`${openSubNavMobile === 5 ? "open" : ""}`}
                     onClick={() => handleOpenSubNavMobile(5)}
@@ -403,7 +396,7 @@ const MenuFour: React.FC<Props> = ({ props }) => {
                         <Icon.CaretRight size={20} />
                       </span>
                     </a>
-                    
+
                   </li>
                   <li
                     className={`${openSubNavMobile === 6 ? "open" : ""}`}
@@ -431,22 +424,20 @@ const MenuFour: React.FC<Props> = ({ props }) => {
                           <li>
                             <Link
                               href="/pages/about"
-                              className={`text-secondary duration-300 ${
-                                pathname === "/pages/about" ? "active" : ""
-                              }`}
+                              className={`text-secondary duration-300 ${pathname === "/pages/about" ? "active" : ""
+                                }`}
                             >
                               About Us
                             </Link>
                           </li>
-                          
+
                           <li>
                             <Link
                               href="/pages/page-not-found"
-                              className={`text-secondary duration-300 ${
-                                pathname === "/pages/page-not-found"
+                              className={`text-secondary duration-300 ${pathname === "/pages/page-not-found"
                                   ? "active"
                                   : ""
-                              }`}
+                                }`}
                             >
                               404
                             </Link>
@@ -454,9 +445,8 @@ const MenuFour: React.FC<Props> = ({ props }) => {
                           <li>
                             <Link
                               href="/pages/faqs"
-                              className={`text-secondary duration-300 ${
-                                pathname === "/pages/faqs" ? "active" : ""
-                              }`}
+                              className={`text-secondary duration-300 ${pathname === "/pages/faqs" ? "active" : ""
+                                }`}
                             >
                               FAQs
                             </Link>
@@ -464,11 +454,10 @@ const MenuFour: React.FC<Props> = ({ props }) => {
                           <li>
                             <Link
                               href="/pages/coming-soon"
-                              className={`text-secondary duration-300 ${
-                                pathname === "/pages/coming-soon"
+                              className={`text-secondary duration-300 ${pathname === "/pages/coming-soon"
                                   ? "active"
                                   : ""
-                              }`}
+                                }`}
                             >
                               Coming Soon
                             </Link>
@@ -476,11 +465,10 @@ const MenuFour: React.FC<Props> = ({ props }) => {
                           <li>
                             <Link
                               href="/pages/customer-feedbacks"
-                              className={`text-secondary duration-300 ${
-                                pathname === "/pages/customer-feedbacks"
+                              className={`text-secondary duration-300 ${pathname === "/pages/customer-feedbacks"
                                   ? "active"
                                   : ""
-                              }`}
+                                }`}
                             >
                               Customer Feedbacks
                             </Link>

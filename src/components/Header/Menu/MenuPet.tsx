@@ -161,9 +161,9 @@ const MenuPet = () => {
                       Dashboard
                     </Link>
                     <div className="bottom mt-4 pt-4 border-t border-line"></div>
-                    <Link href={"#!"} className="body1 hover:underline">
-                      Support
-                    </Link>
+                    <Link href="mailto:orders@shopclud.com" className="body1 hover:underline">
+  Support
+</Link>
                   </div>
                 </div>
                 <div

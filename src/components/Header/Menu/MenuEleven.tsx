@@ -72,9 +72,8 @@ const MenuEleven = () => {
   return (
     <>
       <div
-        className={`${
-          fixedHeader ? " fixed" : "relative"
-        } header-menu bg-white w-full top-0 z-10 duration-500`}
+        className={`${fixedHeader ? " fixed" : "relative"
+          } header-menu bg-white w-full top-0 z-10 duration-500`}
       >
         <div
           className={`header-menu style-eigh bg-white w-full md:h-[74px] h-[56px]`}
@@ -138,9 +137,8 @@ const MenuEleven = () => {
                     />
                     <div
                       className={`login-popup absolute top-[74px] w-[320px] p-7 rounded-xl bg-white box-shadow-sm 
-                                                ${
-                                                  openLoginPopup ? "open" : ""
-                                                }`}
+                                                ${openLoginPopup ? "open" : ""
+                        }`}
                     >
                       <Link
                         href={"/login"}
@@ -164,7 +162,7 @@ const MenuEleven = () => {
                         Dashboard
                       </Link>
                       <div className="bottom mt-4 pt-4 border-t border-line"></div>
-                      <Link href={"#!"} className="body1 hover:underline">
+                      <Link href="mailto:orders@shopclud.com" className="body1 hover:underline">
                         Support
                       </Link>
                     </div>
@@ -223,9 +221,8 @@ const MenuEleven = () => {
                     />
                   </div>
                   <div
-                    className={`sub-menu-department shop-department-popup box-shadow-sm absolute top-[44px] left-0 right-0 h-max bg-white rounded-b-2xl ${
-                      openShopDepartmentPopup ? "open" : ""
-                    }`}
+                    className={`sub-menu-department shop-department-popup box-shadow-sm absolute top-[44px] left-0 right-0 h-max bg-white rounded-b-2xl ${openShopDepartmentPopup ? "open" : ""
+                      }`}
                   >
                     <div className="item block">
                       <Link
@@ -315,19 +312,18 @@ const MenuEleven = () => {
                       <Link
                         href="/"
                         className={`text-button-uppercase duration-300 h-full flex items-center justify-center gap-1 
-                                                ${
-                                                  pathname.includes(
-                                                    "/homepages/"
-                                                  )
-                                                    ? "active"
-                                                    : ""
-                                                }`}
+                                                ${pathname.includes(
+                          "/homepages/"
+                        )
+                            ? "active"
+                            : ""
+                          }`}
                       >
                         Home
                       </Link>
-                      
+
                     </li>
-                    
+
                     <li className="h-full">
                       <Link
                         href="/shop/default"
@@ -335,7 +331,7 @@ const MenuEleven = () => {
                       >
                         Shop
                       </Link>
-                     
+
                     </li>
                     <li className="h-full">
                       <Link
@@ -344,7 +340,7 @@ const MenuEleven = () => {
                       >
                         Contact us
                       </Link>
-                      
+
                     </li>
                     <li className="h-full relative">
                       <Link
@@ -353,14 +349,13 @@ const MenuEleven = () => {
                       >
                         Blog
                       </Link>
-                      
+
                     </li>
                     <li className="h-full relative">
                       <Link
                         href="#!"
-                        className={`text-button-uppercase duration-300 h-full flex items-center justify-center ${
-                          pathname.includes("/pages") ? "active" : ""
-                        }`}
+                        className={`text-button-uppercase duration-300 h-full flex items-center justify-center ${pathname.includes("/pages") ? "active" : ""
+                          }`}
                       >
                         Pages
                       </Link>
@@ -369,22 +364,20 @@ const MenuEleven = () => {
                           <li>
                             <Link
                               href="/pages/about"
-                              className={`text-secondary duration-300 ${
-                                pathname === "/pages/about" ? "active" : ""
-                              }`}
+                              className={`text-secondary duration-300 ${pathname === "/pages/about" ? "active" : ""
+                                }`}
                             >
                               About Us
                             </Link>
                           </li>
-                          
+
                           <li>
                             <Link
                               href="/pages/page-not-found"
-                              className={`text-secondary duration-300 ${
-                                pathname === "/pages/page-not-found"
+                              className={`text-secondary duration-300 ${pathname === "/pages/page-not-found"
                                   ? "active"
                                   : ""
-                              }`}
+                                }`}
                             >
                               404
                             </Link>
@@ -392,9 +385,8 @@ const MenuEleven = () => {
                           <li>
                             <Link
                               href="/pages/faqs"
-                              className={`text-secondary duration-300 ${
-                                pathname === "/pages/faqs" ? "active" : ""
-                              }`}
+                              className={`text-secondary duration-300 ${pathname === "/pages/faqs" ? "active" : ""
+                                }`}
                             >
                               FAQs
                             </Link>
@@ -402,11 +394,10 @@ const MenuEleven = () => {
                           <li>
                             <Link
                               href="/pages/coming-soon"
-                              className={`text-secondary duration-300 ${
-                                pathname === "/pages/coming-soon"
+                              className={`text-secondary duration-300 ${pathname === "/pages/coming-soon"
                                   ? "active"
                                   : ""
-                              }`}
+                                }`}
                             >
                               Coming Soon
                             </Link>
@@ -414,11 +405,10 @@ const MenuEleven = () => {
                           <li>
                             <Link
                               href="/pages/customer-feedbacks"
-                              className={`text-secondary duration-300 ${
-                                pathname === "/pages/customer-feedbacks"
+                              className={`text-secondary duration-300 ${pathname === "/pages/customer-feedbacks"
                                   ? "active"
                                   : ""
-                              }`}
+                                }`}
                             >
                               Customer Feedbacks
                             </Link>
@@ -487,7 +477,7 @@ const MenuEleven = () => {
                         <Icon.CaretRight size={20} />
                       </span>
                     </a>
-                    
+
                   </li>
                   <li
                     className={`${openSubNavMobile === 2 ? "open" : ""}`}
@@ -502,7 +492,7 @@ const MenuEleven = () => {
                         <Icon.CaretRight size={20} />
                       </span>
                     </a>
-                   
+
                   </li>
                   <li
                     className={`${openSubNavMobile === 3 ? "open" : ""}`}
@@ -517,9 +507,9 @@ const MenuEleven = () => {
                         <Icon.CaretRight size={20} />
                       </span>
                     </a>
-                    
+
                   </li>
-                  
+
                   <li
                     className={`${openSubNavMobile === 5 ? "open" : ""}`}
                     onClick={() => handleOpenSubNavMobile(5)}
@@ -533,7 +523,7 @@ const MenuEleven = () => {
                         <Icon.CaretRight size={20} />
                       </span>
                     </a>
-                    
+
                   </li>
                   <li
                     className={`${openSubNavMobile === 6 ? "open" : ""}`}
@@ -561,22 +551,20 @@ const MenuEleven = () => {
                           <li>
                             <Link
                               href="/pages/about"
-                              className={`text-secondary duration-300 ${
-                                pathname === "/pages/about" ? "active" : ""
-                              }`}
+                              className={`text-secondary duration-300 ${pathname === "/pages/about" ? "active" : ""
+                                }`}
                             >
                               About Us
                             </Link>
                           </li>
-                          
+
                           <li>
                             <Link
                               href="/pages/page-not-found"
-                              className={`text-secondary duration-300 ${
-                                pathname === "/pages/page-not-found"
+                              className={`text-secondary duration-300 ${pathname === "/pages/page-not-found"
                                   ? "active"
                                   : ""
-                              }`}
+                                }`}
                             >
                               404
                             </Link>
@@ -584,9 +572,8 @@ const MenuEleven = () => {
                           <li>
                             <Link
                               href="/pages/faqs"
-                              className={`text-secondary duration-300 ${
-                                pathname === "/pages/faqs" ? "active" : ""
-                              }`}
+                              className={`text-secondary duration-300 ${pathname === "/pages/faqs" ? "active" : ""
+                                }`}
                             >
                               FAQs
                             </Link>
@@ -594,11 +581,10 @@ const MenuEleven = () => {
                           <li>
                             <Link
                               href="/pages/coming-soon"
-                              className={`text-secondary duration-300 ${
-                                pathname === "/pages/coming-soon"
+                              className={`text-secondary duration-300 ${pathname === "/pages/coming-soon"
                                   ? "active"
                                   : ""
-                              }`}
+                                }`}
                             >
                               Coming Soon
                             </Link>
@@ -606,11 +592,10 @@ const MenuEleven = () => {
                           <li>
                             <Link
                               href="/pages/customer-feedbacks"
-                              className={`text-secondary duration-300 ${
-                                pathname === "/pages/customer-feedbacks"
+                              className={`text-secondary duration-300 ${pathname === "/pages/customer-feedbacks"
                                   ? "active"
                                   : ""
-                              }`}
+                                }`}
                             >
                               Customer Feedbacks
                             </Link>
