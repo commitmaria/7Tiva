@@ -26,27 +26,17 @@ const Cart = () => {
   const { cartState, updateCart, removeFromCart } = useCart();
 
   const handleQuantityChange = (productId: string, newQuantity: number) => {
-    // Tìm sản phẩm trong giỏ hàng
     const itemToUpdate = cartState.cartArray.find(
       (item) => item.id === productId
     );
 
-    // Kiểm tra xem sản phẩm có tồn tại không
     if (itemToUpdate) {
-      // Truyền giá trị hiện tại của selectedSize và selectedColor
-      updateCart(
-        productId,
-        newQuantity,
-        itemToUpdate.selectedSize,
-        itemToUpdate.selectedColor
-      );
+      updateCart(productId, newQuantity, "", ""); // ✅ removed size/color
     }
   };
 
-  let moneyForFreeship = 150;
   let [totalCart, setTotalCart] = useState<number>(0);
   let [discountCart, setDiscountCart] = useState<number>(0);
-  let [shipCart, setshipCart] = useState<number>(30);
   let [applyCode, setApplyCode] = useState<number>(0);
 
   cartState.cartArray.map((item) => (totalCart += item.price * item.quantity));
@@ -65,16 +55,8 @@ const Cart = () => {
     discountCart = 0;
   }
 
-  if (totalCart < moneyForFreeship) {
-    shipCart = 30;
-  }
-
-  if (cartState.cartArray.length === 0) {
-    shipCart = 0;
-  }
-
   const redirectToCheckout = () => {
-    router.push(`/checkout?discount=${discountCart}&ship=${shipCart}`);
+    router.push(`/checkout?discount=${discountCart}`); // ✅ removed shipping
   };
 
   return (
@@ -102,41 +84,17 @@ const Cart = () => {
                       ? `0${timeLeft.seconds}`
                       : timeLeft.seconds}
                   </span>
-                  <span>
-                    {" "}
-                    minutes! Please checkout now before your items sell out!
-                  </span>
+                  <span> minutes!</span>
                 </div>
               </div>
+
+              {/* ✅ simplified banner */}
               <div className="heading banner mt-5">
                 <div className="text">
-                  Buy
-                  <span className="text-button">
-                    {" "}
-                    $
-                    <span className="more-price">
-                      {moneyForFreeship - totalCart > 0 ? (
-                        <>{moneyForFreeship - totalCart}</>
-                      ) : (
-                        0
-                      )}
-                    </span>{" "}
-                  </span>
-                  <span>more to get </span>
-                  <span className="text-button">freeship</span>
-                </div>
-                <div className="tow-bar-block mt-4">
-                  <div
-                    className="progress-line"
-                    style={{
-                      width:
-                        totalCart <= moneyForFreeship
-                          ? `${(totalCart / moneyForFreeship) * 100}%`
-                          : `100%`,
-                    }}
-                  ></div>
+                  All products are delivered instantly after purchase.
                 </div>
               </div>
+
               <div className="list-product w-full sm:mt-7 mt-5">
                 <div className="w-full">
                   <div className="heading bg-surface bora-4 pt-4 pb-4">
@@ -148,7 +106,7 @@ const Cart = () => {
                         <div className="text-button text-center">Price</div>
                       </div>
                       <div className="w-1/6">
-                        <div className="text-button text-center">Quantity</div>
+                        <div className="text-button text-center">Access</div>
                       </div>
                       <div className="w-1/6">
                         <div className="text-button text-center">
@@ -157,6 +115,7 @@ const Cart = () => {
                       </div>
                     </div>
                   </div>
+
                   <div className="list-product-main w-full mt-3">
                     {cartState.cartArray.length < 1 ? (
                       <p className="text-button pt-3">No product in cart</p>
@@ -179,49 +138,27 @@ const Cart = () => {
                               </div>
                               <div>
                                 <div className="text-title">{product.name}</div>
-                                <div className="list-select mt-3"></div>
                               </div>
                             </div>
                           </div>
+
                           <div className="w-1/12 price flex items-center justify-center">
                             <div className="text-title text-center">
                               ${product.price}
                             </div>
                           </div>
+
+                          {/* ✅ quantity removed */}
                           <div className="w-1/6 flex items-center justify-center">
-                            <div className="quantity-block bg-surface md:p-3 p-2 flex items-center justify-between rounded-lg border border-line md:w-[100px] flex-shrink-0 w-20">
-                              <Icon.Minus
-                                onClick={() => {
-                                  if (product.quantity > 1) {
-                                    handleQuantityChange(
-                                      product.id,
-                                      product.quantity - 1
-                                    );
-                                  }
-                                }}
-                                className={`text-base max-md:text-sm ${
-                                  product.quantity === 1 ? "disabled" : ""
-                                }`}
-                              />
-                              <div className="text-button quantity">
-                                {product.quantity}
-                              </div>
-                              <Icon.Plus
-                                onClick={() =>
-                                  handleQuantityChange(
-                                    product.id,
-                                    product.quantity + 1
-                                  )
-                                }
-                                className="text-base max-md:text-sm"
-                              />
-                            </div>
+                            <div className="text-button">1</div>
                           </div>
+
                           <div className="w-1/6 flex total-price items-center justify-center">
                             <div className="text-title text-center">
-                              ${product.quantity * product.price}
+                              ${product.price}
                             </div>
                           </div>
+
                           <div className="w-1/12 flex items-center justify-center">
                             <Icon.XCircle
                               className="text-xl max-md:text-base text-red cursor-pointer hover:text-black duration-500"
@@ -236,6 +173,8 @@ const Cart = () => {
                   </div>
                 </div>
               </div>
+
+              {/* discount section unchanged */}
               <div className="input-block discount-code w-full h-12 sm:mt-7 mt-5">
                 <form className="w-full h-full relative">
                   <input
@@ -249,194 +188,39 @@ const Cart = () => {
                   </button>
                 </form>
               </div>
-              <div className="list-voucher flex items-center gap-5 flex-wrap sm:mt-7 mt-5">
-                <div
-                  className={`item ${
-                    applyCode === 200 ? "bg-green" : ""
-                  } border border-line rounded-lg py-2`}
-                >
-                  <div className="top flex gap-10 justify-between px-3 pb-2 border-b border-dashed border-line">
-                    <div className="left">
-                      <div className="caption1">Discount</div>
-                      <div className="caption1 font-bold">10% OFF</div>
-                    </div>
-                    <div className="right">
-                      <div className="caption1">
-                        For all orders <br />
-                        from 200$
-                      </div>
-                    </div>
-                  </div>
-                  <div className="bottom gap-6 items-center flex justify-between px-3 pt-2">
-                    <div className="text-button-uppercase">Code: AN6810</div>
-                    <div
-                      className="button-main py-1 px-2.5 capitalize text-xs"
-                      onClick={() =>
-                        handleApplyCode(200, Math.floor((totalCart / 100) * 10))
-                      }
-                    >
-                      {applyCode === 200 ? "Applied" : "Apply Code"}
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className={`item ${
-                    applyCode === 300 ? "bg-green" : ""
-                  } border border-line rounded-lg py-2`}
-                >
-                  <div className="top flex gap-10 justify-between px-3 pb-2 border-b border-dashed border-line">
-                    <div className="left">
-                      <div className="caption1">Discount</div>
-                      <div className="caption1 font-bold">15% OFF</div>
-                    </div>
-                    <div className="right">
-                      <div className="caption1">
-                        For all orders <br />
-                        from 300$
-                      </div>
-                    </div>
-                  </div>
-                  <div className="bottom gap-6 items-center flex justify-between px-3 pt-2">
-                    <div className="text-button-uppercase">Code: AN6810</div>
-                    <div
-                      className="button-main py-1 px-2.5 capitalize text-xs"
-                      onClick={() =>
-                        handleApplyCode(300, Math.floor((totalCart / 100) * 15))
-                      }
-                    >
-                      {applyCode === 300 ? "Applied" : "Apply Code"}
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className={`item ${
-                    applyCode === 400 ? "bg-green" : ""
-                  } border border-line rounded-lg py-2`}
-                >
-                  <div className="top flex gap-10 justify-between px-3 pb-2 border-b border-dashed border-line">
-                    <div className="left">
-                      <div className="caption1">Discount</div>
-                      <div className="caption1 font-bold">20% OFF</div>
-                    </div>
-                    <div className="right">
-                      <div className="caption1">
-                        For all orders <br />
-                        from 400$
-                      </div>
-                    </div>
-                  </div>
-                  <div className="bottom gap-6 items-center flex justify-between px-3 pt-2">
-                    <div className="text-button-uppercase">Code: AN6810</div>
-                    <div
-                      className="button-main py-1 px-2.5 capitalize text-xs"
-                      onClick={() =>
-                        handleApplyCode(400, Math.floor((totalCart / 100) * 20))
-                      }
-                    >
-                      {applyCode === 400 ? "Applied" : "Apply Code"}
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
+
             <div className="xl:w-1/3 xl:pl-12 w-full">
               <div className="checkout-block bg-surface p-6 rounded-2xl">
                 <div className="heading5">Order Summary</div>
+
                 <div className="total-block py-5 flex justify-between border-b border-line">
                   <div className="text-title">Subtotal</div>
                   <div className="text-title">
                     $<span className="total-product">{totalCart}</span>
-                    <span></span>
                   </div>
                 </div>
+
                 <div className="discount-block py-5 flex justify-between border-b border-line">
                   <div className="text-title">Discounts</div>
                   <div className="text-title">
-                    {" "}
-                    <span>-$</span>
-                    <span className="discount">{discountCart}</span>
-                    <span></span>
+                    -${discountCart}
                   </div>
                 </div>
-                <div className="ship-block py-5 flex justify-between border-b border-line">
-                  <div className="text-title">Shipping</div>
-                  <div className="choose-type flex gap-12">
-                    <div className="left">
-                      <div className="type">
-                        {moneyForFreeship - totalCart > 0 ? (
-                          <input
-                            id="shipping"
-                            type="radio"
-                            name="ship"
-                            disabled
-                          />
-                        ) : (
-                          <input
-                            id="shipping"
-                            type="radio"
-                            name="ship"
-                            checked={shipCart === 0}
-                            onChange={() => setshipCart(0)}
-                          />
-                        )}
-                        <label className="pl-1" htmlFor="shipping">
-                          Instant Download:
-                        </label>
-                      </div>
-                      <div className="type mt-1">
-                        <input
-                          id="local"
-                          type="radio"
-                          name="ship"
-                          value={30}
-                          checked={shipCart === 30}
-                          onChange={() => setshipCart(30)}
-                        />
-                        <label
-                          className="text-on-surface-variant1 pl-1"
-                          htmlFor="local"
-                        >
-                          Local:
-                        </label>
-                      </div>
-                      <div className="type mt-1">
-                        <input
-                          id="flat"
-                          type="radio"
-                          name="ship"
-                          value={40}
-                          checked={shipCart === 40}
-                          onChange={() => setshipCart(40)}
-                        />
-                        <label
-                          className="text-on-surface-variant1 pl-1"
-                          htmlFor="flat"
-                        >
-                          Flat Rate:
-                        </label>
-                      </div>
-                    </div>
-                    <div className="right">
-                      <div className="ship">$0</div>
-                      <div className="local text-on-surface-variant1 mt-1">
-                        $30
-                      </div>
-                      <div className="flat text-on-surface-variant1 mt-1">
-                        $40
-                      </div>
-                    </div>
-                  </div>
+
+                {/* ✅ replaced shipping */}
+                <div className="py-5 flex justify-between border-b border-line">
+                  <div className="text-title">Delivery</div>
+                  <div className="text-title">Instant</div>
                 </div>
+
                 <div className="total-cart-block pt-4 pb-4 flex justify-between">
                   <div className="heading5">Total</div>
                   <div className="heading5">
-                    $
-                    <span className="total-cart heading5">
-                      {totalCart - discountCart + shipCart}
-                    </span>
-                    <span className="heading5"></span>
+                    ${totalCart - discountCart}
                   </div>
                 </div>
+
                 <div className="block-button flex flex-col items-center gap-y-4 mt-5">
                   <div
                     className="checkout-btn button-main text-center w-full"

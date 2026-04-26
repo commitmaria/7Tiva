@@ -146,7 +146,7 @@ const ModalCart = ({
                   </span>{" "}
                 </span>
                 <span>more to get </span>
-                <span className="text-button">One item free</span>
+                <span className="text-button">freeship</span>
               </div>
               <div className="tow-bar-block mt-3">
                 <div
@@ -213,8 +213,8 @@ const ModalCart = ({
                   className="item flex items-center gap-3 cursor-pointer"
                   onClick={() => handleActiveTab("shipping")}
                 >
-                  <Icon.EnvelopeSimple className="text-xl" />
-                  <div className="caption1">Instant access</div>
+                  <Icon.Truck className="text-xl" />
+                  <div className="caption1">Shipping</div>
                 </div>
                 <div
                   className="item flex items-center gap-3 cursor-pointer"
