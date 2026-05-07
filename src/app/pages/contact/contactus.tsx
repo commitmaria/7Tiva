@@ -70,22 +70,22 @@ const ContactUs = () => {
                 <p className="mt-3">
                   Whatsapp:{" "}
                   <a
-                    href="https://wa.me/34667345669"
+                    href="https://wa.me/6098032052"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="whitespace-nowrap"
                   >
-                    +34 667 34 56 69
+                    +1 609-803-2052
                   </a>
                 </p>
 
                 <p className="mt-1">
                   Email:{" "}
                   <a
-                    href="mailto:orders@shopclud.com"
+                    href="mailto:orders@3minta.com"
                     className="whitespace-nowrap"
                   >
-                    orders@shopclud.com
+                    orders@3minta.com
                   </a>
                 </p>
               </div>

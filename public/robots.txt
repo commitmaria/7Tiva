@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.shopclud.com
+Host: https://www.3minta.com
 
 # Sitemaps
-Sitemap: https://www.shopclud.com/sitemap.xml
+Sitemap: https://www.3minta.com/sitemap.xml

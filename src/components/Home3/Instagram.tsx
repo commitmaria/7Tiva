@@ -12,8 +12,8 @@ const Instagram = () => {
     <>
       <div className="instagram-block md:pt-20 pt-10">
         <div className="heading">
-          <div className="heading3 text-center">shopclud On Instagram</div>
-          <div className="text-center mt-3">ShopClud Official</div>
+          <div className="heading3 text-center">3minta On Instagram</div>
+          <div className="text-center mt-3">3minta Official</div>
         </div>
         <div className="list-instagram md:mt-7 mt-4">
           <Swiper

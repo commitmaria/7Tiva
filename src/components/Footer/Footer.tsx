@@ -15,7 +15,7 @@ const Footer = () => {
                   <div className="heading4">
                     <Image
                       src="/logoclud.png"
-                      alt="Shopclud logo"
+                      alt="3minta logo"
                       width={80}
                       height={28}
                       priority
@@ -29,16 +29,16 @@ const Footer = () => {
                     <span className="text-button mt-3">address:</span>
                   </div>
                   <div className="flex flex-col ">
-                    <a href="mailto:orders@shopclud.com" className="">
-                      orders@shopclud.com
+                    <a href="mailto:orders@3minta.com" className="">
+                      orders@3minta.com
                     </a>
                     <span className="mt-3 block">
                       <a
-                        href="https://wa.me/34667345669"
+                        href="https://wa.me/6098032052"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        +34 667 34 56 69
+                        +1 609-803-2052
                       </a>
                     </span>
                     <span className="mt-3 pt-px">
@@ -182,7 +182,7 @@ const Footer = () => {
             <div className="footer-bottom py-3 flex items-center justify-between gap-5 max-lg:justify-center max-lg:flex-col border-t border-line">
               <div className="left flex items-center gap-8">
                 <div className="copyright caption1 text-secondary">
-                  ©{new Date().getFullYear()} shopclud. All Rights Reserved.
+                  ©{new Date().getFullYear()} 3minta. All Rights Reserved.
                 </div>
                 <div className="select-block flex items-center gap-5 max-md:hidden">
                   <div className="choose-language flex items-center gap-1.5">

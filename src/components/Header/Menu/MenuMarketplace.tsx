@@ -61,7 +61,7 @@ const MenuMarketplace = () => {
                 <Icon.List className="text-white text-2xl" />
               </div>
               <Link href={"/"} className="flex items-center">
-                <div className="heading4 text-white">shopclud</div>
+                <div className="heading4 text-white">3minta</div>
               </Link>
               <div className="form-search w-2/3 pl-8 flex items-center h-[44px] max-lg:hidden">
                 <div className="w-full flex items-center h-full">
@@ -405,7 +405,7 @@ const MenuMarketplace = () => {
                   <div className="logo">
                     <Image
                       src="/logoclud.png"
-                      alt="Shopclud logo"
+                      alt="3minta logo"
                       width={114}
                       height={31}
                       priority

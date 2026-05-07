@@ -1227,7 +1227,7 @@ const MyAccount = () => {
                 </strong>
                 <h6 className="heading6 order_name mt-2">Lee Art</h6>
                 <h6 className="heading6 order_phone mt-2">
-                  (+12) 345 - 678910
+                  (+1) 234-567-8910
                 </h6>
                 <h6 className="heading6 normal-case order_email mt-2">
                   orders@codeclud.com

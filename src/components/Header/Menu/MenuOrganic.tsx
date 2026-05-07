@@ -91,7 +91,7 @@ const MenuOrganic = () => {
                 <div className="heading4">
                   <Image
                     src="/logoclud.png"
-                    alt="Shopclud logo"
+                    alt="3minta logo"
                     width={100}
                     height={30}
                     priority
@@ -437,7 +437,7 @@ const MenuOrganic = () => {
                   <div className="logo">
                     <Image
                       src="/logoclud.png"
-                      alt="Shopclud logo"
+                      alt="3minta logo"
                       width={114}
                       height={31}
                       priority

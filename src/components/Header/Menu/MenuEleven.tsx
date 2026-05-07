@@ -90,7 +90,7 @@ const MenuEleven = () => {
                 <div className="heading4">
                   <Image
                     src="/logoclud.png"
-                    alt="Shopclud logo"
+                    alt="3minta logo"
                     width={100}
                     height={30}
                     priority
@@ -162,7 +162,7 @@ const MenuEleven = () => {
                         Dashboard
                       </Link>
                       <div className="bottom mt-4 pt-4 border-t border-line"></div>
-                      <Link href="mailto:orders@shopclud.com" className="body1 hover:underline">
+                      <Link href="mailto:orders@3minta.com" className="body1 hover:underline">
                         Support
                       </Link>
                     </div>
@@ -443,7 +443,7 @@ const MenuEleven = () => {
                   <div className="logo">
                     <Image
                       src="/logoclud.png"
-                      alt="Shopclud logo"
+                      alt="3minta logo"
                       width={114}
                       height={31}
                       priority

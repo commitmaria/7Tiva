@@ -22,22 +22,22 @@ const instrument = Instrument_Sans({
 
 
 export const metadata: Metadata = {
-  title: "ShopClud | Best Digital Products & Exclusive Deals Online",
+  title: "3minta | Best Digital Products & Exclusive Deals Online",
   description:
-    "Discover high-quality digital products at ShopClud. Enjoy exclusive deals, fast delivery, and secure checkout on SofTools, eBooks, courses, and more.",
+    "Discover high-quality digital products at 3minta. Enjoy exclusive deals, fast delivery, and secure checkout on SofTools, eBooks, courses, and more.",
 
   openGraph: {
-    title: "ShopClud | Best Digital Products & Exclusive Deals Online",
+    title: "3minta | Best Digital Products & Exclusive Deals Online",
     description:
-      "Discover high-quality digital products at ShopClud. Enjoy exclusive deals, fast delivery, and secure checkout on SofTools, eBooks, courses, and more.",
-    url: "https://www.shopclud.com",
-    siteName: "ShopClud",
+      "Discover high-quality digital products at 3minta. Enjoy exclusive deals, fast delivery, and secure checkout on SofTools, eBooks, courses, and more.",
+    url: "https://www.3minta.com",
+    siteName: "3minta",
     images: [
       {
-        url: "https://www.shopclud.com/open_graph.jpeg", // replace with your image URL
+        url: "https://www.3minta.com/open_graph.jpeg", // replace with your image URL
         width: 1200,
         height: 630,
-        alt: "ShopClud Digital Storefront",
+        alt: "3minta Digital Storefront",
       },
     ],
     locale: "en_US",
@@ -46,10 +46,10 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "ShopClud | Best Digital Products & Exclusive Deals Online",
+    title: "3minta | Best Digital Products & Exclusive Deals Online",
     description:
-      "Discover high-quality digital products at ShopClud. Enjoy exclusive deals, fast delivery, and secure checkout on SofTools, eBooks, courses, and more.",
-    images: ["https://www.shopclud.com/open_graph.jpeg"],
+      "Discover high-quality digital products at 3minta. Enjoy exclusive deals, fast delivery, and secure checkout on SofTools, eBooks, courses, and more.",
+    images: ["https://www.3minta.com/open_graph.jpeg"],
   },
 };
 
