@@ -369,22 +369,23 @@
     "action": "quick shop",
     "slug": "CupCut-activation"
   },
+
   {
     "id": "10",
     "category": "Digital",
     "type": "d-apps",
-    "name": "AutoDesk 3-Years Subscription",
-    "gender": "All",
+    "name": "10,000 Real TikTok Followers for Fast Account Growth",
+    "gender": "all",
     "new": false,
     "sale": true,
     "rate": 5,
-    "price": 20.45,
-    "originPrice": 36.45,
-    "brand": "AutoDesk",
-    "sold": 12,
-    "quantity": 200,
+    "price": 7.45,
+    "originPrice": 30.45,
+    "brand": "Digital",
+    "sold": 15,
+    "quantity": 100,
     "quantityPurchase": 1,
-    "paypalLink": "https://shops.3minta.com/checkouts/cn/hWNBvoz1Bvyrb0vUSsDBcHgs/en-de?_r=AQAB1gwkvqwPKvbCc8oYXFyM2ijc6VDJU8lUUWYTYwDgN-E&preview_theme_id=195708911956&skip_shop_pay=true",
+    "paypalLink": "https://shops.3minta.com/checkouts/cn/hWNBvqKDo6KE1D1DUBVKvj42/en-de?_r=AQABqdmdPcxh_RiIZYE2rD8te6Uq9YZguV7765KNbAr5Lng&preview_theme_id=195708911956&skip_shop_pay=true",
     "sizes": [
       "L"
     ],
@@ -395,24 +396,22 @@
         "colorImage": "",
         "image": ""
       }
-    
     ],
     "thumbImage": [
-      "/images/product/autodesk/Autodesk1.png",
-      "/images/product/autodesk/Autodesk1.png"
+      "/images/product/10k/ticktok.png",
+      "/images/product/10k/ticktok.png"
     ],
     "images": [
-      "/images/product/autodesk/Autodesk1.png",
-      "/images/product/autodesk/Autodesk1.png",
-      "/images/product/autodesk/Autodesk1.png",
-      "/images/product/autodesk/Autodesk1.png"
+      "/images/product/10k/ticktok.png",
+      "/images/product/10k/ticktok.png",
+      "/images/product/10k/ticktok.png",
+      "/images/product/10k/ticktok.png"
     ],
-    "description": "Enjoy full creativity and power with Autodesk 3-Year Subscription for only $20. Professionally designed for creators and engineers, it offers all premium features with easy activation by code or email.",
+    "description": "Grow your TikTok presence with a powerful visibility boost designed to build social proof and increase reach. This service helps enhance your profile’s credibility, making it more attractive to new followers and supporting faster organic growth.",
     "action": "quick shop",
     "slug": "activation"
   },
 
-  
   {
     "id": "11",
     "category": "Digital",
@@ -1005,21 +1004,21 @@
   {
     "id": "28",
     "category": "Digital",
-    "type": "tools",
-    "name": "10,000 Real TikTok Followers for Fast Account Growth",
-    "gender": "all",
+    "type": "d-apps",
+    "name": "AutoDesk 3-Years Subscription",
+    "gender": "All",
     "new": false,
     "sale": true,
     "rate": 5,
-    "price": 7.45,
-    "originPrice": 30.45,
-    "brand": "Digital",
-    "sold": 15,
-    "quantity": 100,
+    "price": 20.45,
+    "originPrice": 36.45,
+    "brand": "AutoDesk",
+    "sold": 12,
+    "quantity": 200,
     "quantityPurchase": 1,
-    "paypalLink": "https://shops.3minta.com/checkouts/cn/hWNBvqKDo6KE1D1DUBVKvj42/en-de?_r=AQABqdmdPcxh_RiIZYE2rD8te6Uq9YZguV7765KNbAr5Lng&preview_theme_id=195708911956&skip_shop_pay=true",
+    "paypalLink": "https://shops.3minta.com/checkouts/cn/hWNBvoz1Bvyrb0vUSsDBcHgs/en-de?_r=AQAB1gwkvqwPKvbCc8oYXFyM2ijc6VDJU8lUUWYTYwDgN-E&preview_theme_id=195708911956&skip_shop_pay=true",
     "sizes": [
-      "U"
+      "L"
     ],
     "variation": [
       {
@@ -1028,20 +1027,21 @@
         "colorImage": "",
         "image": ""
       }
+    
     ],
     "thumbImage": [
-      "/images/product/10k/ticktok.png",
-      "/images/product/10k/ticktok.png"
+      "/images/product/autodesk/Autodesk1.png",
+      "/images/product/autodesk/Autodesk1.png"
     ],
     "images": [
-      "/images/product/10k/ticktok.png",
-      "/images/product/10k/ticktok.png",
-      "/images/product/10k/ticktok.png",
-      "/images/product/10k/ticktok.png"
+      "/images/product/autodesk/Autodesk1.png",
+      "/images/product/autodesk/Autodesk1.png",
+      "/images/product/autodesk/Autodesk1.png",
+      "/images/product/autodesk/Autodesk1.png"
     ],
-    "description": "Grow your TikTok presence with a powerful visibility boost designed to build social proof and increase reach. This service helps enhance your profile’s credibility, making it more attractive to new followers and supporting faster organic growth.",
+    "description": "Enjoy full creativity and power with Autodesk 3-Year Subscription for only $20. Professionally designed for creators and engineers, it offers all premium features with easy activation by code or email.",
     "action": "quick shop",
-    "slug": "d-apps"
+    "slug": "activation"
   },
 
   {
