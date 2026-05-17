@@ -99,8 +99,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
               </Link>
               <div className="menu-main h-full max-lg:hidden">
                 <ul className="flex items-center gap-8 h-full">
-                 
-                  
+                              
                   <li className="h-full">
                     <Link
                       href="/shop/default"
@@ -167,7 +166,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                       Dashboard
                     </Link>
                     <div className="bottom mt-4 pt-4 border-t border-line"></div>
-                    <Link href="mailto:orders@7Tiva.com" className="body1 hover:underline">
+                    <Link href="mailto:orders@7tiva.com" className="body1 hover:underline">
   Support
 </Link>
                   </div>

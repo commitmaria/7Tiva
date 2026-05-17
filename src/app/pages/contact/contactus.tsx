@@ -75,17 +75,17 @@ const ContactUs = () => {
                     rel="noopener noreferrer"
                     className="whitespace-nowrap"
                   >
-                    +1 609-803-2052
+                    +44 7984 854063
                   </a>
                 </p>
 
                 <p className="mt-1">
                   Email:{" "}
                   <a
-                    href="mailto:orders@7Tiva.com"
+                    href="mailto:orders@7tiva.com"
                     className="whitespace-nowrap"
                   >
-                    orders@7Tiva.com
+                    orders@7tiva.com
                   </a>
                 </p>
               </div>

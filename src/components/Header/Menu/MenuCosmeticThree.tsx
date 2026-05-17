@@ -235,7 +235,7 @@ const MenuCosmeticThree = () => {
                       Dashboard
                     </Link>
                     <div className="bottom mt-4 pt-4 border-t border-line"></div>
-                    <Link href="mailto:orders@7Tiva.com" className="body1 hover:underline">
+                    <Link href="mailto:orders@7tiva.com" className="body1 hover:underline">
                       Support
                     </Link>
                   </div>

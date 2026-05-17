@@ -29,8 +29,8 @@ const Footer = () => {
                     <span className="text-button mt-3">address:</span>
                   </div>
                   <div className="flex flex-col ">
-                    <a href="mailto:orders@7Tiva.com" className="">
-                      orders@7Tiva.com
+                    <a href="mailto:orders@7tiva.com" className="">
+                      orders@7tiva.com
                     </a>
                     <span className="mt-3 block">
                       <a
@@ -38,7 +38,7 @@ const Footer = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        +1 609-803-2052
+                        +44 7984 854063
                       </a>
                     </span>
                     <span className="mt-3 pt-px">
