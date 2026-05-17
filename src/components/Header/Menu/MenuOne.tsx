@@ -244,36 +244,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
               </div>
               <div className="list-nav mt-6">
                 <ul>
-                  <li
-                    className={`${openSubNavMobile === 1 ? "open" : ""}`}
-                    onClick={() => handleOpenSubNavMobile(1)}
-                  >
-                    <a
-                      href={"/"}
-                      className={`text-xl font-semibold flex items-center justify-between`}
-                    >
-                      Home
-                      <span className="text-right">
-                        <Icon.CaretRight size={20} />
-                      </span>
-                    </a>
-                    
-                  </li>
-                  <li
-                    className={`${openSubNavMobile === 2 ? "open" : ""}`}
-                    onClick={() => handleOpenSubNavMobile(2)}
-                  >
-                    <a
-                      href={"/pages/contact"}
-                      className="text-xl font-semibold flex items-center justify-between mt-5"
-                    >
-                      Contact us
-                      <span className="text-right">
-                        <Icon.CaretRight size={20} />
-                      </span>
-                    </a>
-                    
-                  </li>
+                  
                   <li
                     className={`${openSubNavMobile === 3 ? "open" : ""}`}
                     onClick={() => handleOpenSubNavMobile(3)}
@@ -289,35 +260,29 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                     </a>
                     
                   </li>
-                
                   <li
-                    className={`${openSubNavMobile === 5 ? "open" : ""}`}
-                    onClick={() => handleOpenSubNavMobile(5)}
+                    className={`${openSubNavMobile === 1 ? "open" : ""}`}
+                    onClick={() => handleOpenSubNavMobile(1)}
                   >
+                    
                     <a
-                      href={"/blog/list"}
+                      href={"/pages/contact"}
                       className="text-xl font-semibold flex items-center justify-between mt-5"
                     >
-                      Blog
+                      Contact us
                       <span className="text-right">
                         <Icon.CaretRight size={20} />
                       </span>
                     </a>
-                   
+                    
                   </li>
+                
+                  
                   <li
                     className={`${openSubNavMobile === 6 ? "open" : ""}`}
                     onClick={() => handleOpenSubNavMobile(6)}
                   >
-                    <a
-                      href={"#!"}
-                      className="text-xl font-semibold flex items-center justify-between mt-5"
-                    >
-                      Pages
-                      <span className="text-right">
-                        <Icon.CaretRight size={20} />
-                      </span>
-                    </a>
+                    
                     <div className="sub-nav-mobile">
                       <div
                         className="back-btn flex items-center gap-3"
@@ -327,66 +292,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                         Back
                       </div>
                       <div className="list-nav-item w-full pt-2 pb-6">
-                        <ul className="w-full">
-                          <li>
-                            <Link
-                              href="/pages/about"
-                              className={`link text-secondary duration-300 ${
-                                pathname === "/pages/about" ? "active" : ""
-                              }`}
-                            >
-                              About Us
-                            </Link>
-                          </li>
-                          
-                          
-                          <li>
-                            <Link
-                              href="/pages/page-not-found"
-                              className={`link text-secondary duration-300 ${
-                                pathname === "/pages/page-not-found"
-                                  ? "active"
-                                  : ""
-                              }`}
-                            >
-                              404
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="/pages/faqs"
-                              className={`link text-secondary duration-300 ${
-                                pathname === "/pages/faqs" ? "active" : ""
-                              }`}
-                            >
-                              FAQs
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="/pages/coming-soon"
-                              className={`link text-secondary duration-300 ${
-                                pathname === "/pages/coming-soon"
-                                  ? "active"
-                                  : ""
-                              }`}
-                            >
-                              Coming Soon
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="/pages/customer-feedbacks"
-                              className={`link text-secondary duration-300 ${
-                                pathname === "/pages/customer-feedbacks"
-                                  ? "active"
-                                  : ""
-                              }`}
-                            >
-                              Customer Feedbacks
-                            </Link>
-                          </li>
-                        </ul>
+                        
                       </div>
                     </div>
                   </li>

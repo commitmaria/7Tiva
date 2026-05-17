@@ -15,12 +15,15 @@ import Brand from '@/components/Home1/Brand'
 import Footer from '@/components/Footer/Footer'
 import ModalNewsletter from '@/components/Modal/ModalNewsletter'
 import DefaultClient from '@/app/shop/default/DefaultClient'
+import { Suspense } from 'react'
 
 export default function Home() {
   return (
     <>
      
+     <Suspense fallback={null}>
       <DefaultClient />
+    </Suspense>
     </>
   )
 }
