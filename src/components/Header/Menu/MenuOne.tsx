@@ -99,17 +99,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
               </Link>
               <div className="menu-main h-full max-lg:hidden">
                 <ul className="flex items-center gap-8 h-full">
-                  <li className="h-full relative">
-                    <Link
-                      href="/"
-                      className={`text-button-uppercase duration-300 h-full flex items-center justify-center gap-1 ${
-                        pathname === "/" ? "active" : ""
-                      }`}
-                    >
-                      Home
-                    </Link>
-                    
-                  </li>
+                 
                   
                   <li className="h-full">
                     <Link
@@ -129,88 +119,9 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                     >
                       Contact us
                     </Link>
-                    
-                  </li>
-                  <li className="h-full relative">
-                    <Link
-                      href="/blog/list"
-                      className={`text-button-uppercase duration-300 h-full flex items-center justify-center ${
-                        pathname.includes("/blog") ? "active" : ""
-                      }`}
-                    >
-                      Blog
-                    </Link>
-                    
-                  </li>
-                  <li className="h-full relative">
-                    <Link
-                      href="#!"
-                      className={`text-button-uppercase duration-300 h-full flex items-center justify-center ${
-                        pathname.includes("/pages") ? "active" : ""
-                      }`}
-                    >
-                      Pages
-                    </Link>
-                    <div className="sub-menu py-3 px-5 -left-10 absolute bg-white rounded-b-xl">
-                      <ul className="w-full">
-                        <li>
-                          <Link
-                            href="/pages/about"
-                            className={`link text-secondary duration-300 ${
-                              pathname === "/pages/about" ? "active" : ""
-                            }`}
-                          >
-                            About Us
-                          </Link>
-                        </li>
-                       
-                        <li>
-                          <Link
-                            href="/pages/page-not-found"
-                            className={`link text-secondary duration-300 ${
-                              pathname === "/pages/page-not-found"
-                                ? "active"
-                                : ""
-                            }`}
-                          >
-                            404
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/pages/faqs"
-                            className={`link text-secondary duration-300 ${
-                              pathname === "/pages/faqs" ? "active" : ""
-                            }`}
-                          >
-                            FAQs
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/pages/coming-soon"
-                            className={`link text-secondary duration-300 ${
-                              pathname === "/pages/coming-soon" ? "active" : ""
-                            }`}
-                          >
-                            Coming Soon
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/pages/customer-feedbacks"
-                            className={`link text-secondary duration-300 ${
-                              pathname === "/pages/customer-feedbacks"
-                                ? "active"
-                                : ""
-                            }`}
-                          >
-                            Customer Feedbacks
-                          </Link>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
+                  </li>  
+                
+                  
                 </ul>
               </div>
             </div>

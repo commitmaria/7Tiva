@@ -14,25 +14,13 @@ import Instagram from '@/components/Home1/Instagram'
 import Brand from '@/components/Home1/Brand'
 import Footer from '@/components/Footer/Footer'
 import ModalNewsletter from '@/components/Modal/ModalNewsletter'
+import DefaultClient from '@/app/shop/default/DefaultClient'
 
 export default function Home() {
   return (
     <>
-      <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
-      <div id="header" className='relative w-full'>
-        <MenuOne props="bg-transparent" />
-        <SliderOne />
-      </div>
-      <WhatNewOne data={productData} start={0} limit={4} />
-      <Collection />
-      <TabFeatures data={productData} start={0} limit={6} />
-      <Banner />
-      <Benefit props="md:py-20 py-10" />
-      <Testimonial data={testimonialData} limit={6} />
-      <Instagram />
-      <Brand />
-      <Footer />
-      <ModalNewsletter />
+     
+      <DefaultClient />
     </>
   )
 }
