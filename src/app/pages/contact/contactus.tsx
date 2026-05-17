@@ -82,10 +82,10 @@ const ContactUs = () => {
                 <p className="mt-1">
                   Email:{" "}
                   <a
-                    href="mailto:orders@3minta.com"
+                    href="mailto:orders@7Tiva.com"
                     className="whitespace-nowrap"
                   >
-                    orders@3minta.com
+                    orders@7Tiva.com
                   </a>
                 </p>
               </div>

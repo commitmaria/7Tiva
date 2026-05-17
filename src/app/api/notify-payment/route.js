@@ -34,7 +34,7 @@ export async function POST(req) {
       "@type": "Order",
       "merchant": {
         "@type": "Organization",
-        "name": "3minta",
+        "name": "7Tiva",
       },
       "orderNumber": order?.id || "N/A",
       "priceCurrency": "USD",
@@ -51,7 +51,7 @@ export async function POST(req) {
           }))
         : [],
       "orderStatus": "http://schema.org/OrderProcessing",
-      "url": `https://www.3minta.com/orders/${order?.id || ""}`,
+      "url": `https://www.7Tiva.com/orders/${order?.id || ""}`,
     };
 
     if (process.env.SMTP_HOST && process.env.OWNER_EMAIL) {
@@ -72,7 +72,7 @@ export async function POST(req) {
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Order Confirmation - 3minta</title>
+<title>Order Confirmation - 7Tiva</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type="application/ld+json">
 ${JSON.stringify(jsonLd)}
@@ -98,9 +98,9 @@ h1 { color:#4f46e5; text-align:center; }
 <p><strong>Amount:</strong> $${amount || "N/A"}</p>
 <p><strong>Status:</strong> Processing</p>
 </div>
-<a href="https://www.3minta.com/orders/${order?.id || ""}" class="btn">View your order</a>
+<a href="https://www.7Tiva.com/orders/${order?.id || ""}" class="btn">View your order</a>
 <div class="footer">
-© 2025 3minta. All rights reserved.
+© 2025 7Tiva. All rights reserved.
 </div>
 </div>
 </body>

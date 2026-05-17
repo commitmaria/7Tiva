@@ -90,7 +90,7 @@ const MenuPet = () => {
               <div className="heading4">
                 <Image
                   src="/logoclud.png"
-                  alt="3minta logo"
+                  alt="7Tiva logo"
                   width={100}
                   height={30}
                   priority
@@ -161,7 +161,7 @@ const MenuPet = () => {
                       Dashboard
                     </Link>
                     <div className="bottom mt-4 pt-4 border-t border-line"></div>
-                    <Link href="mailto:orders@3minta.com" className="body1 hover:underline">
+                    <Link href="mailto:orders@7Tiva.com" className="body1 hover:underline">
   Support
 </Link>
                   </div>
@@ -439,7 +439,7 @@ const MenuPet = () => {
                   <div className="logo">
                     <Image
                       src="/logoclud.png"
-                      alt="3minta logo"
+                      alt="7Tiva logo"
                       width={114}
                       height={31}
                       priority

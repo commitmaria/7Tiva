@@ -90,7 +90,7 @@ const MenuFurniture: React.FC<Props> = ({ props }) => {
               <div className="heading4">
                 <Image
                   src="/logoclud.png"
-                  alt="3minta logo"
+                  alt="7Tiva logo"
                   width={100}
                   height={30}
                   priority
@@ -153,7 +153,7 @@ const MenuFurniture: React.FC<Props> = ({ props }) => {
                 </li>
                 <li className="h-full flex items-center justify-center logo">
                   <Link href={"/"} className="heading4">
-                    3minta
+                    7Tiva
                   </Link>
                 </li>
                
@@ -267,7 +267,7 @@ const MenuFurniture: React.FC<Props> = ({ props }) => {
                       Dashboard
                     </Link>
                     <div className="bottom mt-4 pt-4 border-t border-line"></div>
-                    <Link href="mailto:orders@3minta.com" className="body1 hover:underline">
+                    <Link href="mailto:orders@7Tiva.com" className="body1 hover:underline">
   Support
 </Link>
                   </div>
@@ -323,7 +323,7 @@ const MenuFurniture: React.FC<Props> = ({ props }) => {
                   <div className="logo">
                     <Image
                       src="/logoclud.png"
-                      alt="3minta logo"
+                      alt="7Tiva logo"
                       width={114}
                       height={31}
                       priority
