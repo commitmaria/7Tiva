@@ -42,7 +42,7 @@ const Footer = () => {
                       </a>
                     </span>
                     <span className="mt-3 pt-px">
-                      Unit 122569 London W1A 6US United Kingdom
+                      17 Thirsk Road, Blairythan, AB41 5AJ, United Kingdom
                     </span>
                   </div>
                 </div>

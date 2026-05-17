@@ -232,7 +232,7 @@ const ShopFilterDropdown: React.FC<Props> = ({
                   {dataType === null ? "Shop" : dataType}
                 </div>
                 <div className="link flex items-center justify-center gap-1 caption1 mt-3">
-                  <Link href={"/"}>Homepage</Link>
+                  <Link href={"/"}>Menu</Link>
                   <Icon.CaretRight size={14} className="text-secondary2" />
                   <div className="text-secondary2 capitalize">
                     {dataType === null ? "Shop" : dataType}

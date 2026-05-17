@@ -65,7 +65,7 @@ const ContactUs = () => {
               <div className="item">
                 <div className="heading4">Our Store</div>
                 <p className="mt-3">
-                  Unit 122569 London W1A 6US United Kingdom
+                  17 Thirsk Road, Blairythan, AB41 5AJ, United Kingdom
                 </p>
                 <p className="mt-3">
                   Whatsapp:{" "}

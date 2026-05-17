@@ -112,7 +112,7 @@ export const StoreListMetadata: Metadata = {
 export const NotFoundMetadata: Metadata = {
   title: "404 - Page Not Found | 7Tiva",
   description:
-    "Oops! The page you’re looking for doesn’t exist. Return to the homepage to continue exploring digital products and subscriptions.",
+    "Oops! The page you’re looking for doesn’t exist. Return to the Menu to continue exploring digital products and subscriptions.",
   alternates: { canonical: `${baseUrl}/404` },
   openGraph: {
     title: "Page Not Found",

@@ -213,7 +213,7 @@ const ShopFilterOptions: React.FC<Props> = ({ data, productPerPage }) => {
                   {type === undefined ? "Shop" : type}
                 </div>
                 <div className="link flex items-center justify-center gap-1 caption1 mt-3">
-                  <Link href={"/"}>Homepage</Link>
+                  <Link href={"/"}>Menu</Link>
                   <Icon.CaretRight size={14} className="text-secondary2" />
                   <div className="text-secondary2 capitalize">
                     {type === undefined ? "Shop" : type}
