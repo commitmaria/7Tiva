@@ -317,7 +317,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
           >
             <Icon.List weight="bold" className="text-2xl" />
             <span className="menu_bar-title caption2 font-semibold">
-              Category
+              Shop
             </span>
           </Link>
           <Link
