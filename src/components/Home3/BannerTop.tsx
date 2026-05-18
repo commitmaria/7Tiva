@@ -14,7 +14,7 @@ const BannerTop: React.FC<Props> = ({ props, textColor, bgLine }) => {
                 <Marquee>
                     <div className={`text-button-uppercase px-8 ${textColor}`}>Get 10% off on selected items</div>
                     <div className={`line w-8 h-px ${bgLine}`}></div>
-                    <div className={`text-button-uppercase px-8 ${textColor}`}>New customers save 10% with the code GET10</div>
+                    <div className={`text-button-uppercase px-8 ${textColor}`}>Get real followers — not bot followers</div>
                     <div className={`line w-8 h-px ${bgLine}`}></div>
                     <div className={`text-button-uppercase px-8 ${textColor}`}>10% off swim suits</div>
                     <div className={`line w-8 h-px ${bgLine}`}></div>

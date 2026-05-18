@@ -40,7 +40,7 @@ const Login = () => {
     <>
       <TopNavOne
         props="style-one bg-black"
-        slogan="New customers save 10% with the code GET10"
+        slogan="Get real followers — not bot followers"
       />
       <div id="header" className="relative w-full">
         <MenuOne props="bg-transparent" />

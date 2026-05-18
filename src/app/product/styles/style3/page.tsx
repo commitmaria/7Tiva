@@ -7,7 +7,7 @@ import FilterCanvasClientThree from './FilterCanvasClientThree'
 export default function FilterCanvasProductThreePage() {
   return (
     <>
-      <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
+      <TopNavOne props="style-one bg-black" slogan="Get real followers — not bot followers" />
       <div id="header" className='relative w-full'>
         <MenuOne props="bg-transparent" />
       </div>
